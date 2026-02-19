@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8n3l8yf7jfng"
-path.s3tc="res://.godot/imported/Paintings.png-3f38076c77a9c40240bcf18a773932e8.s3tc.ctex"
+path.s3tc="res://.godot/imported/Paintings.png-abc378f6b3767c2eefd9048747efcec5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/textures/Paintings.png"
-dest_files=["res://.godot/imported/Paintings.png-3f38076c77a9c40240bcf18a773932e8.s3tc.ctex"]
+source_file="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/Textures/Paintings.png"
+dest_files=["res://.godot/imported/Paintings.png-abc378f6b3767c2eefd9048747efcec5.s3tc.ctex"]
 
 [params]
 

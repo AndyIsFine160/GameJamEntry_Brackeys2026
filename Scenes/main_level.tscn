@@ -5,6 +5,7 @@
 [ext_resource type="ArrayMesh" uid="uid://yreeu62guv0g" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Office_Desk_4.obj" id="3_a2ia3"]
 [ext_resource type="ArrayMesh" uid="uid://d26a7sryuywwd" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Office_Desk_4_Two_Alt.obj" id="4_236hc"]
 [ext_resource type="ArrayMesh" uid="uid://1du0ltl7l678" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Wall_Medium_Door.obj" id="5_lwkuy"]
+[ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="6_236hc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -76,3 +77,5 @@ mesh = ExtResource("5_lwkuy")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/WallMediumDoor/StaticBody3D" unique_id=1337324196]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2479846, 0, 0)
 shape = SubResource("BoxShape3D_tqiex")
+
+[node name="Ui" parent="." unique_id=139771353 instance=ExtResource("6_236hc")]

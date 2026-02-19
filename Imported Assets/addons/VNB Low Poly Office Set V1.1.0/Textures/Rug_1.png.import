@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxe7bo41tabc"
-path.s3tc="res://.godot/imported/Rug_1.png-ca77d55124d1a9bd22f2c54ab00e688f.s3tc.ctex"
+path.s3tc="res://.godot/imported/Rug_1.png-30bdc3cf5f316ad1b4c9e18db79ae9ae.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/textures/Rug_1.png"
-dest_files=["res://.godot/imported/Rug_1.png-ca77d55124d1a9bd22f2c54ab00e688f.s3tc.ctex"]
+source_file="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/Textures/Rug_1.png"
+dest_files=["res://.godot/imported/Rug_1.png-30bdc3cf5f316ad1b4c9e18db79ae9ae.s3tc.ctex"]
 
 [params]
 

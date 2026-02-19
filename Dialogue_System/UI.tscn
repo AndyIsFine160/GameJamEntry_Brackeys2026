@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dmpqawvo4bc3k"]
+
+[ext_resource type="Script" uid="uid://boc61fxiwpxrj" path="res://Dialogue_System/ui.gd" id="1_07dl5"]
+
+[node name="Ui" type="Control" unique_id=139771353]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_07dl5")
+
+[node name="Panel" type="Panel" parent="." unique_id=548712322]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -173.0
+offset_right = -32.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Dialogue" type="VSplitContainer" parent="Panel" unique_id=713939920]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+dragging_enabled = false
+
+[node name="Name" type="RichTextLabel" parent="Panel/Dialogue" unique_id=143423105]
+layout_mode = 2
+text = "aaaaaaaaaaaaaaaa"
+fit_content = true
+
+[node name="Text" type="RichTextLabel" parent="Panel/Dialogue" unique_id=1099329024]
+layout_mode = 2
+text = "aaaaaaaaaaaaaaaaaa"
+fit_content = true
