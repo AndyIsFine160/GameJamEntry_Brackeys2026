@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://cpdhx0f2in6b"]
+
+[ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/gremlins_fpc.tscn" id="1_q2fht"]
+[ext_resource type="PackedScene" uid="uid://p36qf43u48jh" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/ChairDesk.fbx" id="2_6l6h0"]
+[ext_resource type="PackedScene" uid="uid://bb43jhuvuikbj" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/Computer.fbx" id="3_o18aq"]
+[ext_resource type="PackedScene" uid="uid://54mbgc5xpenb" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/DrinkingFountain2.fbx" id="4_hd7sb"]
+[ext_resource type="PackedScene" uid="uid://bi8geqtea0s2y" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/DrinkingFountain.fbx" id="5_5vthg"]
+[ext_resource type="PackedScene" uid="uid://bcei3wk2d52rk" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/FilingCabinetSingle.fbx" id="6_unus1"]
+[ext_resource type="PackedScene" uid="uid://sjdhjof72kkl" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/FilingCabinetQuad.fbx" id="7_vgie2"]
+[ext_resource type="PackedScene" uid="uid://dg2ucre04kqyn" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/PottedFern.fbx" id="8_and0o"]
+[ext_resource type="PackedScene" uid="uid://b462emsqq73fe" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/PottedShrubbery.fbx" id="9_jf8f8"]
+[ext_resource type="PackedScene" uid="uid://dvsvwmxiw103x" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/TableOffice.fbx" id="10_qx7ya"]
+[ext_resource type="PackedScene" uid="uid://dm71tv4tdemx2" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/VendingMachine.fbx" id="11_d4dc6"]
+[ext_resource type="PackedScene" uid="uid://b23hjptdr60xa" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/BenchMetal.fbx" id="12_7wxy1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_ikcpc"]
+sky_material = SubResource("ProceduralSkyMaterial_q2fht")
+
+[sub_resource type="Environment" id="Environment_5erdv"]
+background_mode = 2
+sky = SubResource("Sky_ikcpc")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="MainLevel" type="Node3D" unique_id=1067484017]
+
+[node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
+transform = Transform3D(2.3576083, 0, 0, 0, 2.3576083, 0, 0, 0, 2.3576083, -13.192187, 2.6872883, -0.031338215)
+speed = 4.0
+jump_force = 5.0
+
+[node name="Objects" type="Node" parent="." unique_id=328378614]
+
+[node name="ChairDesk" parent="Objects" unique_id=1167547163 instance=ExtResource("2_6l6h0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.916992, 0.0420599, -9.937754)
+
+[node name="Computer" parent="Objects" unique_id=185920514 instance=ExtResource("3_o18aq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.703138, 0.058750868, -5.9252663)
+
+[node name="DrinkingFountain2" parent="Objects" unique_id=1422526846 instance=ExtResource("4_hd7sb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.647617, 0.04205942, -12.303001)
+
+[node name="DrinkingFountain" parent="Objects" unique_id=149397573 instance=ExtResource("5_5vthg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.019285, 0.049127817, -9.499697)
+
+[node name="FilingCabinetSingle" parent="Objects" unique_id=2121581232 instance=ExtResource("6_unus1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3115153, 0.04205942, -7.9663544)
+
+[node name="FilingCabinetQuad" parent="Objects" unique_id=1898259908 instance=ExtResource("7_vgie2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.313711, 0.0420599, -7.8843117)
+
+[node name="PottedFern" parent="Objects" unique_id=184230589 instance=ExtResource("8_and0o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7505355, 0.04205966, -6.4521933)
+
+[node name="PottedShrubbery" parent="Objects" unique_id=432557902 instance=ExtResource("9_jf8f8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.337372, 0.04205942, -6.5319757)
+
+[node name="TableOffice" parent="Objects" unique_id=612791640 instance=ExtResource("10_qx7ya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3984344, 0.0420599, -4.2992973)
+
+[node name="VendingMachine" parent="Objects" unique_id=1748379821 instance=ExtResource("11_d4dc6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.768911, 0.05208206, -11.172645)
+
+[node name="BenchMetal" parent="Objects" unique_id=1217779805 instance=ExtResource("12_7wxy1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.495424, 0.04205942, -4.905538)
+
+[node name="ChairDesk2" parent="Objects" unique_id=1153407204 instance=ExtResource("2_6l6h0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.447006, 0.04205942, -1.9578066)
+
+[node name="Necessary" type="Node" parent="." unique_id=1984820676]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Necessary" unique_id=1078663832]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Necessary" unique_id=414033806]
+environment = SubResource("Environment_5erdv")
+
+[node name="Floor" type="CSGBox3D" parent="Necessary" unique_id=1963374793]
+transform = Transform3D(27.822905, 0, 0, 0, 0.08411926, 0, 0, 0, 27.822905, 0, 0, 0)
+use_collision = true
