@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0hy07qiruqfr"
+path="res://.godot/imported/RFan_A.obj-06cef1757ee39ca6e708e85006c1a0bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/RFan_A.obj-06cef1757ee39ca6e708e85006c1a0bb.mesh"]
+
+source_file="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/RFan_A.obj"
+dest_files=["res://.godot/imported/RFan_A.obj-06cef1757ee39ca6e708e85006c1a0bb.mesh", "res://.godot/imported/RFan_A.obj-06cef1757ee39ca6e708e85006c1a0bb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

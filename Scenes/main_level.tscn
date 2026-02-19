@@ -1,17 +1,10 @@
 [gd_scene format=3 uid="uid://cpdhx0f2in6b"]
 
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/gremlins_fpc.tscn" id="1_q2fht"]
-[ext_resource type="PackedScene" uid="uid://p36qf43u48jh" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/ChairDesk.fbx" id="2_6l6h0"]
-[ext_resource type="PackedScene" uid="uid://bb43jhuvuikbj" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/Computer.fbx" id="3_o18aq"]
-[ext_resource type="PackedScene" uid="uid://54mbgc5xpenb" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/DrinkingFountain2.fbx" id="4_hd7sb"]
-[ext_resource type="PackedScene" uid="uid://bi8geqtea0s2y" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/DrinkingFountain.fbx" id="5_5vthg"]
-[ext_resource type="PackedScene" uid="uid://bcei3wk2d52rk" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/FilingCabinetSingle.fbx" id="6_unus1"]
-[ext_resource type="PackedScene" uid="uid://sjdhjof72kkl" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/FilingCabinetQuad.fbx" id="7_vgie2"]
-[ext_resource type="PackedScene" uid="uid://dg2ucre04kqyn" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/PottedFern.fbx" id="8_and0o"]
-[ext_resource type="PackedScene" uid="uid://b462emsqq73fe" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/PottedShrubbery.fbx" id="9_jf8f8"]
-[ext_resource type="PackedScene" uid="uid://dvsvwmxiw103x" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/TableOffice.fbx" id="10_qx7ya"]
-[ext_resource type="PackedScene" uid="uid://dm71tv4tdemx2" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/VendingMachine.fbx" id="11_d4dc6"]
-[ext_resource type="PackedScene" uid="uid://b23hjptdr60xa" path="res://Imported Assets/addons/OfficeDetailsPackUpdated/BenchMetal.fbx" id="12_7wxy1"]
+[ext_resource type="PackedScene" uid="uid://lrwhxstaa862" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_CounterA1.fbx" id="2_ikcpc"]
+[ext_resource type="ArrayMesh" uid="uid://yreeu62guv0g" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Office_Desk_4.obj" id="3_a2ia3"]
+[ext_resource type="ArrayMesh" uid="uid://d26a7sryuywwd" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Office_Desk_4_Two_Alt.obj" id="4_236hc"]
+[ext_resource type="ArrayMesh" uid="uid://1du0ltl7l678" path="res://Imported Assets/addons/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Wall_Medium_Door.obj" id="5_lwkuy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -26,50 +19,17 @@ sky = SubResource("Sky_ikcpc")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ikcpc"]
+size = Vector3(1, 0.92041016, 0.70562744)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tqiex"]
+
 [node name="MainLevel" type="Node3D" unique_id=1067484017]
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
-transform = Transform3D(2.3576083, 0, 0, 0, 2.3576083, 0, 0, 0, 2.3576083, -13.192187, 2.6872883, -0.031338215)
+transform = Transform3D(0.897215, 0, 0, 0, 0.897215, 0, 0, 0, 0.897215, -13.192187, 0.9431344, 0.12715101)
 speed = 4.0
 jump_force = 5.0
-
-[node name="Objects" type="Node" parent="." unique_id=328378614]
-
-[node name="ChairDesk" parent="Objects" unique_id=1167547163 instance=ExtResource("2_6l6h0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.916992, 0.0420599, -9.937754)
-
-[node name="Computer" parent="Objects" unique_id=185920514 instance=ExtResource("3_o18aq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.703138, 0.058750868, -5.9252663)
-
-[node name="DrinkingFountain2" parent="Objects" unique_id=1422526846 instance=ExtResource("4_hd7sb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.647617, 0.04205942, -12.303001)
-
-[node name="DrinkingFountain" parent="Objects" unique_id=149397573 instance=ExtResource("5_5vthg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.019285, 0.049127817, -9.499697)
-
-[node name="FilingCabinetSingle" parent="Objects" unique_id=2121581232 instance=ExtResource("6_unus1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3115153, 0.04205942, -7.9663544)
-
-[node name="FilingCabinetQuad" parent="Objects" unique_id=1898259908 instance=ExtResource("7_vgie2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.313711, 0.0420599, -7.8843117)
-
-[node name="PottedFern" parent="Objects" unique_id=184230589 instance=ExtResource("8_and0o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7505355, 0.04205966, -6.4521933)
-
-[node name="PottedShrubbery" parent="Objects" unique_id=432557902 instance=ExtResource("9_jf8f8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.337372, 0.04205942, -6.5319757)
-
-[node name="TableOffice" parent="Objects" unique_id=612791640 instance=ExtResource("10_qx7ya")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3984344, 0.0420599, -4.2992973)
-
-[node name="VendingMachine" parent="Objects" unique_id=1748379821 instance=ExtResource("11_d4dc6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.768911, 0.05208206, -11.172645)
-
-[node name="BenchMetal" parent="Objects" unique_id=1217779805 instance=ExtResource("12_7wxy1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.495424, 0.04205942, -4.905538)
-
-[node name="ChairDesk2" parent="Objects" unique_id=1153407204 instance=ExtResource("2_6l6h0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.447006, 0.04205942, -1.9578066)
 
 [node name="Necessary" type="Node" parent="." unique_id=1984820676]
 
@@ -81,5 +41,38 @@ shadow_enabled = true
 environment = SubResource("Environment_5erdv")
 
 [node name="Floor" type="CSGBox3D" parent="Necessary" unique_id=1963374793]
-transform = Transform3D(27.822905, 0, 0, 0, 0.08411926, 0, 0, 0, 27.822905, 0, 0, 0)
+transform = Transform3D(36.75573, 0, 0, 0, 0.08411926, 0, 0, 0, 27.822905, 0, 0, 0)
 use_collision = true
+
+[node name="Objects" type="Node" parent="." unique_id=328378614]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Objects" unique_id=1665556544]
+transform = Transform3D(7.2264185, 0, 0, 0, 3.3851883, 0, 0, 0, 0.1883235, 0, 1.7306566, 1.7329006)
+use_collision = true
+
+[node name="Office_CounterA1" parent="Objects" unique_id=1739669205 instance=ExtResource("2_ikcpc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.101585, 0.021037221, -0.5870242)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Objects/Office_CounterA1" unique_id=853377976]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Office_CounterA1/StaticBody3D" unique_id=1898831981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48514414, -0.052886963)
+shape = SubResource("BoxShape3D_ikcpc")
+
+[node name="OfficeDesk4" type="MeshInstance3D" parent="Objects" unique_id=120915210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.191788, 0.04394466, -3.4299645)
+mesh = ExtResource("3_a2ia3")
+
+[node name="OfficeDesk4TwoAlt" type="MeshInstance3D" parent="Objects" unique_id=769222918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.66033, 0.04394466, -3.719314)
+mesh = ExtResource("4_236hc")
+
+[node name="WallMediumDoor" type="MeshInstance3D" parent="Objects" unique_id=1863003523]
+transform = Transform3D(18.398573, 0, 0, 0, 1, 0, 0, 0, 1, -18.298122, 0.04205966, -8.505533)
+mesh = ExtResource("5_lwkuy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Objects/WallMediumDoor" unique_id=1027039721]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/WallMediumDoor/StaticBody3D" unique_id=1337324196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2479846, 0, 0)
+shape = SubResource("BoxShape3D_tqiex")
