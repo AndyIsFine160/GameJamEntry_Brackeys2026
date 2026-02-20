@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8q5dcs2nwmfi"
+path="res://.godot/imported/FileCabinet_Small_Drawer_A.obj-bf70a8480d14d24f8a8f8bff899d576f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/FileCabinet_Small_Drawer_A.obj-bf70a8480d14d24f8a8f8bff899d576f.mesh"]
+
+source_file="res://Imported Assets/VNB Low Poly Office Set V1.1.0/OBJ/Separated/FileCabinet_Small_Drawer_A.obj"
+dest_files=["res://.godot/imported/FileCabinet_Small_Drawer_A.obj-bf70a8480d14d24f8a8f8bff899d576f.mesh", "res://.godot/imported/FileCabinet_Small_Drawer_A.obj-bf70a8480d14d24f8a8f8bff899d576f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

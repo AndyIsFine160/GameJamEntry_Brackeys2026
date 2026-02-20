@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cer8r4vvahe8w"
+path="res://.godot/imported/WallShelf_Simple.obj-be4d5fbbc318fda6f48ec7ffc07dfba6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallShelf_Simple.obj-be4d5fbbc318fda6f48ec7ffc07dfba6.mesh"]
+
+source_file="res://Imported Assets/VNB Low Poly Office Set V1.1.0/OBJ/Separated/WallShelf_Simple.obj"
+dest_files=["res://.godot/imported/WallShelf_Simple.obj-be4d5fbbc318fda6f48ec7ffc07dfba6.mesh", "res://.godot/imported/WallShelf_Simple.obj-be4d5fbbc318fda6f48ec7ffc07dfba6.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

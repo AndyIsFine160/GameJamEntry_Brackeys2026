@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4mkpofnxy8lq"
+path="res://.godot/imported/Wall_Standard_Sep_2.obj-c47e5db28d6b7d05313fdb5bc410beea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wall_Standard_Sep_2.obj-c47e5db28d6b7d05313fdb5bc410beea.mesh"]
+
+source_file="res://Imported Assets/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Wall_Standard_Sep_2.obj"
+dest_files=["res://.godot/imported/Wall_Standard_Sep_2.obj-c47e5db28d6b7d05313fdb5bc410beea.mesh", "res://.godot/imported/Wall_Standard_Sep_2.obj-c47e5db28d6b7d05313fdb5bc410beea.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
