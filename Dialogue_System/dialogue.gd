@@ -4,10 +4,14 @@ class_name Dialogue
 
 var name: String
 var text: String
-@export var index: int
+@export var index: int = 0
 signal dialogue_finished
 
 @export var content: Array[Pair]
+
+func _ready():
+    name = content[index].name
+    text = content[index].text
 
 func next():
     index += 1

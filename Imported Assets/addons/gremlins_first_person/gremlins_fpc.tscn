@@ -57,6 +57,9 @@ script/source = "extends CharacterBody3D
 ##Name of the action for going down
 @export var down : String = \"down\"
 
+@export var interact : String = \"interact\"
+
+signal interact_signal
 
 @onready var head = $Head
 @onready var camera = $Head/Camera
@@ -73,6 +76,10 @@ func _ready():
 	head_original_height = head.position.y
 
 func _input(event: InputEvent) -> void:
+
+	if Input.is_action_just_pressed(interact):
+		interact_signal.emit()
+
 	if is_on_floor():
 		if toggleable_sprint:
 			if Input.is_action_just_pressed(sprint):

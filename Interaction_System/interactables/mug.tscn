@@ -61,7 +61,7 @@ void fragment() {
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7nhgr"]
 render_priority = 0
 shader = SubResource("Shader_nssgg")
-shader_parameter/strength = 24.39
+shader_parameter/strength = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4v25"]
 resource_name = "Palette"
@@ -82,7 +82,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_o4v25")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=888404007]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.041667342, 0)
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=192836289]
 shape = SubResource("SphereShape3D_ytk37")

@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://boc61fxiwpxrj" path="res://Dialogue_System/ui.gd" id="1_07dl5"]
 
-[node name="Ui" type="Control" unique_id=139771353]
+[node name="UI" type="Control" unique_id=139771353]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -35,10 +36,9 @@ dragging_enabled = false
 
 [node name="Name" type="RichTextLabel" parent="Panel/Dialogue" unique_id=143423105]
 layout_mode = 2
-text = "aaaaaaaaaaaaaaaa"
+text = " "
 fit_content = true
 
 [node name="Text" type="RichTextLabel" parent="Panel/Dialogue" unique_id=1099329024]
 layout_mode = 2
-text = "aaaaaaaaaaaaaaaaaa"
 fit_content = true
