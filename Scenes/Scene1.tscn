@@ -90,6 +90,8 @@
 [ext_resource type="PackedScene" uid="uid://cqpvvvqs2ei1h" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Projector.fbx" id="88_2q8sg"]
 [ext_resource type="PackedScene" uid="uid://stfxo1rge3xu" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Files_C.fbx" id="89_sdenr"]
 [ext_resource type="PackedScene" uid="uid://cdh4twkqlafd2" path="res://Imported Assets/Low Poly Furniture/Carpets/Carpet A.fbx" id="90_2q8sg"]
+[ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="91_nssgg"]
+[ext_resource type="PackedScene" uid="uid://c5xuchjpoeu5n" path="res://Interaction_System/interactables/mug.tscn" id="92_agw4u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -121,6 +123,10 @@ size = Vector3(2.319336, 1, 0.77001953)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m5xbg"]
 size = Vector3(2.3735962, 1, 0.75341797)
+
+[sub_resource type="SphereMesh" id="SphereMesh_nssgg"]
+radius = 0.1
+height = 0.1
 
 [node name="Scene1" type="Node3D" unique_id=1067484017]
 
@@ -1491,3 +1497,17 @@ transform = Transform3D(0.77992314, 0, 0, 0, 1, 0, 0, 0, 0.4178095, -9.247442, -
 
 [node name="Carpet A" parent="." unique_id=1301107881 instance=ExtResource("90_2q8sg")]
 transform = Transform3D(0.59047055, 0, 0, 0, 1, 0, 0, 0, 0.5563232, -3.0276783, -0.06199956, -6.53069)
+
+[node name="Interactable" type="Node" parent="." unique_id=1346698006]
+script = ExtResource("91_nssgg")
+
+[node name="RayCast3D" type="RayCast3D" parent="Interactable" unique_id=408523902]
+collide_with_areas = true
+
+[node name="Target" type="MeshInstance3D" parent="Interactable" unique_id=291388637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -2)
+visible = false
+mesh = SubResource("SphereMesh_nssgg")
+
+[node name="Mug" parent="Interactable" unique_id=1164625262 instance=ExtResource("92_agw4u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.834763, 1.2236087, 4.883785)
