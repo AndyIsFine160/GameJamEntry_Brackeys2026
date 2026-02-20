@@ -10,7 +10,7 @@ func hover():
 	if hovered:
 		return
 	hovered = true
-	shader.set_shader_parameter("strength", 0.5)
+	shader.set_shader_parameter("strength", 0.7)
 
 func unhover():
 	if !hovered:

@@ -1,15 +1,35 @@
 [gd_scene format=3 uid="uid://dmpqawvo4bc3k"]
 
 [ext_resource type="Script" uid="uid://boc61fxiwpxrj" path="res://Dialogue_System/ui.gd" id="1_07dl5"]
+[ext_resource type="FontFile" uid="uid://1aa2oljv2mm" path="res://Imported Assets/eras-book-587181c4d21d4.otf" id="1_xbpju"]
+[ext_resource type="FontFile" uid="uid://baaasag03ca4v" path="res://Imported Assets/eras-demi-587182767b329.otf" id="2_xbpju"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07dl5"]
+bg_color = Color(0.18039216, 0.18039216, 0.18039216, 0.6117647)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+shadow_size = 2
+shadow_offset = Vector2(7, 7)
+
+[sub_resource type="Theme" id="Theme_13srn"]
+Panel/styles/panel = SubResource("StyleBoxFlat_07dl5")
+RichTextLabel/fonts/bold_font = ExtResource("2_xbpju")
+RichTextLabel/fonts/normal_font = ExtResource("1_xbpju")
 
 [node name="UI" type="Control" unique_id=139771353]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_13srn")
 script = ExtResource("1_07dl5")
 
 [node name="Panel" type="Panel" parent="." unique_id=548712322]
@@ -18,10 +38,10 @@ anchors_preset = -1
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 32.0
+offset_left = 64.0
 offset_top = -173.0
-offset_right = -32.0
-offset_bottom = -32.0
+offset_right = -64.0
+offset_bottom = -64.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -36,9 +56,11 @@ dragging_enabled = false
 
 [node name="Name" type="RichTextLabel" parent="Panel/Dialogue" unique_id=143423105]
 layout_mode = 2
-text = " "
+bbcode_enabled = true
+text = "[b]Sample[b]"
 fit_content = true
 
 [node name="Text" type="RichTextLabel" parent="Panel/Dialogue" unique_id=1099329024]
 layout_mode = 2
-fit_content = true
+bbcode_enabled = true
+text = "Sample"

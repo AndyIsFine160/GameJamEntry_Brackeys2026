@@ -7,8 +7,6 @@ func say() -> void:
 		return
 	get_node("Panel/Dialogue/Name").text = dialogue.name;
 	get_node("Panel/Dialogue/Text").text = dialogue.text;
-	print(dialogue.name)
-	print(dialogue.text)
 
 
 func _input(event) -> void:
@@ -24,7 +22,6 @@ func _input(event) -> void:
 func on_dialogue_finished():
 	hide()
 	dialogue.dialogue_finished.disconnect(on_dialogue_finished)
-	print("dg finished")
 	dialogue = null
 
 func set_dialogue(dg : Dialogue) -> void:
