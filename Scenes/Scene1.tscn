@@ -122,7 +122,7 @@ size = Vector3(2.319336, 1, 0.77001953)
 [sub_resource type="BoxShape3D" id="BoxShape3D_m5xbg"]
 size = Vector3(2.3735962, 1, 0.75341797)
 
-[node name="MainLevel" type="Node3D" unique_id=1067484017]
+[node name="Scene1" type="Node3D" unique_id=1067484017]
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
 transform = Transform3D(0.897215, 0, 0, 0, 0.897215, 0, 0, 0, 0.897215, -15.302741, 0.9431344, 0.3770587)
