@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cpdhx0f2in6b"]
 
+[ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_d246l"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_q2fht"]
 [ext_resource type="PackedScene" uid="uid://dep38qa5t5kk1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Stool_B.fbx" id="2_ddui2"]
 [ext_resource type="PackedScene" uid="uid://dp7r2ghp38n3" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4_Rounded_Alt.fbx" id="2_qbrl8"]
@@ -131,6 +132,7 @@ radius = 0.1
 height = 0.1
 
 [node name="Scene1" type="Node3D" unique_id=1067484017]
+script = ExtResource("1_d246l")
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
 transform = Transform3D(0.897215, 0, 0, 0, 0.897215, 0, 0, 0, 0.897215, -15.302741, 0.9431344, 0.3770587)
@@ -1218,286 +1220,286 @@ transform = Transform3D(-4.0065928, 0, -2.0575656e-07, 0, 2.3535805, 0, 3.502674
 [node name="Phone_A_Base4" parent="Objects" unique_id=377830377 instance=ExtResource("17_76m0p")]
 transform = Transform3D(-0.9659258, 0, -0.25881913, 0, 1, 0, 0.25881913, 0, -0.9659258, -9.86829, 0.9862784, -2.7985392)
 
-[node name="Fridge B" parent="." unique_id=1435970806 instance=ExtResource("76_5wq0l")]
+[node name="Fridge B" parent="Objects" unique_id=1435970806 instance=ExtResource("76_5wq0l")]
 transform = Transform3D(-1.526753e-08, 0, -0.27345437, 0, 0.27345437, 0, 0.34928036, 0, -1.195307e-08, -1.2433168, 1.529335, 6.2395444)
 
-[node name="Fridge B2" parent="." unique_id=1597338340 instance=ExtResource("76_5wq0l")]
+[node name="Fridge B2" parent="Objects" unique_id=1597338340 instance=ExtResource("76_5wq0l")]
 transform = Transform3D(1.5827808e-08, 0, -0.2734544, 0, 0.27345437, 0, -0.36209804, 0, -1.1953071e-08, -1.2433168, 1.529335, 7.3479524)
 
-[node name="Kitchen Roll" parent="." unique_id=1834228096 instance=ExtResource("77_n8cgd")]
+[node name="Kitchen Roll" parent="Objects" unique_id=1834228096 instance=ExtResource("77_n8cgd")]
 transform = Transform3D(0.3324204, 0, 0, 0, 0.3324204, 0, 0, 0, 0.3324204, -1.180278, 1.2661415, 4.583525)
 
-[node name="Cupboard B" parent="." unique_id=333921750 instance=ExtResource("78_e768g")]
+[node name="Cupboard B" parent="Objects" unique_id=333921750 instance=ExtResource("78_e768g")]
 transform = Transform3D(-8.063044e-09, 0, -0.13286252, 0, 0.18446094, 0, 0.18446094, 0, -5.807605e-09, -0.84402984, 2.370093, -1.3893564)
 
-[node name="Cupboard B2" parent="." unique_id=1291580242 instance=ExtResource("78_e768g")]
+[node name="Cupboard B2" parent="Objects" unique_id=1291580242 instance=ExtResource("78_e768g")]
 transform = Transform3D(-8.063044e-09, 0, -0.13286252, 0, 0.18446094, 0, 0.18446094, 0, -5.807605e-09, -0.84402984, 2.370093, -0.52173626)
 
-[node name="Cupboard B3" parent="." unique_id=651126620 instance=ExtResource("78_e768g")]
+[node name="Cupboard B3" parent="Objects" unique_id=651126620 instance=ExtResource("78_e768g")]
 transform = Transform3D(-8.063044e-09, 0, -0.13286252, 0, 0.18446094, 0, 0.18446094, 0, -5.807605e-09, -0.84402984, 2.370093, 0.34186292)
 
-[node name="Cupboard B4" parent="." unique_id=110845776 instance=ExtResource("78_e768g")]
+[node name="Cupboard B4" parent="Objects" unique_id=110845776 instance=ExtResource("78_e768g")]
 transform = Transform3D(-8.063044e-09, 0, -0.13286252, 0, 0.18446094, 0, 0.18446094, 0, -5.807605e-09, -0.84402984, 2.370093, 2.433615)
 
-[node name="Cupboard B5" parent="." unique_id=1026779690 instance=ExtResource("78_e768g")]
+[node name="Cupboard B5" parent="Objects" unique_id=1026779690 instance=ExtResource("78_e768g")]
 transform = Transform3D(-8.063044e-09, 0, -0.13286252, 0, 0.18446094, 0, 0.18446094, 0, -5.807605e-09, -0.84402984, 2.370093, 3.3012352)
 
-[node name="Cupboard B6" parent="." unique_id=629407340 instance=ExtResource("78_e768g")]
+[node name="Cupboard B6" parent="Objects" unique_id=629407340 instance=ExtResource("78_e768g")]
 transform = Transform3D(-8.063044e-09, 0, -0.13286252, 0, 0.18446094, 0, 0.18446094, 0, -5.807605e-09, -0.84402984, 2.370093, 4.164834)
 
-[node name="Cupboard E" parent="." unique_id=205525146 instance=ExtResource("79_4lqae")]
+[node name="Cupboard E" parent="Objects" unique_id=205525146 instance=ExtResource("79_4lqae")]
 transform = Transform3D(-1.1478155e-08, 0, -0.30450702, 0, 0.26258957, 0, 0.26258957, 0, -1.33104265e-08, -1.3423085, 0.5765581, -1.3556881)
 
-[node name="Kettle" parent="." unique_id=624355786 instance=ExtResource("80_gp5yf")]
+[node name="Kettle" parent="Objects" unique_id=624355786 instance=ExtResource("80_gp5yf")]
 transform = Transform3D(0.18892424, 0, -0.09665922, 0, 0.19999999, 0, 0.08047782, 0, 0.2269106, -0.8968427, 1.2886045, 2.9894133)
 
-[node name="Phone" parent="." unique_id=111344828 instance=ExtResource("83_4lqae")]
+[node name="Phone" parent="Objects" unique_id=111344828 instance=ExtResource("83_4lqae")]
 transform = Transform3D(0.172623, 0, 0.07967575, 0, 0.22689302, 0, -0.08952132, 0, 0.15363792, -13.021809, 1.0396519, -1.6256168)
 
-[node name="Laptop" parent="." unique_id=853985546 instance=ExtResource("84_gp5yf")]
+[node name="Laptop" parent="Objects" unique_id=853985546 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(0.20614052, 0, 0.045107987, 0, 0.21101812, 0, -0.045107987, 0, 0.20614052, -10.826604, 1.0937245, -1.7094712)
 
-[node name="Laptop2" parent="." unique_id=629481759 instance=ExtResource("84_gp5yf")]
+[node name="Laptop2" parent="Objects" unique_id=629481759 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(-0.21100767, 0, -0.002099257, 0, 0.21101812, 0, 0.002099257, 0, -0.21100767, -10.373146, 1.0937245, 3.3114185)
 
-[node name="Books A" parent="." unique_id=1012678246 instance=ExtResource("48_5pa0w")]
+[node name="Books A2" parent="Objects" unique_id=1012678246 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.30011666, 0, 0, 0, 0.30011666, 0, 0, 0, 0.30011666, -9.878822, 1.1595119, -1.8867205)
 
-[node name="Books A2" parent="." unique_id=1614385155 instance=ExtResource("48_5pa0w")]
+[node name="Books A3" parent="Objects" unique_id=1614385155 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.2951805, 0, -0.05420771, 0, 0.30011663, 0, 0.05420771, 0, 0.2951805, -9.789971, 1.1595119, -1.5951792)
 
-[node name="Office_Files_A" parent="." unique_id=1488986607 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A" parent="Objects" unique_id=1488986607 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.603628, 0.98627853, 3.2939634)
 
-[node name="Office_Files_B" parent="." unique_id=759571745 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B" parent="Objects" unique_id=759571745 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.80521476, 0, -0.5929833, 0, 1, 0, 0.5929833, 0, 0.80521476, -11.487508, 0.98627853, 3.2720623)
 
-[node name="Office_Files_A2" parent="." unique_id=88034030 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A2" parent="Objects" unique_id=88034030 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(0.017277887, 0, -0.99985075, 0, 1, 0, 0.99985075, 0, 0.017277887, -11.175239, 0.98627853, 3.517417)
 
-[node name="Office_Files_B2" parent="." unique_id=549946256 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B2" parent="Objects" unique_id=549946256 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.1859071, 0, -1.0276492, 0, 1, 0, 1.2479564, 0, 0.15308811, -11.079918, 0.98627853, 3.2385364)
 
-[node name="Office_Desk_drawer2" parent="." unique_id=740425780 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer2" parent="Objects" unique_id=740425780 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.643771, 0.60356355, 3.2021487)
 
-[node name="Office_Desk_drawer3" parent="." unique_id=96256559 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer3" parent="Objects" unique_id=96256559 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.643771, 0.32333094, 2.8409884)
 
-[node name="Office_Desk_drawer4" parent="." unique_id=2057074023 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer4" parent="Objects" unique_id=2057074023 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.385395, 0.60356355, 2.8505657)
 
-[node name="Office_Desk_drawer5" parent="." unique_id=91346540 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer5" parent="Objects" unique_id=91346540 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.385395, 0.32333094, 3.3027186)
 
-[node name="Office_Files_F" parent="." unique_id=681351823 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F" parent="Objects" unique_id=681351823 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4969379, 0, 0, 0, 0.8463234, 0.5326695, 0, -0.5326695, 0.8463234, -11.34769, 0.76969427, 2.7953258)
 
-[node name="Office_Files_F2" parent="." unique_id=200688707 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F2" parent="Objects" unique_id=200688707 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4617254, 0, 0, 0, 0.6934645, 0.4364613, 0, -0.4364613, 0.6934645, -11.34769, 0.7870566, 2.9290175)
 
-[node name="Office_Files_A3" parent="." unique_id=877677179 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A3" parent="Objects" unique_id=877677179 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -9.65577, 0.47503054, 2.7761781)
 
-[node name="Office_Files_A4" parent="." unique_id=1759828440 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A4" parent="Objects" unique_id=1759828440 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -9.65577, 0.47503054, 2.9145749)
 
-[node name="Laptop6" parent="." unique_id=1708449709 instance=ExtResource("84_gp5yf")]
+[node name="Laptop6" parent="Objects" unique_id=1708449709 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(-0.21100767, 0, -0.002099257, 0, 0.21101812, 0, 0.002099257, 0, -0.21100767, -5.4905443, 1.0937245, 3.3114185)
 
-[node name="Office_Files_A5" parent="." unique_id=501972980 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A5" parent="Objects" unique_id=501972980 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7210264, 0.98627853, 3.2939634)
 
-[node name="Office_Files_B3" parent="." unique_id=1152967753 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B3" parent="Objects" unique_id=1152967753 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.80521476, 0, -0.5929833, 0, 1, 0, 0.5929833, 0, 0.80521476, -6.604906, 0.98627853, 3.2720623)
 
-[node name="Office_Files_A6" parent="." unique_id=401861188 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A6" parent="Objects" unique_id=401861188 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(0.017277887, 0, -0.99985075, 0, 1, 0, 0.99985075, 0, 0.017277887, -6.292637, 0.98627853, 3.517417)
 
-[node name="Office_Files_B4" parent="." unique_id=1833131238 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B4" parent="Objects" unique_id=1833131238 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.1859071, 0, -1.0276492, 0, 1, 0, 1.2479564, 0, 0.15308811, -6.197316, 0.98627853, 3.2385364)
 
-[node name="Office_Desk_drawer6" parent="." unique_id=1666690643 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer6" parent="Objects" unique_id=1666690643 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7611694, 0.60356355, 3.2021487)
 
-[node name="Office_Desk_drawer7" parent="." unique_id=1560116073 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer7" parent="Objects" unique_id=1560116073 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7611694, 0.32333094, 2.8409884)
 
-[node name="Office_Desk_drawer8" parent="." unique_id=604788423 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer8" parent="Objects" unique_id=604788423 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.5027933, 0.60356355, 2.8505657)
 
-[node name="Office_Desk_drawer9" parent="." unique_id=547017612 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer9" parent="Objects" unique_id=547017612 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.5027933, 0.32333094, 3.3027186)
 
-[node name="Office_Files_F3" parent="." unique_id=1141903785 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F3" parent="Objects" unique_id=1141903785 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4969379, 0, 0, 0, 0.8463234, 0.5326695, 0, -0.5326695, 0.8463234, -6.465088, 0.76969427, 2.7953258)
 
-[node name="Office_Files_F4" parent="." unique_id=245836883 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F4" parent="Objects" unique_id=245836883 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4617254, 0, 0, 0, 0.6934645, 0.4364613, 0, -0.4364613, 0.6934645, -6.465088, 0.7870566, 2.9290175)
 
-[node name="Office_Files_A7" parent="." unique_id=1532753743 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A7" parent="Objects" unique_id=1532753743 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -4.7731686, 0.47503054, 2.7761781)
 
-[node name="Office_Files_A8" parent="." unique_id=1238081612 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A8" parent="Objects" unique_id=1238081612 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -4.7731686, 0.47503054, 2.9145749)
 
-[node name="Laptop7" parent="." unique_id=249812534 instance=ExtResource("84_gp5yf")]
+[node name="Laptop7" parent="Objects" unique_id=249812534 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(-0.21100767, 0, -0.002099257, 0, 0.21101812, 0, 0.002099257, 0, -0.21100767, -5.4905443, 1.0937245, -2.7705145)
 
-[node name="Office_Files_A9" parent="." unique_id=337589076 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A9" parent="Objects" unique_id=337589076 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7210264, 0.98627853, -2.7879696)
 
-[node name="Office_Files_B5" parent="." unique_id=1343093324 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B5" parent="Objects" unique_id=1343093324 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.80521476, 0, -0.5929833, 0, 1, 0, 0.5929833, 0, 0.80521476, -6.604906, 0.98627853, -2.8098707)
 
-[node name="Office_Files_A10" parent="." unique_id=954772697 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A10" parent="Objects" unique_id=954772697 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(0.017277887, 0, -0.99985075, 0, 1, 0, 0.99985075, 0, 0.017277887, -6.292637, 0.98627853, -2.564516)
 
-[node name="Office_Files_B6" parent="." unique_id=1782541916 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B6" parent="Objects" unique_id=1782541916 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.1859071, 0, -1.0276492, 0, 1, 0, 1.2479564, 0, 0.15308811, -6.197316, 0.98627853, -2.8433967)
 
-[node name="Office_Desk_drawer10" parent="." unique_id=263568473 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer10" parent="Objects" unique_id=263568473 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7611694, 0.60356355, -2.8797846)
 
-[node name="Office_Desk_drawer11" parent="." unique_id=773484871 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer11" parent="Objects" unique_id=773484871 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7611694, 0.32333094, -3.2409449)
 
-[node name="Office_Desk_drawer12" parent="." unique_id=1305654814 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer12" parent="Objects" unique_id=1305654814 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.5027933, 0.60356355, -3.2313676)
 
-[node name="Office_Desk_drawer13" parent="." unique_id=235846293 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer13" parent="Objects" unique_id=235846293 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.5027933, 0.32333094, -2.7792144)
 
-[node name="Office_Files_F5" parent="." unique_id=895992063 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F5" parent="Objects" unique_id=895992063 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4969379, 0, 0, 0, 0.8463234, 0.5326695, 0, -0.5326695, 0.8463234, -6.465088, 0.76969427, -3.2866073)
 
-[node name="Office_Files_F6" parent="." unique_id=1982909456 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F6" parent="Objects" unique_id=1982909456 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4617254, 0, 0, 0, 0.6934645, 0.4364613, 0, -0.4364613, 0.6934645, -6.465088, 0.7870566, -3.1529155)
 
-[node name="Office_Files_A11" parent="." unique_id=1299747706 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A11" parent="Objects" unique_id=1299747706 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -4.7731686, 0.47503054, -3.3057551)
 
-[node name="Office_Files_A12" parent="." unique_id=1290164257 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A12" parent="Objects" unique_id=1290164257 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -4.7731686, 0.47503054, -3.1673584)
 
-[node name="Laptop8" parent="." unique_id=211044191 instance=ExtResource("84_gp5yf")]
+[node name="Laptop8" parent="Objects" unique_id=211044191 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(-0.21100767, 0, -0.002099257, 0, 0.21101812, 0, 0.002099257, 0, -0.21100767, -10.335827, 1.0937245, -2.7705145)
 
-[node name="Office_Files_A13" parent="." unique_id=215966460 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A13" parent="Objects" unique_id=215966460 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.566309, 0.98627853, -2.7879696)
 
-[node name="Office_Files_B7" parent="." unique_id=845364062 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B7" parent="Objects" unique_id=845364062 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.80521476, 0, -0.5929833, 0, 1, 0, 0.5929833, 0, 0.80521476, -11.450188, 0.98627853, -2.8098707)
 
-[node name="Office_Files_A14" parent="." unique_id=1923135282 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A14" parent="Objects" unique_id=1923135282 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(0.017277887, 0, -0.99985075, 0, 1, 0, 0.99985075, 0, 0.017277887, -11.137918, 0.98627853, -2.564516)
 
-[node name="Office_Files_B8" parent="." unique_id=749219979 instance=ExtResource("85_4lqae")]
+[node name="Office_Files_B8" parent="Objects" unique_id=749219979 instance=ExtResource("85_4lqae")]
 transform = Transform3D(0.1859071, 0, -1.0276492, 0, 1, 0, 1.2479564, 0, 0.15308811, -11.042599, 0.98627853, -2.8433967)
 
-[node name="Office_Desk_drawer14" parent="." unique_id=127951756 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer14" parent="Objects" unique_id=127951756 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.606451, 0.60356355, -2.8797846)
 
-[node name="Office_Desk_drawer15" parent="." unique_id=1546370656 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer15" parent="Objects" unique_id=1546370656 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.606451, 0.32333094, -3.2409449)
 
-[node name="Office_Desk_drawer16" parent="." unique_id=2053487812 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer16" parent="Objects" unique_id=2053487812 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.348076, 0.60356355, -3.2313676)
 
-[node name="Office_Desk_drawer17" parent="." unique_id=1777637542 instance=ExtResource("86_gp5yf")]
+[node name="Office_Desk_drawer17" parent="Objects" unique_id=1777637542 instance=ExtResource("86_gp5yf")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.348076, 0.32333094, -2.7792144)
 
-[node name="Office_Files_F7" parent="." unique_id=1593198616 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F7" parent="Objects" unique_id=1593198616 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4969379, 0, 0, 0, 0.8463234, 0.5326695, 0, -0.5326695, 0.8463234, -11.3103695, 0.76969427, -3.2866073)
 
-[node name="Office_Files_F8" parent="." unique_id=1955241411 instance=ExtResource("16_r6y0e")]
+[node name="Office_Files_F8" parent="Objects" unique_id=1955241411 instance=ExtResource("16_r6y0e")]
 transform = Transform3D(1.4617254, 0, 0, 0, 0.6934645, 0.4364613, 0, -0.4364613, 0.6934645, -11.3103695, 0.7870566, -3.1529155)
 
-[node name="Office_Files_A15" parent="." unique_id=47690643 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A15" parent="Objects" unique_id=47690643 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -9.61845, 0.47503054, -3.3057551)
 
-[node name="Office_Files_A16" parent="." unique_id=823662273 instance=ExtResource("42_sfmy3")]
+[node name="Office_Files_A16" parent="Objects" unique_id=823662273 instance=ExtResource("42_sfmy3")]
 transform = Transform3D(2.0705816e-15, -4.371139e-08, 1.2180994, -1.0836852, -4.371139e-08, 0, 4.7369387e-08, -1, -5.3244815e-08, -9.61845, 0.47503054, -3.1673584)
 
-[node name="Projector" parent="." unique_id=559073337 instance=ExtResource("88_2q8sg")]
+[node name="Projector" parent="Objects" unique_id=559073337 instance=ExtResource("88_2q8sg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.19371, 0.98627865, -1.5754547)
 
-[node name="Printer" parent="." unique_id=1186019087 instance=ExtResource("13_30qra")]
+[node name="Printer" parent="Objects" unique_id=1186019087 instance=ExtResource("13_30qra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.649004, 0.9862786, -1.7876942)
 
-[node name="Office_Files_C" parent="." unique_id=563440686 instance=ExtResource("89_sdenr")]
+[node name="Office_Files_C" parent="Objects" unique_id=563440686 instance=ExtResource("89_sdenr")]
 transform = Transform3D(0.83504, 0, 0.55018926, 0, 1, 0, -0.55018926, 0, 0.83504, -13.010084, 0.9862786, -1.6493802)
 
-[node name="Phone2" parent="." unique_id=580014353 instance=ExtResource("83_4lqae")]
+[node name="Phone2" parent="Objects" unique_id=580014353 instance=ExtResource("83_4lqae")]
 transform = Transform3D(0.172623, 0, 0.07967575, 0, 0.22689302, 0, -0.08952132, 0, 0.15363792, -8.151468, 1.0396519, -1.6256168)
 
-[node name="Laptop3" parent="." unique_id=418939690 instance=ExtResource("84_gp5yf")]
+[node name="Laptop3" parent="Objects" unique_id=418939690 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(0.20614052, 0, 0.045107987, 0, 0.21101812, 0, -0.045107987, 0, 0.20614052, -5.9562635, 1.0937245, -1.7094712)
 
-[node name="Books A3" parent="." unique_id=1513153925 instance=ExtResource("48_5pa0w")]
+[node name="Books A4" parent="Objects" unique_id=1513153925 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.2951805, 0, -0.05420771, 0, 0.30011663, 0, 0.05420771, 0, 0.2951805, -4.919631, 1.1595119, -1.5951792)
 
-[node name="Projector2" parent="." unique_id=1732987602 instance=ExtResource("88_2q8sg")]
+[node name="Projector2" parent="Objects" unique_id=1732987602 instance=ExtResource("88_2q8sg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.32337, 0.98627865, -1.5754547)
 
-[node name="Printer2" parent="." unique_id=643608637 instance=ExtResource("13_30qra")]
+[node name="Printer2" parent="Objects" unique_id=643608637 instance=ExtResource("13_30qra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.778664, 0.9862786, -1.7876942)
 
-[node name="Office_Files_C2" parent="." unique_id=223137365 instance=ExtResource("89_sdenr")]
+[node name="Office_Files_C2" parent="Objects" unique_id=223137365 instance=ExtResource("89_sdenr")]
 transform = Transform3D(0.83504, 0, 0.55018926, 0, 1, 0, -0.55018926, 0, 0.83504, -8.139744, 0.9862786, -1.6493802)
 
-[node name="Phone3" parent="." unique_id=728155191 instance=ExtResource("83_4lqae")]
+[node name="Phone3" parent="Objects" unique_id=728155191 instance=ExtResource("83_4lqae")]
 transform = Transform3D(0.172623, 0, 0.07967575, 0, 0.22689302, 0, -0.08952132, 0, 0.15363792, -13.021809, 1.0396519, 4.4607897)
 
-[node name="Laptop4" parent="." unique_id=886308591 instance=ExtResource("84_gp5yf")]
+[node name="Laptop4" parent="Objects" unique_id=886308591 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(0.20614052, 0, 0.045107987, 0, 0.21101812, 0, -0.045107987, 0, 0.20614052, -10.826604, 1.0937245, 4.3769355)
 
-[node name="Books A4" parent="." unique_id=797409357 instance=ExtResource("48_5pa0w")]
+[node name="Books A5" parent="Objects" unique_id=797409357 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.30011666, 0, 0, 0, 0.30011666, 0, 0, 0, 0.30011666, -9.878822, 1.1595119, 4.199686)
 
-[node name="Books A7" parent="." unique_id=1547107441 instance=ExtResource("48_5pa0w")]
+[node name="Books A7" parent="Objects" unique_id=1547107441 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.30011666, 0, 0, 0, 0.30011666, 0, 0, 0, 0.30011666, -5.1640015, 1.1595119, -1.8867205)
 
-[node name="Books A8" parent="." unique_id=359815875 instance=ExtResource("48_5pa0w")]
+[node name="Books A8" parent="Objects" unique_id=359815875 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.30011666, 0, 0, 0, 0.30011666, 0, 0, 0, 0.30011666, -5.1640015, 1.1595119, 4.199686)
 
-[node name="Books A5" parent="." unique_id=186477199 instance=ExtResource("48_5pa0w")]
+[node name="Books A6" parent="Objects" unique_id=186477199 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.2951805, 0, -0.05420771, 0, 0.30011663, 0, 0.05420771, 0, 0.2951805, -9.789971, 1.1595119, 4.4912276)
 
-[node name="Projector3" parent="." unique_id=413339821 instance=ExtResource("88_2q8sg")]
+[node name="Projector3" parent="Objects" unique_id=413339821 instance=ExtResource("88_2q8sg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.19371, 0.98627865, 4.510952)
 
-[node name="Printer3" parent="." unique_id=479248791 instance=ExtResource("13_30qra")]
+[node name="Printer3" parent="Objects" unique_id=479248791 instance=ExtResource("13_30qra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.649004, 0.9862786, 4.2987127)
 
-[node name="Office_Files_C3" parent="." unique_id=204018037 instance=ExtResource("89_sdenr")]
+[node name="Office_Files_C3" parent="Objects" unique_id=204018037 instance=ExtResource("89_sdenr")]
 transform = Transform3D(0.83504, 0, 0.55018926, 0, 1, 0, -0.55018926, 0, 0.83504, -13.010084, 0.9862786, 4.4370265)
 
-[node name="Phone4" parent="." unique_id=1206306550 instance=ExtResource("83_4lqae")]
+[node name="Phone4" parent="Objects" unique_id=1206306550 instance=ExtResource("83_4lqae")]
 transform = Transform3D(0.172623, 0, 0.07967575, 0, 0.22689302, 0, -0.08952132, 0, 0.15363792, -8.151468, 1.0396519, 4.4607897)
 
-[node name="Laptop5" parent="." unique_id=1226360932 instance=ExtResource("84_gp5yf")]
+[node name="Laptop5" parent="Objects" unique_id=1226360932 instance=ExtResource("84_gp5yf")]
 transform = Transform3D(0.20614052, 0, 0.045107987, 0, 0.21101812, 0, -0.045107987, 0, 0.20614052, -5.9562635, 1.0937245, 4.3769355)
 
-[node name="Books A6" parent="." unique_id=153851003 instance=ExtResource("48_5pa0w")]
+[node name="Books A9" parent="Objects" unique_id=153851003 instance=ExtResource("48_5pa0w")]
 transform = Transform3D(0.2951805, 0, -0.05420771, 0, 0.30011663, 0, 0.05420771, 0, 0.2951805, -4.919631, 1.1595119, 4.4912276)
 
-[node name="Projector4" parent="." unique_id=1884120955 instance=ExtResource("88_2q8sg")]
+[node name="Projector4" parent="Objects" unique_id=1884120955 instance=ExtResource("88_2q8sg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.32337, 0.98627865, 4.510952)
 
-[node name="Printer4" parent="." unique_id=364734564 instance=ExtResource("13_30qra")]
+[node name="Printer4" parent="Objects" unique_id=364734564 instance=ExtResource("13_30qra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.778664, 0.9862786, 4.2987127)
 
-[node name="Office_Files_C4" parent="." unique_id=203455996 instance=ExtResource("89_sdenr")]
+[node name="Office_Files_C4" parent="Objects" unique_id=203455996 instance=ExtResource("89_sdenr")]
 transform = Transform3D(0.83504, 0, 0.55018926, 0, 1, 0, -0.55018926, 0, 0.83504, -8.139744, 0.9862786, 4.4370265)
 
-[node name="Carpet B" parent="." unique_id=1985333879 instance=ExtResource("36_xob32")]
+[node name="Carpet B" parent="Objects" unique_id=1985333879 instance=ExtResource("36_xob32")]
 transform = Transform3D(1.1831377, 0, 0, 0, 1, 0, 0, 0, 0.4178095, -9.247442, -0.011409283, 7.658025)
 
-[node name="Carpet B2" parent="." unique_id=1390426753 instance=ExtResource("36_xob32")]
+[node name="Carpet B2" parent="Objects" unique_id=1390426753 instance=ExtResource("36_xob32")]
 transform = Transform3D(0.77992314, 0, 0, 0, 1, 0, 0, 0, 0.4178095, -9.247442, -0.002151966, 0.8936753)
 
-[node name="Carpet A" parent="." unique_id=1301107881 instance=ExtResource("90_2q8sg")]
+[node name="Carpet A" parent="Objects" unique_id=1301107881 instance=ExtResource("90_2q8sg")]
 transform = Transform3D(0.59047055, 0, 0, 0, 1, 0, 0, 0, 0.5563232, -3.0276783, -0.06199956, -6.53069)
 
 [node name="InteractionHandler" type="Node" parent="." unique_id=1346698006]

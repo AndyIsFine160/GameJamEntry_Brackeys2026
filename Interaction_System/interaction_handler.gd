@@ -12,7 +12,7 @@ func _ready():
 	ray = get_node("RayCast3D")
 	ui.hidden.connect(ui_hidden)
 
-func _process(delta : float):
+func _process(_delta : float):
 	camera = get_viewport().get_camera_3d()
 	if camera != null:
 		player = camera.get_parent().get_parent()

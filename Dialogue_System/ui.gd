@@ -2,6 +2,9 @@ extends Control
 class_name UI
 @export var dialogue : Dialogue
 
+func _ready():
+	hide()
+
 func say() -> void:
 	if dialogue == null:
 		return
@@ -34,5 +37,7 @@ func set_dialogue(dg : Dialogue) -> void:
 ## Call this to start a dialogue.
 ## Accepts the custom dialogue resource
 func start(dg : Dialogue):
+	if dialogue != null:
+		return
 	set_dialogue(dg)
 	show()
