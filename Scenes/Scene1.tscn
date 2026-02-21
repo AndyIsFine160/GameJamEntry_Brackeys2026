@@ -94,7 +94,9 @@
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="91_nssgg"]
 [ext_resource type="PackedScene" uid="uid://c5xuchjpoeu5n" path="res://Interaction_System/interactables/mug.tscn" id="92_agw4u"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="93_nssgg"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="94_0wmv6"]
 [ext_resource type="Resource" uid="uid://dxnwsmvbr3kbs" path="res://Dialogue_System/alinus_test_dialogue.tres" id="94_ytk37"]
+[ext_resource type="PackedScene" uid="uid://bal637vv3ohsm" path="res://Interaction_System/interactables/pile_of_documents.tscn" id="97_7nhgr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1515,6 +1517,10 @@ mesh = SubResource("SphereMesh_nssgg")
 
 [node name="Mug" parent="InteractionHandler" unique_id=1164625262 instance=ExtResource("92_agw4u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.834763, 1.2236087, 4.883785)
+script = ExtResource("94_0wmv6")
 dialogue = ExtResource("94_ytk37")
 
 [node name="UI" parent="InteractionHandler" unique_id=139771353 instance=ExtResource("93_nssgg")]
+
+[node name="Office_Files_A" parent="InteractionHandler" unique_id=1768343871 instance=ExtResource("97_7nhgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2854974, 0.99361, -7.7544365)

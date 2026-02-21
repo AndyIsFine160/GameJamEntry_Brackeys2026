@@ -15,7 +15,8 @@ func _ready():
 func _process(_delta : float):
 	camera = get_viewport().get_camera_3d()
 	if camera != null:
-		player = camera.get_parent().get_parent()
+		if player == null:
+			player = camera.get_parent().get_parent()
 		ray.global_position = camera.global_position
 		var basis = Basis.from_euler(camera.global_rotation)
 		var forward = -basis.z
@@ -42,4 +43,5 @@ func interact():
 	player.set_physics_process(false)
 
 func ui_hidden():
+	current.done()
 	player.set_physics_process(true)
