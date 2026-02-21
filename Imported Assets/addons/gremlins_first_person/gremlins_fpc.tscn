@@ -57,6 +57,9 @@ script/source = "extends CharacterBody3D
 ##Name of the action for going down
 @export var down : String = \"down\"
 
+@export var interact : String = \"interact\"
+
+signal interact_signal
 
 @onready var head = $Head
 @onready var camera = $Head/Camera
@@ -73,6 +76,10 @@ func _ready():
 	head_original_height = head.position.y
 
 func _input(event: InputEvent) -> void:
+
+	if Input.is_action_just_pressed(interact):
+		interact_signal.emit()
+
 	if is_on_floor():
 		if toggleable_sprint:
 			if Input.is_action_just_pressed(sprint):
@@ -215,6 +222,8 @@ func _set_speed(dir):
 albedo_color = Color(1, 0.007843138, 0.14509805, 1)
 
 [node name="FirstPersonCharacter" type="CharacterBody3D" unique_id=990361468]
+collision_layer = 2
+collision_mask = 3
 script = SubResource("GDScript_5oqox")
 
 [node name="Head" type="Node3D" parent="." unique_id=1309892357]

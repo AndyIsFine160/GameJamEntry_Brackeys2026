@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dxnwsmvbr3kbs"]
+
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="1_awbkk"]
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_ceu8o"]
+
+[sub_resource type="Resource" id="Resource_bka12"]
+script = ExtResource("1_ceu8o")
+name = "Alinus"
+text = "So yeah"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_8em86"]
+script = ExtResource("1_ceu8o")
+name = "Alinus"
+text = "This is"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_xt8p1"]
+script = ExtResource("1_ceu8o")
+name = "Alinus"
+text = "The Dialogue System"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("1_awbkk")
+content = Array[ExtResource("1_ceu8o")]([SubResource("Resource_bka12"), SubResource("Resource_8em86"), SubResource("Resource_xt8p1")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
