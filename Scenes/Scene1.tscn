@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpdhx0f2in6b"]
 
-[ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/gremlins_fpc.tscn" id="1_q2fht"]
+[ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_q2fht"]
 [ext_resource type="PackedScene" uid="uid://dep38qa5t5kk1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Stool_B.fbx" id="2_ddui2"]
 [ext_resource type="PackedScene" uid="uid://dp7r2ghp38n3" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4_Rounded_Alt.fbx" id="2_qbrl8"]
 [ext_resource type="PackedScene" uid="uid://h75diu2vqsad" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Wall_Small.fbx" id="3_unjri"]
