@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://d27bxnak440a"]
+
+[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_xyyhe"]
+[ext_resource type="Resource" uid="uid://cl4pk30vabgsn" path="res://Dialogue_System/Interactable Dialogss/Scene1 Interactables/1-3.tres" id="2_pu508"]
+[ext_resource type="Texture2D" uid="uid://cg0gj88un02yw" path="res://Imported Assets/635125287_1241475031510557_2321817207634983977_n.png" id="3_n1kl4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2c7e3"]
+albedo_texture = ExtResource("3_n1kl4")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w11vk"]
+size = Vector3(1, 0.8465576, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lngm8"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2r3lv"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_pct20"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h4ybe"]
+render_priority = 0
+shader = SubResource("Shader_pct20")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05ulr"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_h4ybe")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_2r3lv")
+emission_enabled = true
+
+[node name="painting" type="Node3D" unique_id=1384751631]
+script = ExtResource("1_xyyhe")
+dialogue = ExtResource("2_pu508")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1670456429]
+transform = Transform3D(1, 0, 0, 0, 1.6786332, 0, 0, 0, 0.13026744, 0, 0.79225063, -0.3613019)
+material_override = SubResource("StandardMaterial3D_2c7e3")
+size = Vector3(1, 1, 0.30859375)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=863673367]
+transform = Transform3D(1.1129508, 0, 0, 0, 1.7914118, 0, 0, 0, 1, -0.002122879, 0.79225796, -0.3783918)
+size = Vector3(1.0202637, 1.0537109, 0.056518555)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2135791381]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=169053294]
+transform = Transform3D(1.3788391, 0, 0, 0, 2.3009834, 0, 0, 0, 1, 0, 0.8049153, -0.47947407)
+shape = SubResource("BoxShape3D_w11vk")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=85340664]
+transform = Transform3D(1.1195035, 0, 0, 0, 1.843309, 0, 0, 0, 0.07034512, 0, 0.79705703, -0.38114452)
+mesh = SubResource("BoxMesh_lngm8")
+surface_material_override/0 = SubResource("StandardMaterial3D_05ulr")

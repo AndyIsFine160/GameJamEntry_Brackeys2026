@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://dkpivop5vhsvw"]
+
+[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_ukhhp"]
+[ext_resource type="Texture2D" uid="uid://b7kqcqsc6p0q4" path="res://Imported Assets/71hJVtqqD9L._AC_UF894,1000_QL80_.jpg" id="2_ukhhp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uoqlh"]
+albedo_texture = ExtResource("2_ukhhp")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5joxg"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_7msjt"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ckxpo"]
+render_priority = 0
+shader = SubResource("Shader_7msjt")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_adsxt"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_ckxpo")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_5joxg")
+emission_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_efwel"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dywd2"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_0gu4l"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5joxg"]
+render_priority = 0
+shader = SubResource("Shader_0gu4l")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7msjt"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_5joxg")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_dywd2")
+emission_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dywd2"]
+
+[node name="Node3D" type="Node3D" unique_id=696717749]
+script = ExtResource("1_ukhhp")
+
+[node name="Box" type="CSGBox3D" parent="." unique_id=775435708]
+transform = Transform3D(-0.020897476, 3.826334e-08, -2.7291412e-15, 0, -1.9131674e-08, -0.71417874, -1.8269154e-09, -0.4376816, 3.1217738e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_uoqlh")
+material = SubResource("StandardMaterial3D_adsxt")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=785316011]
+transform = Transform3D(-0.01872389, 0, 0, 0, 0.7187558, 0, 0, 0, 0.42871672, 0, 0, 0)
+mesh = SubResource("BoxMesh_efwel")
+surface_material_override/0 = SubResource("StandardMaterial3D_7msjt")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1379920470]
+transform = Transform3D(-0.020897476, 3.826334e-08, -2.7291412e-15, 0, -1.9131674e-08, -0.71417874, -1.8269154e-09, -0.4376816, 3.1217738e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1411663107]
+shape = SubResource("BoxShape3D_dywd2")

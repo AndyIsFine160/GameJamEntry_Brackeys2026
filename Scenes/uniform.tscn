@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://d00id05nnhkt7"]
+
+[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_3p3rd"]
+[ext_resource type="Texture2D" uid="uid://cpws66l6nqs1v" path="res://Imported Assets/621734856_1289661459683315_2634154474629075877_n.png" id="1_74jj5"]
+[ext_resource type="Texture2D" uid="uid://dincp3q2qwc2i" path="res://Imported Assets/images.jpg" id="2_f5ht1"]
+[ext_resource type="Resource" uid="uid://cbp2or3v56nbb" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-1.tres" id="2_hcput"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4l877"]
+albedo_texture = ExtResource("1_74jj5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyq6s"]
+albedo_texture = ExtResource("2_f5ht1")
+
+[sub_resource type="BoxMesh" id="BoxMesh_rbj0c"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3p3rd"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_hcput"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rbj0c"]
+render_priority = 0
+shader = SubResource("Shader_hcput")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pe1xh"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_rbj0c")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_3p3rd")
+emission_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pe1xh"]
+size = Vector3(0.30169678, 0.09082031, 0.29974365)
+
+[node name="uniform" type="Node3D" unique_id=691943324]
+script = ExtResource("1_3p3rd")
+dialogue = ExtResource("2_hcput")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=230048952]
+transform = Transform3D(0.20440026, 0, 0.19943799, 0, 0.051870774, 0, -0.19943798, 0, 0.20440026, 0.021055222, 0.0056004226, -0.011675805)
+material_override = SubResource("StandardMaterial3D_4l877")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=1133330028]
+transform = Transform3D(0.07526973, 0, -0.032604214, 0, 0.0043929163, 0, 0.021833701, 0, 0.11240014, -0.08457595, 0.03215903, -0.02769801)
+material_override = SubResource("StandardMaterial3D_kyq6s")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1428607688]
+transform = Transform3D(0.21024026, 0, 0.21024026, 0, 0.05013945, 0, -0.21024026, 0, 0.21024026, 0.021434665, 0.00589291, -0.013505995)
+mesh = SubResource("BoxMesh_rbj0c")
+surface_material_override/0 = SubResource("StandardMaterial3D_pe1xh")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1689142446]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1480651073]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 0.02127707, 0.020996094, -0.015191749)
+shape = SubResource("BoxShape3D_pe1xh")

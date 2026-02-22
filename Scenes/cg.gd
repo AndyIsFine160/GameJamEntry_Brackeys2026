@@ -1,0 +1,2 @@
+extends Interactable_Disappearing
+class_name InteractableCG

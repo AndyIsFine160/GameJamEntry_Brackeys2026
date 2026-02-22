@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://bix1ikmd7fwww"]
+
+[ext_resource type="Texture2D" uid="uid://dincp3q2qwc2i" path="res://Imported Assets/images.jpg" id="1_7x8lk"]
+[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="2_yh1t1"]
+[ext_resource type="Resource" uid="uid://b6m4fv3njcaaj" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-4.tres" id="3_0y0nn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8c55"]
+albedo_texture = ExtResource("1_7x8lk")
+
+[sub_resource type="BoxMesh" id="BoxMesh_l54i4"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ekydv"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_62wqw"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v6qup"]
+render_priority = 0
+shader = SubResource("Shader_62wqw")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ifjsh"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_v6qup")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_ekydv")
+emission_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fem23"]
+
+[node name="Letters" type="CSGBox3D" unique_id=1089834561]
+transform = Transform3D(0.005355687, 0, -0.14190997, 0, 0.007986209, 0, 0.084678106, 0, 0.008975468, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_a8c55")
+script = ExtResource("2_yh1t1")
+dialogue = ExtResource("3_0y0nn")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=824355537]
+mesh = SubResource("BoxMesh_l54i4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ifjsh")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2137147232]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=979577581]
+shape = SubResource("BoxShape3D_fem23")
