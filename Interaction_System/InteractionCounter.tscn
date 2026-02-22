@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://2v6bhwigxmy3"]
+
+[sub_resource type="Theme" id="Theme_cme1s"]
+Label/font_sizes/font_size = 32
+Label/styles/normal = null
+
+[node name="InteractionCounter" type="HBoxContainer" unique_id=343577032]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -122.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme = SubResource("Theme_cme1s")
+alignment = 2
+
+[node name="Text" type="Label" parent="." unique_id=279002682]
+layout_mode = 2
+text = "Interactions"
+
+[node name="Count" type="Label" parent="." unique_id=833638086]
+layout_mode = 2
+text = "5"
+
+[node name="Label" type="Label" parent="." unique_id=2089093820]
+layout_mode = 2
+text = "/"
+
+[node name="Total" type="Label" parent="." unique_id=25798312]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "5"
