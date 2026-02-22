@@ -3,6 +3,37 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_lmieb"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_pv1hr"]
 
+[sub_resource type="Resource" id="Resource_lmieb"]
+script = ExtResource("1_lmieb")
+name = "Daughter"
+text = "What is this word dad?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_pv1hr"]
+script = ExtResource("1_lmieb")
+name = "Salaryman"
+text = "It's read as a-mey-zing!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_haqja"]
+script = ExtResource("1_lmieb")
+name = "Daughter"
+text = "Amazing!! Hehe!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_j4tfn"]
+script = ExtResource("1_lmieb")
+name = "Salaryman"
+text = "You are learning fast now aren't you? Who's a good girl?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_fh108"]
+script = ExtResource("1_lmieb")
+name = "Daughter"
+text = "Me! Me! Hehehe."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_pv1hr")
+content = Array[ExtResource("1_lmieb")]([SubResource("Resource_lmieb"), SubResource("Resource_pv1hr"), SubResource("Resource_haqja"), SubResource("Resource_j4tfn"), SubResource("Resource_fh108")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

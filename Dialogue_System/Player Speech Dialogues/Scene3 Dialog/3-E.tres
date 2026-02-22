@@ -3,6 +3,13 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_rlgok"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_qqtkp"]
 
+[sub_resource type="Resource" id="Resource_rlgok"]
+script = ExtResource("1_rlgok")
+name = "Salaryman"
+text = "Wait, are these memories... his?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_qqtkp")
+content = Array[ExtResource("1_rlgok")]([SubResource("Resource_rlgok")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

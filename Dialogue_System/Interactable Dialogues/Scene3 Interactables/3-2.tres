@@ -3,6 +3,25 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_dhdbt"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_p31dc"]
 
+[sub_resource type="Resource" id="Resource_dhdbt"]
+script = ExtResource("1_dhdbt")
+name = "Kid"
+text = "Wow, what a great painting #####! You can sell those for so much."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_p31dc"]
+script = ExtResource("1_dhdbt")
+name = "???"
+text = "Thanks, but this piece is important to me, so no selling!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_crpiy"]
+script = ExtResource("1_dhdbt")
+name = "Kid"
+text = "Okay, if you say so!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_p31dc")
+content = Array[ExtResource("1_dhdbt")]([SubResource("Resource_dhdbt"), SubResource("Resource_p31dc"), SubResource("Resource_crpiy")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
