@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b5rlcp37vgcae"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_d2wwc"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_6j786"]
+
+[sub_resource type="Resource" id="Resource_d2wwc"]
+script = ExtResource("1_d2wwc")
+name = "Salary Man"
+text = "\"I can't risk everything for some silly dream.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_6j786"]
+script = ExtResource("1_d2wwc")
+name = "Salary Man"
+text = "\"I gotta be realistic.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_gkct5"]
+script = ExtResource("1_d2wwc")
+name = "Salary Man"
+text = "\"Throw it away ####.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_6j786")
+index = 3
+content = Array[ExtResource("1_d2wwc")]([SubResource("Resource_d2wwc"), SubResource("Resource_6j786"), SubResource("Resource_gkct5")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

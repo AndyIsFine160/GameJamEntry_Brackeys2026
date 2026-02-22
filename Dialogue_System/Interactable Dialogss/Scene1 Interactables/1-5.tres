@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cfimpcaojxgri"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_co1uc"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_af26u"]
+
+[sub_resource type="Resource" id="Resource_co1uc"]
+script = ExtResource("1_co1uc")
+name = "Salary Man"
+text = "Oh this book?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_af26u"]
+script = ExtResource("1_co1uc")
+name = "Salary Man"
+text = "I used to read this heroic story to my little girl because she likes it way too much."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_tfpus"]
+script = ExtResource("1_co1uc")
+name = "Salary Man"
+text = "I miss those days."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_af26u")
+index = 3
+content = Array[ExtResource("1_co1uc")]([SubResource("Resource_co1uc"), SubResource("Resource_af26u"), SubResource("Resource_tfpus")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

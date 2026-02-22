@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dwjxtndb3t4at"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_ddaed"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_i7mnb"]
+
+[sub_resource type="Resource" id="Resource_ddaed"]
+script = ExtResource("1_ddaed")
+name = "Salary Man"
+text = "\"The hero slays the dragon but it's big claws left his chest with a wide gash.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_i7mnb"]
+script = ExtResource("1_ddaed")
+name = "Salary Man"
+text = "\"His party returned without him, but they all lived happily ever after.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_cj8ir"]
+script = ExtResource("1_ddaed")
+name = "Little Girl"
+text = "\"Why did he die, he promised his family that he'd come back, didn't he?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_igsp5"]
+script = ExtResource("1_ddaed")
+name = "Salary Man"
+text = "\"He did, but he couldn't keep it. So his family did not live happily.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_qkbyf"]
+script = ExtResource("1_ddaed")
+name = "Little Girl"
+text = "\"But you are here daddy, so I am happy.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_i7mnb")
+content = Array[ExtResource("1_ddaed")]([SubResource("Resource_ddaed"), SubResource("Resource_i7mnb"), SubResource("Resource_cj8ir"), SubResource("Resource_igsp5"), SubResource("Resource_qkbyf")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

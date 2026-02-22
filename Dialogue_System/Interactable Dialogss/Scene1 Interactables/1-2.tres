@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://c6r1trruvqvwh"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_00a0i"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_g5eg3"]
+
+[sub_resource type="Resource" id="Resource_00a0i"]
+script = ExtResource("1_00a0i")
+name = "Salary Man"
+text = "Already this many?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_g5eg3"]
+script = ExtResource("1_00a0i")
+name = "Salary Man"
+text = "I mean what's the worst that could happen."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_g5eg3")
+index = 2
+content = Array[ExtResource("1_00a0i")]([SubResource("Resource_00a0i"), SubResource("Resource_g5eg3")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bcbpd2nkcj5gb"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_wbtof"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_376n6"]
+
+[sub_resource type="Resource" id="Resource_us1c6"]
+script = ExtResource("1_wbtof")
+name = "Salary Man"
+text = "A cup of coffee..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_cunxj"]
+script = ExtResource("1_wbtof")
+name = "Salary Man"
+text = "Just to complete this day of my endless suffering."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_376n6")
+index = 2
+content = Array[ExtResource("1_wbtof")]([SubResource("Resource_us1c6"), SubResource("Resource_cunxj")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
