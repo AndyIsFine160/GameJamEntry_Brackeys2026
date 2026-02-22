@@ -1,32 +1,47 @@
 [gd_scene format=3 uid="uid://2v6bhwigxmy3"]
 
+[ext_resource type="Script" uid="uid://b6yilr8xjcu10" path="res://Interaction_System/interaction_counter.gd" id="1_p85qv"]
+
 [sub_resource type="Theme" id="Theme_cme1s"]
 Label/font_sizes/font_size = 32
 Label/styles/normal = null
 
-[node name="InteractionCounter" type="HBoxContainer" unique_id=343577032]
+[node name="InteractionCounter" type="Control" unique_id=46917967]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_p85qv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=343577032]
+layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -122.0
-offset_bottom = 23.0
+offset_left = -300.0
+offset_top = 46.0
+offset_right = -37.0
+offset_bottom = 91.0
 grow_horizontal = 0
 theme = SubResource("Theme_cme1s")
 alignment = 2
 
-[node name="Text" type="Label" parent="." unique_id=279002682]
+[node name="Text" type="Label" parent="HBoxContainer" unique_id=279002682]
 layout_mode = 2
-text = "Interactions"
+text = "Interactions: "
 
-[node name="Count" type="Label" parent="." unique_id=833638086]
+[node name="Count" type="Label" parent="HBoxContainer" unique_id=833638086]
 layout_mode = 2
 text = "5"
 
-[node name="Label" type="Label" parent="." unique_id=2089093820]
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=2089093820]
 layout_mode = 2
 text = "/"
 
-[node name="Total" type="Label" parent="." unique_id=25798312]
+[node name="Total" type="Label" parent="HBoxContainer" unique_id=25798312]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "5"

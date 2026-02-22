@@ -100,6 +100,7 @@
 [ext_resource type="Script" uid="uid://hld2c3iwmaag" path="res://Interaction_System/interactable_scene_change.gd" id="98_0bkj6"]
 [ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="99_02phj"]
 [ext_resource type="PackedScene" uid="uid://bx6yr6vakb5pn" path="res://Scenes/DialogueArea.tscn" id="100_02phj"]
+[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="101_msxrw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1594,6 +1595,7 @@ transform = Transform3D(0.77992314, 0, 0, 0, 1, 0, 0, 0, 0.4178095, -9.247442, -
 transform = Transform3D(0.59047055, 0, 0, 0, 1, 0, 0, 0, 0.5563232, -3.0276783, -0.06199956, -6.53069)
 
 [node name="InteractionHandler" type="Node" parent="." unique_id=1346698006]
+unique_name_in_owner = true
 script = ExtResource("91_nssgg")
 length = 2
 
@@ -1646,3 +1648,5 @@ shape = SubResource("BoxShape3D_msxrw")
 
 [node name="Area3D" parent="InteractionHandler" unique_id=570800686 instance=ExtResource("100_02phj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.037872, 1.2635747, 6.6427355)
+
+[node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("101_msxrw")]

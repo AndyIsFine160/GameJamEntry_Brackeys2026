@@ -23,6 +23,10 @@ func _ready():
 	else:
 		state = FAILED
 	
+	var interaction_handler : InteractionHandler = get_node_or_null("%InteractionHandler")
+
+	if interaction_handler != null:
+		interaction_handler.set_interaction_total(interaction_count)
 
 func _process(_delta):
 	while state == LOADING:

@@ -1,14 +1,18 @@
 extends Node
 
+class_name InteractionHandler
+
 var camera : Camera3D
 var player : CharacterBody3D
 var ray : RayCast3D
 var current : Interactable_Disappearing
 var current_area : DialogueArea
 var can_change_scene : bool
+var interaction_total : int
 @export var length = 1
 
 @onready var ui : UI = $UI
+@onready var interaction_counter : InteractionCounter = $InteractionCounter
 
 func _ready():
 	ray = get_node("RayCast3D")
@@ -67,6 +71,7 @@ func ui_hidden():
 			var main_scene = get_tree().current_scene
 			if main_scene is BaseScene:
 				can_change_scene = main_scene.interaction_done_notify()
+				interaction_counter.set_interaction_count(main_scene.interactions, main_scene.interaction_count)
 
 		if current is InteractableSceneChange:
 			print("success")
@@ -84,3 +89,7 @@ func interact_area(dg : Dialogue, area : DialogueArea):
 	current_area = area
 	player.set_physics_process(false)
 	ui.start(dg)
+
+func set_interaction_total(t : int):
+	interaction_total = t
+	interaction_counter.set_interaction_count(0, t)
