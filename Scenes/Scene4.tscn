@@ -157,7 +157,6 @@ material = SubResource("StandardMaterial3D_fye3t")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Room" unique_id=1076221484]
 transform = Transform3D(3.8671658e-15, 4.371139e-08, -3.5692031, 2.023968, -4.3711392e-08, 0, -8.8470436e-08, -1, -1.560148e-07, 0.6949882, 0.40251386, -2.7592497)
-visible = false
 material_override = SubResource("StandardMaterial3D_oxeir")
 use_collision = true
 size = Vector3(0.51660156, 0.07922363, 0.6945801)
