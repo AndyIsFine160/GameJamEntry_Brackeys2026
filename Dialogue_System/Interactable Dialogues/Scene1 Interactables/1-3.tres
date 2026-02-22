@@ -1,34 +1,34 @@
 [gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cl4pk30vabgsn"]
 
-[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_hkdhw"]
-[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_bpbn7"]
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_l2g8b"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_l6buf"]
 
 [sub_resource type="Resource" id="Resource_hkdhw"]
-script = ExtResource("1_hkdhw")
-name = "Salary Man"
+script = ExtResource("1_l2g8b")
+name = "Salaryman"
 text = "I used to love painting..."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [sub_resource type="Resource" id="Resource_bpbn7"]
-script = ExtResource("1_hkdhw")
-name = "Salary Man"
+script = ExtResource("1_l2g8b")
+name = "Salaryman"
 text = "But that was unrealistic."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [sub_resource type="Resource" id="Resource_huisp"]
-script = ExtResource("1_hkdhw")
-name = "Salary Man"
+script = ExtResource("1_l2g8b")
+name = "Salaryman"
 text = "I tried quitting my job but I couldn't."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [sub_resource type="Resource" id="Resource_xjqmo"]
-script = ExtResource("1_hkdhw")
-name = "Salary Man"
+script = ExtResource("1_l2g8b")
+name = "Salaryman"
 text = "It's just not worth it."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [resource]
-script = ExtResource("2_bpbn7")
+script = ExtResource("2_l6buf")
 index = 4
-content = Array[ExtResource("1_hkdhw")]([SubResource("Resource_hkdhw"), SubResource("Resource_bpbn7"), SubResource("Resource_huisp"), SubResource("Resource_xjqmo")])
+content = Array[ExtResource("1_l2g8b")]([SubResource("Resource_hkdhw"), SubResource("Resource_bpbn7"), SubResource("Resource_huisp"), SubResource("Resource_xjqmo")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b0143fup5a7ue"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_8v1a0"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_3eepr"]
+
+[sub_resource type="Resource" id="Resource_8v1a0"]
+script = ExtResource("1_8v1a0")
+name = "Veteran"
+text = "He was accepted? "
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_3eepr"]
+script = ExtResource("1_8v1a0")
+name = "Veteran"
+text = "Just what is the reason..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_3eepr")
+content = Array[ExtResource("1_8v1a0")]([SubResource("Resource_8v1a0"), SubResource("Resource_3eepr")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

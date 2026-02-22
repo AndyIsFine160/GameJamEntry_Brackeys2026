@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cqp8wup11ca3a"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_243wb"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_hbikw"]
+
+[sub_resource type="Resource" id="Resource_243wb"]
+script = ExtResource("1_243wb")
+name = "Salaryman"
+text = "Haha, why'd you remind me of that time huh?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_hbikw")
+content = Array[ExtResource("1_243wb")]([SubResource("Resource_243wb")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

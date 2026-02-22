@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dfiip32yqa3n3"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_hgo3n"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_60aox"]
+
+[sub_resource type="Resource" id="Resource_hgo3n"]
+script = ExtResource("1_hgo3n")
+name = "Salaryman"
+text = "Haha, I miss them so much now..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_60aox")
+content = Array[ExtResource("1_hgo3n")]([SubResource("Resource_hgo3n")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

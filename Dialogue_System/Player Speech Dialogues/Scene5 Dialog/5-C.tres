@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dqxq08immj4bs"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_bf81n"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_lbigv"]
+
+[sub_resource type="Resource" id="Resource_bf81n"]
+script = ExtResource("1_bf81n")
+name = "Veteran"
+text = "So my hunch was correct. Interacting with specific things show a memory of someone."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_lbigv"]
+script = ExtResource("1_bf81n")
+name = "Veteran"
+text = "He seemed to have talent, but why not pursue it?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_xdbed"]
+script = ExtResource("1_bf81n")
+name = "Veteran"
+text = "What does thhis even have to do with me? I have no idea so might as well press on..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_lbigv")
+content = Array[ExtResource("1_bf81n")]([SubResource("Resource_bf81n"), SubResource("Resource_lbigv"), SubResource("Resource_xdbed")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

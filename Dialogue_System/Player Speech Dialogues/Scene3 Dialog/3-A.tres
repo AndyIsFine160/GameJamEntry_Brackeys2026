@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://c8526iesaddmv"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_urvob"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_xo7bk"]
+
+[sub_resource type="Resource" id="Resource_urvob"]
+script = ExtResource("1_urvob")
+name = "Salaryman"
+text = "What? Who was that?!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_xo7bk"]
+script = ExtResource("1_urvob")
+name = "Salaryman"
+text = "No one? I really must be dreaming..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_xo7bk")
+content = Array[ExtResource("1_urvob")]([SubResource("Resource_urvob"), SubResource("Resource_xo7bk")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

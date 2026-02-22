@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cd5c1o6mup57h"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_rvjgt"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_q5vs0"]
+
+[sub_resource type="Resource" id="Resource_rvjgt"]
+script = ExtResource("1_rvjgt")
+name = "Veteran"
+text = "Where am I??"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_q5vs0"]
+script = ExtResource("1_rvjgt")
+name = "Veteran"
+text = "Anyone there?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_3g6hm"]
+script = ExtResource("1_rvjgt")
+name = "Veteran"
+text = "Huh..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_q5vs0")
+content = Array[ExtResource("1_rvjgt")]([SubResource("Resource_rvjgt"), SubResource("Resource_q5vs0"), SubResource("Resource_3g6hm")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b5875si50j2ul"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_66kga"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_vxhh1"]
+
+[sub_resource type="Resource" id="Resource_66kga"]
+script = ExtResource("1_66kga")
+name = "Veteran"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_vxhh1")
+content = Array[ExtResource("1_66kga")]([SubResource("Resource_66kga")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

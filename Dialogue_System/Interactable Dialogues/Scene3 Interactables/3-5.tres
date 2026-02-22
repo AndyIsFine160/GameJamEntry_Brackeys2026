@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://01juijufefos"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_ko6py"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_0nu0c"]
+
+[sub_resource type="Resource" id="Resource_ko6py"]
+script = ExtResource("1_ko6py")
+name = "Newspaper"
+text = "\"A family of the famous ##### clan were massacred by an unknown perpetrator last night. However by some miracle, one of them survived. He was ####!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_0nu0c")
+content = Array[ExtResource("1_ko6py")]([SubResource("Resource_ko6py")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

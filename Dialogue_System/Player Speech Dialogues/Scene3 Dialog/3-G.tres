@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://3wbmn5gcnsac"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_gkgaa"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_edjtt"]
+
+[sub_resource type="Resource" id="Resource_gkgaa"]
+script = ExtResource("1_gkgaa")
+name = "Salaryman"
+text = "I... I WANT TO DO ART AS MY JOB! I WANT TO PURSUE MY DREAMS!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_edjtt"]
+script = ExtResource("1_gkgaa")
+name = "Salaryman"
+text = "I NEVER WANTED TO BE A CORPORATE SLAVE!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_imuqt"]
+script = ExtResource("1_gkgaa")
+name = "Salaryman"
+text = "I'm sorry... to my wife, and my daughter, if I couldn't muster up the courage to quit my job."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_dsou0"]
+script = ExtResource("1_gkgaa")
+name = "Salaryman"
+text = "But I'm gonna be fine. I know I will be."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_gv41m"]
+script = ExtResource("1_gkgaa")
+name = "Salaryman"
+text = "Thank you, Japanese stranger."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_edjtt")
+content = Array[ExtResource("1_gkgaa")]([SubResource("Resource_gkgaa"), SubResource("Resource_edjtt"), SubResource("Resource_imuqt"), SubResource("Resource_dsou0"), SubResource("Resource_gv41m")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://36xobon5yi85"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_aeq6o"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_i0h0u"]
+
+[sub_resource type="Resource" id="Resource_aeq6o"]
+script = ExtResource("1_aeq6o")
+name = "Salaryman"
+text = "What a beautiful bonsai tree, the owner must be a caring person."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_i0h0u")
+content = Array[ExtResource("1_aeq6o")]([SubResource("Resource_aeq6o")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://j2vjyvqqt2a2"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_j2psu"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_vsspx"]
+
+[sub_resource type="Resource" id="Resource_j2psu"]
+script = ExtResource("1_j2psu")
+name = "Kid"
+text = "Big bro! Teach me how to use a sword please?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_vsspx"]
+script = ExtResource("1_j2psu")
+name = "Another Kid"
+text = "Me too! Me too!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_8vbxp"]
+script = ExtResource("1_j2psu")
+name = "Yet Another Kid"
+text = "Leave sir #### alone will you guys?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_add3f"]
+script = ExtResource("1_j2psu")
+name = "???"
+text = "Alright everyone, get your training swords, let's get to training!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_hah0a"]
+script = ExtResource("1_j2psu")
+name = "All Kids"
+text = "YEAHH!!!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_vsspx")
+content = Array[ExtResource("1_j2psu")]([SubResource("Resource_j2psu"), SubResource("Resource_vsspx"), SubResource("Resource_8vbxp"), SubResource("Resource_add3f"), SubResource("Resource_hah0a")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
