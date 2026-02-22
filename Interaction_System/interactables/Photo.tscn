@@ -112,8 +112,7 @@ vertex_color_use_as_albedo = true
 albedo_texture = SubResource("CompressedTexture2D_6dyvd")
 emission_enabled = true
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_8l8ib"]
-radius = 0.22330207
+[sub_resource type="BoxShape3D" id="BoxShape3D_24krr"]
 
 [node name="Painting_Small2" type="Node3D" unique_id=105398146]
 script = ExtResource("2_24krr")
@@ -126,4 +125,4 @@ surface_material_override/0 = SubResource("StandardMaterial3D_cip6j")
 [node name="Area3D" type="Area3D" parent="." unique_id=1374792198]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1365178514]
-shape = SubResource("SphereShape3D_8l8ib")
+shape = SubResource("BoxShape3D_24krr")

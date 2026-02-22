@@ -14,34 +14,34 @@ var next_scene_loaded = 0
 var want_scene = false
 
 func _ready():
-    if next_scene != null:
-        scene_path = next_scene.resource_path
-        ResourceLoader.load_threaded_request(scene_path)
-        state = LOADING
-    else:
-        state = FAILED
-    
+	if next_scene != null:
+		scene_path = next_scene.resource_path
+		ResourceLoader.load_threaded_request(scene_path)
+		state = LOADING
+	else:
+		state = FAILED
+	
 
 func _process(_delta):
-    while state == LOADING:
-        var status = ResourceLoader.load_threaded_get_status(scene_path)
+	while state == LOADING:
+		var status = ResourceLoader.load_threaded_get_status(scene_path)
 
-        if status == ResourceLoader.THREAD_LOAD_LOADED:
-            loaded_scene = ResourceLoader.load_threaded_get(scene_path)
-            print("Scene finished loading!")
-            state = LOADED
-            change_scene()
+		if status == ResourceLoader.THREAD_LOAD_LOADED:
+			loaded_scene = ResourceLoader.load_threaded_get(scene_path)
+			print("Scene finished loading!")
+			state = LOADED
+			change_scene()
 
-        elif status == ResourceLoader.THREAD_LOAD_FAILED:
-            push_error("Failed to load scene/empty scene")
-            state = FAILED
+		elif status == ResourceLoader.THREAD_LOAD_FAILED:
+			push_error("Failed to load scene/empty scene")
+			state = FAILED
 
 func change_scene():
-    if state == LOADED and want_scene:
-        get_tree().change_scene_to_packed(loaded_scene)
-    elif state == LOADING:
-        print("Scene still loading")
+	if state == LOADED and want_scene:
+		get_tree().change_scene_to_packed(loaded_scene)
+	elif state == LOADING:
+		print("Scene still loading")
 
 func request_change_scene():
-    want_scene = true
-    change_scene()
+	want_scene = true
+	change_scene()

@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_3myvu"]
 [ext_resource type="Script" uid="uid://c7copt5d5ptlb" path="res://Scripts/spawnerScript.gd" id="2_ly1ba"]
 [ext_resource type="PackedScene" uid="uid://de2rjh516cryu" path="res://Scenes/clock.tscn" id="3_8077g"]
+[ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="4_8077g"]
+[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="5_7emfr"]
+[ext_resource type="PackedScene" uid="uid://dpa1ey1vojply" path="res://Imported Assets/Low Poly Furniture/Doors/Door B.fbx" id="6_bqrwg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ly1ba"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -23,6 +26,8 @@ fog_light_energy = 0.2
 fog_density = 1.0
 fog_depth_curve = 0.24999979
 fog_depth_end = 30.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bqrwg"]
 
 [node name="Scene2" type="Node3D" unique_id=1276587240]
 
@@ -57,11 +62,6 @@ transform = Transform3D(2.7393703, 0, 0, 0, 2.965682, 0, 0, 0, 0.2556648, 0, 0, 
 visible = false
 use_collision = true
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="Wall" unique_id=683319171]
-transform = Transform3D(2.7393703, 0, 0, 0, 4.402139, 0, 0, 0, 0.2556648, 0, 2.0168886, -37.982098)
-visible = false
-use_collision = true
-
 [node name="Spawner" type="Node3D" parent="." unique_id=1988282986]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5610886, 0, 0)
 script = ExtResource("2_ly1ba")
@@ -88,3 +88,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3957965, -35.24937)
 [node name="OmniLight3D" type="OmniLight3D" parent="Node3D" unique_id=1889360743]
 light_energy = 5.686
 omni_range = 10.650436
+
+[node name="Node" type="Node" parent="." unique_id=1462384160]
+script = ExtResource("4_8077g")
+
+[node name="RayCast3D" type="RayCast3D" parent="Node" unique_id=1128335457]
+collide_with_areas = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node" unique_id=683319171]
+transform = Transform3D(2.7393703, 0, 0, 0, 4.402139, 0, 0, 0, 0.2556648, 0, 2.0168886, -37.982098)
+use_collision = true
+script = ExtResource("5_7emfr")
+
+[node name="Area3D" type="Area3D" parent="Node/CSGBox3D5" unique_id=1174878952]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/CSGBox3D5/Area3D" unique_id=351450503]
+shape = SubResource("BoxShape3D_bqrwg")
+
+[node name="Door B" parent="Node" unique_id=1592935045 instance=ExtResource("6_bqrwg")]
