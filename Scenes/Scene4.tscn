@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_5lwu1"]
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="1_t2e2d"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="2_7u17k"]
+[ext_resource type="PackedScene" path="res://Scenes/Scene5.tscn" id="2_ritk4"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="2_y6c60"]
 [ext_resource type="Texture2D" uid="uid://gphmr2bx4d72" path="res://Imported Assets/images.png" id="2_ycn35"]
 [ext_resource type="PackedScene" uid="uid://f03b8s4wh62e" path="res://Imported Assets/Low Poly Furniture/Beds/Bed Double.fbx" id="3_fye3t"]
@@ -31,6 +32,9 @@
 [ext_resource type="PackedScene" uid="uid://dpa1ey1vojply" path="res://Imported Assets/Low Poly Furniture/Doors/Door B.fbx" id="26_pbm8j"]
 [ext_resource type="Script" uid="uid://be8wsitss88ap" path="res://Interaction_System/dialogue_area.gd" id="29_uy8xk"]
 [ext_resource type="Resource" uid="uid://dm8bjxcnofaj8" path="res://Dialogue_System/Player Speech Dialogues/Scene4 Dialog/4-A.tres" id="30_4nb8s"]
+[ext_resource type="PackedScene" uid="uid://bogm56asgo4iu" path="res://Interaction_System/interactables/Door2.tscn" id="32_cagm1"]
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="33_to8c6"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="34_ritk4"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_y6c60"]
 radius = 0.1
@@ -78,8 +82,13 @@ albedo_texture = ExtResource("2_ycn35")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28hs6"]
 albedo_texture = ExtResource("2_ycn35")
 
+[sub_resource type="Resource" id="Resource_l8gvw"]
+script = ExtResource("34_ritk4")
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
+
 [node name="Node3D" type="Node3D" unique_id=147642952]
 script = ExtResource("1_5lwu1")
+next_scene = ExtResource("2_ritk4")
 interaction_count = 5
 
 [node name="InteractionHandler" type="Node" parent="." unique_id=1288230057]
@@ -246,7 +255,6 @@ size = Vector3(1, 0.07922363, 0.9935913)
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Room2" unique_id=1035168284]
 transform = Transform3D(3.430535, 0, -4.291678e-12, 0, 1, 0, 0, 0, 2.9311469, -0.37267846, 0.85842776, -1.2164593)
-visible = false
 use_collision = true
 size = Vector3(1, 0.07922363, 0.9935913)
 
@@ -283,7 +291,6 @@ size = Vector3(1, 0.07922363, 0.9935913)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Room2" unique_id=1241011841]
 transform = Transform3D(-1.331508, 0, -3.6895892e-07, 0, 1, 0, 1.1640414e-07, 0, -4.220418, -1.417078, 0.866917, 0.9672322)
-visible = false
 use_collision = true
 size = Vector3(1, 0.07922363, 0.8652344)
 
@@ -339,3 +346,7 @@ transform = Transform3D(-0.34804162, 0, -3.7623742e-08, 0, 0.21223444, 0, 2.6385
 
 [node name="Door B" parent="." unique_id=1592935045 instance=ExtResource("26_pbm8j")]
 transform = Transform3D(0.026157895, 0, -0.08737744, 0, 0.06261761, 0, 0.09552547, 0, 0.023926709, -0.2781202, 0.2942648, 2.7830212)
+
+[node name="Door B2" parent="." unique_id=884597055 instance=ExtResource("32_cagm1")]
+transform = Transform3D(-6.119594e-09, 0, -0.14, 0, 0.14, 0, 0.14, 0, -6.119594e-09, -0.7427342, 0.41433477, 6.4540634)
+dialogue = SubResource("Resource_l8gvw")
