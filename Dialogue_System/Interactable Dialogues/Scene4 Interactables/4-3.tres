@@ -3,6 +3,36 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_bptjv"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_cntx2"]
 
+[sub_resource type="Resource" id="Resource_bptjv"]
+script = ExtResource("1_bptjv")
+text = "He then notices a neatly folded uniform with a letter beside it."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_cntx2"]
+script = ExtResource("1_bptjv")
+name = "Letter"
+text = "“How long has it been since you were last here? 8 years? Will you ever come back for us?”"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_o5iif"]
+script = ExtResource("1_bptjv")
+name = "Letter"
+text = "“Our daughter is growing up without you y’know. She’s eagerly waiting for your return. At least get back alive for me, that.. Is all I ask for.”"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ym6qe"]
+script = ExtResource("1_bptjv")
+name = "Letter"
+text = "- From your beloved wife."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_6g1ie"]
+script = ExtResource("1_bptjv")
+name = "Samurai"
+text = "A letter from his beloved. Strange."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_cntx2")
+content = Array[ExtResource("1_bptjv")]([SubResource("Resource_bptjv"), SubResource("Resource_cntx2"), SubResource("Resource_o5iif"), SubResource("Resource_ym6qe"), SubResource("Resource_6g1ie")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

@@ -3,6 +3,39 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_ho6to"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_6684s"]
 
+[sub_resource type="Resource" id="Resource_ho6to"]
+script = ExtResource("1_ho6to")
+text = "He inspects the room in hopes of learning any information about his enemies, but his intention was met with confusion."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_6684s"]
+script = ExtResource("1_ho6to")
+name = "Samurai"
+text = "A journal, full of poems?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_01egi"]
+script = ExtResource("1_ho6to")
+text = "He opens up the tiny notebook and reads some of the poems written on it."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_asbhr"]
+script = ExtResource("1_ho6to")
+text = "The notebook was filled with stories from military training. Silly pranks, campfire gatherings, and many years of melancholic joy was felt through every word."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_g1c7u"]
+script = ExtResource("1_ho6to")
+text = "It reminds him of his comrades that were by his side through battles that they have won. Trusted allies, at that."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_kvdrl"]
+script = ExtResource("1_ho6to")
+name = "Samurai"
+text = "..."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_6684s")
+content = Array[ExtResource("1_ho6to")]([SubResource("Resource_ho6to"), SubResource("Resource_6684s"), SubResource("Resource_01egi"), SubResource("Resource_asbhr"), SubResource("Resource_g1c7u"), SubResource("Resource_kvdrl")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

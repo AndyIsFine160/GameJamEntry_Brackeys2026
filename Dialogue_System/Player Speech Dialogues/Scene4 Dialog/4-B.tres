@@ -3,6 +3,52 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_7ela6"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_kxcvp"]
 
+[sub_resource type="Resource" id="Resource_7ela6"]
+script = ExtResource("1_7ela6")
+text = "He fell silent. But he respected their choice, because they might’ve already met their end."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_kxcvp"]
+script = ExtResource("1_7ela6")
+text = "He remembered an event in the past. Fire and blood everywhere, in the place he called home. He was behind his father while being attacked."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_l5ppu"]
+script = ExtResource("1_7ela6")
+name = "Father"
+text = "#####, at my cue, Run as fast as you can!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_802cs"]
+script = ExtResource("1_7ela6")
+name = "???"
+text = "But father! I cannot leave you here!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_rscd8"]
+script = ExtResource("1_7ela6")
+name = "Father"
+text = "Go, my son! Live your life!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_akdn7"]
+script = ExtResource("1_7ela6")
+text = "He was pushed away, he ran with all his might, and found help, but he was too late.He was pushed away, he ran with all his might, and found help, but he was too late."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_7dj45"]
+script = ExtResource("1_7ela6")
+name = "Samurai"
+text = "Father… if living my life without the restraints of revenge, then I shall comply, as you wish."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_3hkcd"]
+script = ExtResource("1_7ela6")
+name = "Samurai"
+text = "You have my gratitude, kind stranger."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_kxcvp")
+content = Array[ExtResource("1_7ela6")]([SubResource("Resource_7ela6"), SubResource("Resource_kxcvp"), SubResource("Resource_l5ppu"), SubResource("Resource_802cs"), SubResource("Resource_rscd8"), SubResource("Resource_akdn7"), SubResource("Resource_7dj45"), SubResource("Resource_3hkcd")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

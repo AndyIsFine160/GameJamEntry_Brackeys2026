@@ -3,6 +3,35 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_vgfjh"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_2r7gd"]
 
+[sub_resource type="Resource" id="Resource_vgfjh"]
+script = ExtResource("1_vgfjh")
+text = "As he was grieving for the soldiers, a box that seemed to be a present caught his eye. "
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_2r7gd"]
+script = ExtResource("1_vgfjh")
+text = "The label says: “For my daughter’s 7th Birthday” with a message. It said"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_036j5"]
+script = ExtResource("1_vgfjh")
+name = "Letter"
+text = "\"I hope you would like a guitar for your present, because you love singing my poems remember?\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ecw2p"]
+script = ExtResource("1_vgfjh")
+name = "Letter"
+text = "\"But now you can make them songs and sing them to the world one day no? I love you and your mother, always.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ryvla"]
+script = ExtResource("1_vgfjh")
+name = "Letter"
+text = "-From #####"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_2r7gd")
+content = Array[ExtResource("1_vgfjh")]([SubResource("Resource_vgfjh"), SubResource("Resource_2r7gd"), SubResource("Resource_036j5"), SubResource("Resource_ecw2p"), SubResource("Resource_ryvla")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
