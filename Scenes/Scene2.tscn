@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://c7copt5d5ptlb" path="res://Scripts/spawnerScript.gd" id="2_ly1ba"]
 [ext_resource type="PackedScene" uid="uid://de2rjh516cryu" path="res://Scenes/clock.tscn" id="3_8077g"]
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="4_8077g"]
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="5_7emfr"]
-[ext_resource type="PackedScene" uid="uid://dpa1ey1vojply" path="res://Imported Assets/Low Poly Furniture/Doors/Door B.fbx" id="6_bqrwg"]
+[ext_resource type="PackedScene" uid="uid://bogm56asgo4iu" path="res://Interaction_System/interactables/Door2.tscn" id="5_7emfr"]
+[ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="6_bqrwg"]
+[ext_resource type="Resource" uid="uid://bcbpd2nkcj5gb" path="res://Dialogue_System/Interactable Dialogss/Scene1 Interactables/1-1.tres" id="6_krnfe"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ly1ba"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -21,20 +22,25 @@ tonemap_mode = 2
 glow_enabled = true
 fog_enabled = true
 fog_mode = 1
-fog_light_color = Color(0, 0, 0, 1)
+fog_light_color = Color(0.21230483, 0.21230483, 0.21230483, 1)
 fog_light_energy = 0.2
 fog_density = 1.0
 fog_depth_curve = 0.24999979
 fog_depth_end = 30.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_bqrwg"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krnfe"]
+albedo_color = Color(0.45995867, 0.45995867, 0.4599586, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_7emfr"]
+radius = 0.1
+height = 0.1
 
 [node name="Scene2" type="Node3D" unique_id=1276587240]
 
 [node name="FirstPersonCharacter" parent="." unique_id=990361468 groups=["Player"] instance=ExtResource("1_3myvu")]
-transform = Transform3D(0.43413812, 0, 0, 0, 0.43413812, 0, 0, 0, 0.43413812, 0.2871821, 0.5911689, 0.43401074)
-speed = 2.0
-sprint_speed = 2.0
+transform = Transform3D(0.6963037, 0, 0, 0, 0.6963037, 0, 0, 0, 0.6963037, 0.2871821, 0.71966267, 0.43401074)
+speed = 3.0
+sprint_speed = 3.0
 jump_force = 0.0
 toggleable_fly = false
 
@@ -42,23 +48,26 @@ toggleable_fly = false
 environment = SubResource("Environment_7emfr")
 
 [node name="Floor" type="CSGBox3D" parent="." unique_id=122894276]
-transform = Transform3D(2.5592284, 0, 0, 0, 0.06742561, 0, 0, 0, 39.22761, 0, 0, -18.20316)
+transform = Transform3D(2.5592284, 0, 0, 0, 0.06742561, 0, 0, 0, 162.2802, 0, 0, -79.299515)
+material_override = SubResource("StandardMaterial3D_krnfe")
+transparency = 0.95
+visibility_range_fade_mode = 1
 use_collision = true
 
 [node name="Wall" type="Node3D" parent="." unique_id=1306995086]
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Wall" unique_id=1417270470]
-transform = Transform3D(-1.1920929e-07, -0.06742561, 0, 2.5592282, 0, 0, 0, 0, 39.22761, -1.2488377, 0, -18.20316)
+transform = Transform3D(-1.1920929e-07, -0.06742561, 0, 2.5592282, 0, 0, 0, 0, 162.2802, -1.2488377, 0, -79.299515)
 visible = false
 use_collision = true
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Wall" unique_id=852323595]
-transform = Transform3D(-1.1920929e-07, -0.06742561, 0, 2.5592282, 0, 0, 0, 0, 39.22761, 1.2959392, 0, -18.20316)
+transform = Transform3D(-1.1920929e-07, -0.06742561, 0, 2.5592282, 0, 0, 0, 0, 162.2802, 1.2959392, 0, -79.299515)
 visible = false
 use_collision = true
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Wall" unique_id=1016643160]
-transform = Transform3D(2.7393703, 0, 0, 0, 2.965682, 0, 0, 0, 0.2556648, 0, 0, 1.4647255)
+transform = Transform3D(2.7393703, 0, 0, 0, 2.965682, 0, 0, 0, 1.0576564, 0, 0, 2.0643005)
 visible = false
 use_collision = true
 
@@ -66,7 +75,7 @@ use_collision = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5610886, 0, 0)
 script = ExtResource("2_ly1ba")
 items = Array[PackedScene]([ExtResource("3_8077g")])
-min_spawn_range = Vector3(-4, -15, -60)
+min_spawn_range = Vector3(-4, -15, -100)
 max_spawn_range = Vector3(10, 15, 5)
 min_scale = 5.0
 max_scale = 20.0
@@ -76,33 +85,36 @@ spawn_count = 80
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4389114, 0, 0)
 script = ExtResource("2_ly1ba")
 items = Array[PackedScene]([ExtResource("3_8077g")])
-min_spawn_range = Vector3(-10, -15, -60)
+min_spawn_range = Vector3(-10, -15, -100)
 max_spawn_range = Vector3(4, 15, 5)
 min_scale = 5.0
 max_scale = 20.0
 spawn_count = 80
 
 [node name="Node3D" type="Node3D" parent="." unique_id=388378528]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3957965, -35.24937)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3957965, -156.94125)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Node3D" unique_id=1889360743]
-light_energy = 5.686
-omni_range = 10.650436
+[node name="SpotLight3D" type="SpotLight3D" parent="Node3D" unique_id=1068323551]
+transform = Transform3D(1, 0, 0, 0, 0.8245115, 0.5658452, 0, -0.5658452, 0.8245115, 0, 6.7346315, 5.6902847)
+light_energy = 10.0
+spot_range = 16.18573
+spot_attenuation = -0.35
+spot_angle = 57.854233
+spot_angle_attenuation = 19.698294
 
-[node name="Node" type="Node" parent="." unique_id=1462384160]
+[node name="InteractionHandler" type="Node" parent="." unique_id=1462384160]
 script = ExtResource("4_8077g")
 
-[node name="RayCast3D" type="RayCast3D" parent="Node" unique_id=1128335457]
+[node name="RayCast3D" type="RayCast3D" parent="InteractionHandler" unique_id=1128335457]
 collide_with_areas = true
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="Node" unique_id=683319171]
-transform = Transform3D(2.7393703, 0, 0, 0, 4.402139, 0, 0, 0, 0.2556648, 0, 2.0168886, -37.982098)
-use_collision = true
-script = ExtResource("5_7emfr")
+[node name="Target" type="MeshInstance3D" parent="InteractionHandler" unique_id=1361051058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -2)
+visible = false
+mesh = SubResource("SphereMesh_7emfr")
 
-[node name="Area3D" type="Area3D" parent="Node/CSGBox3D5" unique_id=1174878952]
+[node name="Door B" parent="InteractionHandler" unique_id=1592935045 instance=ExtResource("5_7emfr")]
+transform = Transform3D(1, 0, 0, 0, 0.61419475, 0, 0, 0, 1, -0.20365095, 1.5963676, -159.90047)
+dialogue = ExtResource("6_krnfe")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/CSGBox3D5/Area3D" unique_id=351450503]
-shape = SubResource("BoxShape3D_bqrwg")
-
-[node name="Door B" parent="Node" unique_id=1592935045 instance=ExtResource("6_bqrwg")]
+[node name="UI" parent="InteractionHandler" unique_id=139771353 instance=ExtResource("6_bqrwg")]
