@@ -4,6 +4,7 @@ var camera : Camera3D
 var player : CharacterBody3D
 var ray : RayCast3D
 var current : Interactable_Disappearing
+var current_area : DialogueArea
 var can_change_scene : bool
 @export var length = 1
 
@@ -12,6 +13,9 @@ var can_change_scene : bool
 func _ready():
 	ray = get_node("RayCast3D")
 	ui.hidden.connect(ui_hidden)
+	for child in get_children():
+		if child is DialogueArea:
+			child.player_entered.connect(interact_area)
 
 func _process(_delta : float):
 	camera = get_viewport().get_camera_3d()
@@ -57,18 +61,26 @@ func interact():
 	player.set_physics_process(false)
 
 func ui_hidden():
-	current.done()
+	if current != null:
+		current.done()
+		if current is Interactable_Disappearing:
+			var main_scene = get_tree().current_scene
+			if main_scene is BaseScene:
+				can_change_scene = main_scene.interaction_done_notify()
 
-	if current is Interactable_Disappearing:
-		var main_scene = get_tree().current_scene
-		if main_scene is BaseScene:
-			can_change_scene = main_scene.interaction_done_notify()
-
-	if current is InteractableSceneChange:
-		print("success")
-		var main_scene = get_tree().current_scene
-		if main_scene is BaseScene:
-			main_scene.request_change_scene()
-			
+		if current is InteractableSceneChange:
+			print("success")
+			var main_scene = get_tree().current_scene
+			if main_scene is BaseScene:
+				main_scene.request_change_scene()
+	if current_area != null:
+		current_area.queue_free()
+		current_area = null
+				
 
 	player.set_physics_process(true)
+
+func interact_area(dg : Dialogue, area : DialogueArea):
+	current_area = area
+	player.set_physics_process(false)
+	ui.start(dg)
