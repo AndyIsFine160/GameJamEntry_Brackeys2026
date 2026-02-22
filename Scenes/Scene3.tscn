@@ -78,6 +78,7 @@
 [ext_resource type="PackedScene" uid="uid://lytd3p4dbb8o" path="res://Imported Assets/JapaneseEra/Weapon_1 Asia.fbx" id="76_tg6yn"]
 [ext_resource type="PackedScene" uid="uid://beyluy3sie7c2" path="res://Imported Assets/JapaneseEra/Bench_1 Asia.fbx" id="77_m2paq"]
 [ext_resource type="PackedScene" uid="uid://hsfuykjp2flx" path="res://Imported Assets/JapaneseEra/Sign_2 Asia.fbx" id="78_6gjw3"]
+[ext_resource type="PackedScene" uid="uid://bkkprdtd5dgwa" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Box_Base.fbx" id="81_q8k0v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uxj2m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -115,6 +116,9 @@ size = Vector3(41, 5, 1.4)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5g25t"]
 size = Vector3(3.6000001, 6, 41)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bx1db"]
+size = Vector3(12.5, 5, 22)
 
 [node name="scene2" type="Node3D" unique_id=1667678290]
 
@@ -338,7 +342,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.8,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1000004, 0, 0.6999998)
 
 [node name="Tree_Place Asia2" parent="." unique_id=2026940635 instance=ExtResource("29_nh0ja")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 9)
 
 [node name="Wall_1_Gate Asia" parent="." unique_id=1539102877 instance=ExtResource("30_qdki5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 14)
@@ -758,7 +762,7 @@ transform = Transform3D(1, 0, 0, 0, 0.96592706, 0.2588193, 0, -0.2588193, 0.9659
 shape = SubResource("BoxShape3D_5lnoy")
 
 [node name="player" parent="." unique_id=990361468 instance=ExtResource("66_lwiw4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -71)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 3)
 
 [node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=1558137794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -76)
@@ -842,7 +846,7 @@ transform = Transform3D(-0.5000001, 0, -0.8660255, 0, 1, 0, 0.8660255, 0, -0.500
 transform = Transform3D(0.76604444, 0, 0.6427876, 0, 1, 0, -0.6427876, 0, 0.76604444, -16, 0, -5)
 
 [node name="Tree_6 Asia" parent="." unique_id=217719048 instance=ExtResource("74_sn575")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 9)
 
 [node name="Stall Asia2" parent="." unique_id=1891660443 instance=ExtResource("27_lovpn")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -20.2, 0, 6.6000004)
@@ -900,3 +904,22 @@ shape = SubResource("BoxShape3D_5g25t")
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=989912117]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2, 2, -20)
 shape = SubResource("BoxShape3D_5g25t")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" unique_id=698503344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.099998, 2, -22.2)
+shape = SubResource("BoxShape3D_bx1db")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D" unique_id=718965598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.999998, 2, -31.2)
+shape = SubResource("BoxShape3D_bx1db")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=1290509213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.200001, 2, -8.200001)
+shape = SubResource("BoxShape3D_bx1db")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" unique_id=649706200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.449999, 2, -26.7)
+shape = SubResource("BoxShape3D_bx1db")
+
+[node name="Box_Base" parent="." unique_id=1728110959 instance=ExtResource("81_q8k0v")]
+transform = Transform3D(0.70710677, -6.181724e-08, -0.70710677, 0, -1, 8.742278e-08, -0.70710677, -6.181724e-08, -0.70710677, -15, 0.6, -25)

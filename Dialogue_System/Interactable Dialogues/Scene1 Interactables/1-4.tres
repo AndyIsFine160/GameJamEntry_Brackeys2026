@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_ichgc"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_idftf"]
 
+[sub_resource type="Resource" id="Resource_3stig"]
+script = ExtResource("1_ichgc")
+text = "You see your family painting."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [sub_resource type="Resource" id="Resource_ichgc"]
 script = ExtResource("1_ichgc")
 name = "Salaryman"
@@ -12,11 +17,11 @@ metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 [sub_resource type="Resource" id="Resource_idftf"]
 script = ExtResource("1_ichgc")
 name = "Salaryman"
-text = "Good thing I got this photograph of them here to keep me company."
+text = "Good thing I got my painting of them here to keep me company."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [resource]
 script = ExtResource("2_idftf")
 index = 2
-content = Array[ExtResource("1_ichgc")]([SubResource("Resource_ichgc"), SubResource("Resource_idftf")])
+content = Array[ExtResource("1_ichgc")]([SubResource("Resource_3stig"), SubResource("Resource_ichgc"), SubResource("Resource_idftf")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
