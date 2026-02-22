@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="GameJamEntry"
-run/main_scene="uid://cbj2jofsxmvwd"
+run/main_scene="uid://cpdhx0f2in6b"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[global_group]
+
+Player=""
 
 [input]
 

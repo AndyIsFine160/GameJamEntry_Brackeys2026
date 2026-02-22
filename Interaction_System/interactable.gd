@@ -17,6 +17,6 @@ func unhover():
 		return
 	hovered = false
 	shader.set_shader_parameter("outline_width", 0.0)
-
+	
 func done():
 	pass

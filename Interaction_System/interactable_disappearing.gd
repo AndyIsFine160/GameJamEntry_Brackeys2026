@@ -1,3 +1,2 @@
 extends Interactable
 class_name Interactable_Disappearing
-

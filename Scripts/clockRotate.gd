@@ -1,7 +1,11 @@
 extends Node3D
 
-@export var base_degrees_per_second: float = 6.0   # Normal speed (like real seconds)
-@export var time_scale: float = 1.0                # Speed multiplier
+var base_degrees_per_second: float
+var time_scale: float
+
+func _ready():
+	base_degrees_per_second = randf_range(4.0, 10.0)
+	time_scale = randf_range(1.0, 80.0)
 
 func _process(delta):
 	var final_speed = base_degrees_per_second * time_scale

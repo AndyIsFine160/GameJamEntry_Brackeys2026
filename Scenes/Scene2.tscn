@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://dckpcem6l7r6m"]
+
+[ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_3myvu"]
+[ext_resource type="Script" uid="uid://c7copt5d5ptlb" path="res://Scripts/spawnerScript.gd" id="2_ly1ba"]
+[ext_resource type="PackedScene" uid="uid://de2rjh516cryu" path="res://Scenes/clock.tscn" id="3_8077g"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ly1ba"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_8077g"]
+sky_material = SubResource("ProceduralSkyMaterial_ly1ba")
+
+[sub_resource type="Environment" id="Environment_7emfr"]
+background_mode = 2
+sky = SubResource("Sky_8077g")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_light_energy = 0.2
+fog_density = 1.0
+fog_depth_curve = 0.24999979
+fog_depth_end = 30.0
+
+[node name="Scene2" type="Node3D" unique_id=1276587240]
+
+[node name="FirstPersonCharacter" parent="." unique_id=990361468 groups=["Player"] instance=ExtResource("1_3myvu")]
+transform = Transform3D(0.43413812, 0, 0, 0, 0.43413812, 0, 0, 0, 0.43413812, 0.2871821, 0.5911689, 0.43401074)
+speed = 2.0
+sprint_speed = 2.0
+jump_force = 0.0
+toggleable_fly = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=566111831]
+environment = SubResource("Environment_7emfr")
+
+[node name="Floor" type="CSGBox3D" parent="." unique_id=122894276]
+transform = Transform3D(2.5592284, 0, 0, 0, 0.06742561, 0, 0, 0, 39.22761, 0, 0, -18.20316)
+use_collision = true
+
+[node name="Wall" type="Node3D" parent="." unique_id=1306995086]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Wall" unique_id=1417270470]
+transform = Transform3D(-1.1920929e-07, -0.06742561, 0, 2.5592282, 0, 0, 0, 0, 39.22761, -1.2488377, 0, -18.20316)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Wall" unique_id=852323595]
+transform = Transform3D(-1.1920929e-07, -0.06742561, 0, 2.5592282, 0, 0, 0, 0, 39.22761, 1.2959392, 0, -18.20316)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Wall" unique_id=1016643160]
+transform = Transform3D(2.7393703, 0, 0, 0, 2.965682, 0, 0, 0, 0.2556648, 0, 0, 1.4647255)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Wall" unique_id=683319171]
+transform = Transform3D(2.7393703, 0, 0, 0, 4.402139, 0, 0, 0, 0.2556648, 0, 2.0168886, -37.982098)
+visible = false
+use_collision = true
+
+[node name="Spawner" type="Node3D" parent="." unique_id=1988282986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5610886, 0, 0)
+script = ExtResource("2_ly1ba")
+items = Array[PackedScene]([ExtResource("3_8077g")])
+min_spawn_range = Vector3(-4, -15, -60)
+max_spawn_range = Vector3(10, 15, 5)
+min_scale = 5.0
+max_scale = 20.0
+spawn_count = 80
+
+[node name="Spawner2" type="Node3D" parent="." unique_id=861529807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4389114, 0, 0)
+script = ExtResource("2_ly1ba")
+items = Array[PackedScene]([ExtResource("3_8077g")])
+min_spawn_range = Vector3(-10, -15, -60)
+max_spawn_range = Vector3(4, 15, 5)
+min_scale = 5.0
+max_scale = 20.0
+spawn_count = 80
+
+[node name="Node3D" type="Node3D" parent="." unique_id=388378528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3957965, -35.24937)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D" unique_id=1889360743]
+light_energy = 5.686
+omni_range = 10.650436

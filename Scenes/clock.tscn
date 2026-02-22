@@ -9,9 +9,7 @@
 [node name="Clock_A" parent="." index="1" unique_id=895272223 instance=ExtResource("2_1ixnv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0007667467, 0.0027653426, 0.017844051)
 script = ExtResource("3_0t2r4")
-time_scale = 50.0
 
 [node name="Clock_A2" parent="." index="2" unique_id=117012361 instance=ExtResource("2_1ixnv")]
 transform = Transform3D(1, 0, 0, 0, 0.71165735, 0, 0, 0, 1, -0.0004947409, 0.0027653426, 0.022014767)
 script = ExtResource("3_0t2r4")
-time_scale = 8.0
