@@ -1,0 +1,902 @@
+[gd_scene format=3 uid="uid://jed6we5n3lwh"]
+
+[ext_resource type="PackedScene" uid="uid://qbmmf5o8nnxw" path="res://Imported Assets/JapaneseEra/Rake Asia.fbx" id="1_5xb02"]
+[ext_resource type="PackedScene" uid="uid://dc4rtot2ctdqj" path="res://Imported Assets/JapaneseEra/Sakwa Asia.fbx" id="2_yy3rc"]
+[ext_resource type="PackedScene" uid="uid://df13h7ui7j5g3" path="res://Imported Assets/JapaneseEra/Bucket Asia.fbx" id="3_myh1l"]
+[ext_resource type="PackedScene" uid="uid://ck833uu5k7eek" path="res://Imported Assets/JapaneseEra/Stone Lamp_1 Asia.fbx" id="4_aropg"]
+[ext_resource type="PackedScene" uid="uid://cyr2yqapwvelb" path="res://Imported Assets/JapaneseEra/BuildingWall_3_1  Asia.fbx" id="5_jhxkj"]
+[ext_resource type="PackedScene" uid="uid://bhk75nj5714cv" path="res://Imported Assets/JapaneseEra/BuildingWall_1_1 Asia.fbx" id="6_q8k0v"]
+[ext_resource type="PackedScene" uid="uid://cfjiykeokuxdy" path="res://Imported Assets/JapaneseEra/BuildingWall_4_1  Asia.fbx" id="7_bx1db"]
+[ext_resource type="PackedScene" uid="uid://x4l12l4qt3g4" path="res://Imported Assets/JapaneseEra/Door_1_1  Asia.fbx" id="8_6seh7"]
+[ext_resource type="PackedScene" uid="uid://vs1rps3tdjxt" path="res://Imported Assets/JapaneseEra/Table_1 Asia.fbx" id="9_bweko"]
+[ext_resource type="PackedScene" uid="uid://bs2jobvp4gaut" path="res://Imported Assets/JapaneseEra/Barrel_Closed Asia.fbx" id="10_jnb43"]
+[ext_resource type="PackedScene" uid="uid://clyiyv5coyjeo" path="res://Imported Assets/JapaneseEra/Balkon Asia.fbx" id="11_obryg"]
+[ext_resource type="PackedScene" uid="uid://prsjogvvi2gr" path="res://Imported Assets/JapaneseEra/Scroll_1 Asia.fbx" id="12_awsyj"]
+[ext_resource type="PackedScene" uid="uid://cl2tprswvpqei" path="res://Imported Assets/JapaneseEra/Roof_4_4 Asia.fbx" id="13_gyho4"]
+[ext_resource type="PackedScene" uid="uid://ss4f1gbkvcug" path="res://Imported Assets/JapaneseEra/Roof_4_1 Asia.fbx" id="14_rsv0j"]
+[ext_resource type="PackedScene" uid="uid://vh3haqugr68y" path="res://Imported Assets/JapaneseEra/Chimey  Asia.fbx" id="15_48toa"]
+[ext_resource type="PackedScene" uid="uid://b7q805rw1mos1" path="res://Imported Assets/JapaneseEra/Barrel_Open_Empty Asia.fbx" id="16_mkx0j"]
+[ext_resource type="PackedScene" uid="uid://bg4gwl3l4122c" path="res://Imported Assets/JapaneseEra/Barrel_Lid_Destroyed_1 Asia.fbx" id="17_hyiu5"]
+[ext_resource type="PackedScene" uid="uid://bvcleymxq7eq" path="res://Imported Assets/JapaneseEra/Barrel_Open_Spice Asia.fbx" id="18_l104s"]
+[ext_resource type="PackedScene" uid="uid://cj5eo30oe50h3" path="res://Imported Assets/JapaneseEra/Barrel_Lid Asia.fbx" id="19_2lf6c"]
+[ext_resource type="PackedScene" uid="uid://c306mmx1jqkxk" path="res://Imported Assets/JapaneseEra/Vase_1 Asia.fbx" id="20_p7vw6"]
+[ext_resource type="PackedScene" uid="uid://bav5xb3vdx63h" path="res://Imported Assets/Low Poly Furniture/Carpets/Carpet C.fbx" id="21_bju5b"]
+[ext_resource type="PackedScene" uid="uid://bm7nmk0beg83s" path="res://Imported Assets/JapaneseEra/Cart_1  Asia.fbx" id="22_2jlat"]
+[ext_resource type="PackedScene" uid="uid://dde8lyw18q204" path="res://Imported Assets/JapaneseEra/Wooden Board Asia.fbx" id="23_k1lj7"]
+[ext_resource type="PackedScene" uid="uid://ds87k63jqopom" path="res://Imported Assets/JapaneseEra/Platform_1_1 Asia.fbx" id="24_uvk70"]
+[ext_resource type="PackedScene" uid="uid://bd8alysgx80c6" path="res://Imported Assets/JapaneseEra/Barrel_Destroyed Asia.fbx" id="25_fd177"]
+[ext_resource type="PackedScene" uid="uid://dkswqyjhiaiwp" path="res://Imported Assets/JapaneseEra/Building_1 Asia.fbx" id="26_fba0y"]
+[ext_resource type="PackedScene" uid="uid://dvwbunb35kx8h" path="res://Imported Assets/JapaneseEra/Stall Asia.fbx" id="27_lovpn"]
+[ext_resource type="PackedScene" uid="uid://cv7n8pxejvv17" path="res://Imported Assets/JapaneseEra/Chair  Asia.fbx" id="28_g1caw"]
+[ext_resource type="PackedScene" uid="uid://jgs4mpm8qmop" path="res://Imported Assets/JapaneseEra/Tree_Place Asia.fbx" id="29_nh0ja"]
+[ext_resource type="PackedScene" uid="uid://tmbs5xt1rcuy" path="res://Imported Assets/JapaneseEra/Wall_1_Gate Asia.fbx" id="30_qdki5"]
+[ext_resource type="PackedScene" uid="uid://b0nytjde83dhe" path="res://Imported Assets/JapaneseEra/Wall_1_2 Asia.fbx" id="31_1tp2p"]
+[ext_resource type="PackedScene" uid="uid://ce4w2h08wrcax" path="res://Imported Assets/JapaneseEra/Wall_1_7 Asia.fbx" id="32_md70m"]
+[ext_resource type="PackedScene" uid="uid://bs6c6ejxh8ud1" path="res://Imported Assets/JapaneseEra/Wall_1_4 Asia.fbx" id="33_0wtor"]
+[ext_resource type="PackedScene" uid="uid://d04ldue138j7y" path="res://Imported Assets/JapaneseEra/Vase_2 Asia.fbx" id="34_tciis"]
+[ext_resource type="PackedScene" uid="uid://btwnaqv8a3yiw" path="res://Imported Assets/JapaneseEra/Vegetables Box Asia.fbx" id="35_jeqh7"]
+[ext_resource type="PackedScene" uid="uid://buqxglklxyioi" path="res://Imported Assets/JapaneseEra/Building_detai_2 Asia.fbx" id="36_sj3oy"]
+[ext_resource type="PackedScene" uid="uid://c1jqdwqslt4hb" path="res://Imported Assets/JapaneseEra/Building_6 Asia.fbx" id="37_2w6gu"]
+[ext_resource type="PackedScene" uid="uid://jgaysclwpwk2" path="res://Imported Assets/JapaneseEra/Building_4 Asia.fbx" id="38_kbk40"]
+[ext_resource type="PackedScene" uid="uid://dgm72rbor5mf7" path="res://Imported Assets/JapaneseEra/Building_9 Asia.fbx" id="39_baicb"]
+[ext_resource type="PackedScene" uid="uid://cmvtcag51yskm" path="res://Imported Assets/JapaneseEra/Building_5 Asia.fbx" id="40_hqdei"]
+[ext_resource type="PackedScene" uid="uid://ynup3xv3m7ey" path="res://Imported Assets/JapaneseEra/Stall_2 Asia.fbx" id="41_s6eqv"]
+[ext_resource type="PackedScene" uid="uid://ck6qtjv3akcg1" path="res://Imported Assets/JapaneseEra/Sign_1 Asia.fbx" id="42_5tul6"]
+[ext_resource type="PackedScene" uid="uid://car4x4iykqsgu" path="res://Imported Assets/JapaneseEra/Well Asia.fbx" id="43_c32gp"]
+[ext_resource type="PackedScene" uid="uid://bsf026hnpueby" path="res://Imported Assets/JapaneseEra/Witchered_Tree_1 Asia.fbx" id="44_8qluf"]
+[ext_resource type="PackedScene" uid="uid://hv6viymqr2p2" path="res://Imported Assets/JapaneseEra/Hill_2_2 Asia.fbx" id="45_bdwts"]
+[ext_resource type="PackedScene" uid="uid://c7jojxvert046" path="res://Imported Assets/JapaneseEra/Island_1 Asia.fbx" id="46_34703"]
+[ext_resource type="PackedScene" uid="uid://drylsdiw8cpdh" path="res://Imported Assets/JapaneseEra/Sakura_4 Asia.fbx" id="47_h8o5n"]
+[ext_resource type="PackedScene" uid="uid://cfviq5xmlnstu" path="res://Imported Assets/JapaneseEra/Tora _1 Asia.fbx" id="48_l4cu6"]
+[ext_resource type="PackedScene" uid="uid://cxpdroquyw4pm" path="res://Imported Assets/JapaneseEra/Mountain_6 Asia.fbx" id="49_klmoj"]
+[ext_resource type="PackedScene" uid="uid://bgx4m6650tfry" path="res://Imported Assets/JapaneseEra/Mountain_1 Asia.fbx" id="50_jhlkg"]
+[ext_resource type="PackedScene" uid="uid://dx6a7fuhjegqm" path="res://Imported Assets/JapaneseEra/Mountain_2 Asia.fbx" id="51_ajq7b"]
+[ext_resource type="PackedScene" uid="uid://dxxyevytqgfid" path="res://Imported Assets/JapaneseEra/Cloud_1  Asia.fbx" id="52_yxuaw"]
+[ext_resource type="PackedScene" uid="uid://jqkqq6xtvts7" path="res://Imported Assets/JapaneseEra/Cloud_2  Asia.fbx" id="53_nwbj5"]
+[ext_resource type="PackedScene" uid="uid://23qh444pbp7h" path="res://Imported Assets/JapaneseEra/Katana  Asia.fbx" id="54_ba1ah"]
+[ext_resource type="PackedScene" uid="uid://dcdycmljmw1nh" path="res://Imported Assets/JapaneseEra/Wall_1_1 Asia.fbx" id="55_rirst"]
+[ext_resource type="PackedScene" uid="uid://dyapbwyls6750" path="res://Imported Assets/JapaneseEra/Tile_1_1 Asia.fbx" id="56_xtc4s"]
+[ext_resource type="PackedScene" uid="uid://cvnv44fll8wqm" path="res://Imported Assets/JapaneseEra/Tile_1_3 Asia.fbx" id="57_uu1qi"]
+[ext_resource type="PackedScene" uid="uid://cstgmmy03cud3" path="res://Imported Assets/JapaneseEra/Tile_1_5 Asia.fbx" id="58_yiln4"]
+[ext_resource type="PackedScene" uid="uid://d2g0a8g051si0" path="res://Imported Assets/JapaneseEra/Wall_1_3 Asia.fbx" id="59_omw6i"]
+[ext_resource type="PackedScene" uid="uid://18cj3hl0bitg" path="res://Imported Assets/JapaneseEra/Wall_Gate_2 Asia.fbx" id="60_dx7vq"]
+[ext_resource type="PackedScene" uid="uid://2lo6qupirgj0" path="res://Imported Assets/JapaneseEra/Building_12 Asia.fbx" id="61_jxxmv"]
+[ext_resource type="PackedScene" uid="uid://bf8w26lx454u" path="res://Imported Assets/JapaneseEra/Wall_Ladder Asia.fbx" id="62_73jqr"]
+[ext_resource type="PackedScene" uid="uid://mdgch54dggdn" path="res://Imported Assets/JapaneseEra/Fence_4_2 Asia.fbx" id="63_j7axb"]
+[ext_resource type="PackedScene" uid="uid://cpds87g4gf4fa" path="res://Imported Assets/JapaneseEra/Building_Pagoda Asia.fbx" id="64_lvqlt"]
+[ext_resource type="PackedScene" uid="uid://brags6g5gjpti" path="res://Imported Assets/JapaneseEra/Arena_YingYang Asia.fbx" id="65_asxqf"]
+[ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="66_lwiw4"]
+[ext_resource type="PackedScene" uid="uid://blrycvu14exy2" path="res://Imported Assets/JapaneseEra/GardenWall_Gate_1 Asia.fbx" id="67_n26av"]
+[ext_resource type="PackedScene" uid="uid://cybapgiq2x4ou" path="res://Imported Assets/JapaneseEra/GardenWall_4 Asia.fbx" id="68_hg4eo"]
+[ext_resource type="PackedScene" uid="uid://c1rijrt0itbh1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Shelf_Base.fbx" id="69_geluv"]
+[ext_resource type="PackedScene" uid="uid://ctv1ixvk386jl" path="res://Imported Assets/JapaneseEra/Tora_2 Asia.fbx" id="70_ks2rm"]
+[ext_resource type="PackedScene" uid="uid://cml1h6im42vuo" path="res://Imported Assets/JapaneseEra/Bell_1 Asia.fbx" id="71_3hx6f"]
+[ext_resource type="PackedScene" uid="uid://boujtedmlwyyo" path="res://Imported Assets/JapaneseEra/Bag Asia.fbx" id="72_5fl6d"]
+[ext_resource type="PackedScene" uid="uid://p8ogupjs8nkn" path="res://Imported Assets/JapaneseEra/Pot Asia.fbx" id="73_abh15"]
+[ext_resource type="PackedScene" uid="uid://cd5uskkc27fxo" path="res://Imported Assets/JapaneseEra/Tree_6 Asia.fbx" id="74_sn575"]
+[ext_resource type="PackedScene" uid="uid://dtotku0mkr4d0" path="res://Imported Assets/JapaneseEra/Tree_4 Asia.fbx" id="75_27rs3"]
+[ext_resource type="PackedScene" uid="uid://lytd3p4dbb8o" path="res://Imported Assets/JapaneseEra/Weapon_1 Asia.fbx" id="76_tg6yn"]
+[ext_resource type="PackedScene" uid="uid://beyluy3sie7c2" path="res://Imported Assets/JapaneseEra/Bench_1 Asia.fbx" id="77_m2paq"]
+[ext_resource type="PackedScene" uid="uid://hsfuykjp2flx" path="res://Imported Assets/JapaneseEra/Sign_2 Asia.fbx" id="78_6gjw3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uxj2m"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_cfx11"]
+sky_material = SubResource("ProceduralSkyMaterial_uxj2m")
+
+[sub_resource type="Environment" id="Environment_uo4po"]
+background_mode = 2
+sky = SubResource("Sky_cfx11")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b5ue3"]
+size = Vector3(1, 8, 46)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ddxmc"]
+size = Vector3(10, 1, 9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uchmy"]
+size = Vector3(41, 5, 27.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5lnoy"]
+size = Vector3(19.5, 5.4, 3.6000001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fe8j"]
+size = Vector3(18.9, 5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ajkep"]
+size = Vector3(3, 1.6, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oc0hn"]
+size = Vector3(41, 5, 1.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5g25t"]
+size = Vector3(3.6000001, 6, 41)
+
+[node name="scene2" type="Node3D" unique_id=1667678290]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=97119353]
+transform = Transform3D(-0.6123725, -0.65973943, -0.4355957, -0.6123725, 0.047366977, 0.7891491, -0.49999997, 0.75000006, -0.43301263, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1659924124]
+environment = SubResource("Environment_uo4po")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1259536906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.00049999356, -8.799999)
+use_collision = true
+size = Vector3(24, 0.001, 42)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=105618499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0.00049999356, -52.8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=126450996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 3.5, -0.5)
+shape = SubResource("BoxShape3D_b5ue3")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D2" unique_id=1674088900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 3.5, -0.5)
+shape = SubResource("BoxShape3D_b5ue3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=9908344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0.00049999356, -53.3)
+use_collision = true
+size = Vector3(42, 0.001, 47)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=360960908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5, 0.00049999356, -8.700001)
+use_collision = true
+size = Vector3(17, 0.001, 42)
+
+[node name="Rake Asia" parent="." unique_id=1370187121 instance=ExtResource("1_5xb02")]
+transform = Transform3D(0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 0, 0, 1, -17.300001, 0, -1.0999999)
+
+[node name="Sakwa Asia2" parent="." unique_id=1310429871 instance=ExtResource("2_yy3rc")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -16.1, 0, -12.1)
+
+[node name="Sakwa Asia3" parent="." unique_id=631835749 instance=ExtResource("2_yy3rc")]
+transform = Transform3D(-0.5000002, 0, -0.86602557, 0, 1, 0, 0.86602557, 0, -0.5000002, -16, 0, -12.5)
+
+[node name="Sakwa Asia4" parent="." unique_id=1073651354 instance=ExtResource("2_yy3rc")]
+transform = Transform3D(-0.25881904, 0, 0.9659258, 0, 1, 0, -0.9659258, 0, -0.25881904, -16.4, 0, -11.900001)
+
+[node name="Sakwa Asia" parent="." unique_id=1777660557 instance=ExtResource("2_yy3rc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.300001, 0, -12.3)
+
+[node name="Bucket Asia4" parent="." unique_id=566292745 instance=ExtResource("3_myh1l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.4, 0, -5.7000003)
+
+[node name="Stone Lamp_1 Asia3" parent="." unique_id=1451001386 instance=ExtResource("4_aropg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="Stone Lamp_1 Asia4" parent="." unique_id=704600778 instance=ExtResource("4_aropg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 6)
+
+[node name="bedroom" type="Node3D" parent="." unique_id=406114256]
+
+[node name="BuildingWall_3_1  Asia" parent="bedroom" unique_id=1247610333 instance=ExtResource("5_jhxkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 6)
+
+[node name="BuildingWall_3_1  Asia2" parent="bedroom" unique_id=115778648 instance=ExtResource("5_jhxkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="BuildingWall_1_1 Asia" parent="bedroom" unique_id=423174583 instance=ExtResource("6_q8k0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="BuildingWall_1_1 Asia6" parent="bedroom" unique_id=44871849 instance=ExtResource("6_q8k0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="BuildingWall_1_1 Asia3" parent="bedroom" unique_id=1381676264 instance=ExtResource("6_q8k0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 6)
+
+[node name="BuildingWall_4_1  Asia" parent="bedroom" unique_id=626887917 instance=ExtResource("7_bx1db")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="BuildingWall_4_1  Asia2" parent="bedroom" unique_id=1258921970 instance=ExtResource("7_bx1db")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 6)
+
+[node name="BuildingWall_4_1  Asia3" parent="bedroom" unique_id=1047372532 instance=ExtResource("7_bx1db")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 0, 5)
+
+[node name="BuildingWall_4_1  Asia4" parent="bedroom" unique_id=1533884538 instance=ExtResource("7_bx1db")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 0, 1)
+
+[node name="BuildingWall_1_1 Asia2" parent="bedroom" unique_id=574877230 instance=ExtResource("6_q8k0v")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6, 0, 1)
+
+[node name="BuildingWall_1_1 Asia4" parent="bedroom" unique_id=533607636 instance=ExtResource("6_q8k0v")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6, 0, 5)
+
+[node name="BuildingWall_1_1 Asia5" parent="bedroom" unique_id=89274357 instance=ExtResource("6_q8k0v")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6, 0, 3)
+
+[node name="Door_1_1  Asia" parent="bedroom" unique_id=266986207 instance=ExtResource("8_6seh7")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.8, 0, 2)
+
+[node name="Door_1_1  Asia2" parent="bedroom" unique_id=633244610 instance=ExtResource("8_6seh7")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.8, 0, 4.5)
+
+[node name="Table_1 Asia" parent="bedroom" unique_id=629688299 instance=ExtResource("9_bweko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0.6)
+
+[node name="Barrel_Closed Asia" parent="bedroom" unique_id=1135067091 instance=ExtResource("10_jnb43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3999996, 0.7, 0.6)
+
+[node name="Balkon Asia" parent="bedroom" unique_id=2051061697 instance=ExtResource("11_obryg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+
+[node name="Scroll_1 Asia" parent="bedroom" unique_id=525543248 instance=ExtResource("12_awsyj")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 4.7, 0.7, 0.7)
+
+[node name="Sakwa Asia" parent="bedroom" unique_id=555211919 instance=ExtResource("2_yy3rc")]
+transform = Transform3D(-0.25881904, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881904, 4.5, 0.7, 0.5)
+
+[node name="Roof_4_4 Asia" parent="bedroom" unique_id=898309431 instance=ExtResource("13_gyho4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 1.9, 4.3)
+
+[node name="Roof_4_4 Asia2" parent="bedroom" unique_id=44866931 instance=ExtResource("13_gyho4")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3, 1.9, 1.8)
+
+[node name="Roof_4_4 Asia3" parent="bedroom" unique_id=850667643 instance=ExtResource("13_gyho4")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.2000003, 1.9, 1.8000002)
+
+[node name="Roof_4_4 Asia4" parent="bedroom" unique_id=1674840245 instance=ExtResource("13_gyho4")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 4.2, 1.9, 4.3)
+
+[node name="Roof_4_1 Asia" parent="bedroom" unique_id=1402814874 instance=ExtResource("14_rsv0j")]
+transform = Transform3D(1.155, 0, 0, 0, 1, 0, 0, 0, 1, 1.9, 1.9, 4.3)
+
+[node name="Roof_4_1 Asia2" parent="bedroom" unique_id=1797606000 instance=ExtResource("14_rsv0j")]
+transform = Transform3D(-1.1549999, 0, 8.742277e-08, 0, 0.99999994, 0, -1.00973296e-07, 0, -0.99999994, 1.9, 1.9, 1.8000002)
+
+[node name="Roof_4_1 Asia3" parent="bedroom" unique_id=1007795895 instance=ExtResource("14_rsv0j")]
+transform = Transform3D(-2.8412401e-08, 0, 1, 0, 1, 0, -0.65, 0, -4.371139e-08, 4.2, 1.9, 3)
+
+[node name="Roof_4_1 Asia4" parent="bedroom" unique_id=1799652948 instance=ExtResource("14_rsv0j")]
+transform = Transform3D(8.5237204e-08, 0, -1, 0, 1, 0, 0.65, 0, 1.3113416e-07, -0.3000002, 1.9, 3)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="bedroom" unique_id=904554235]
+transform = Transform3D(1, 0, 0, 0, -1041.9647, 0, 0, 0, 1, 2, 2.5005, 3)
+size = Vector3(6, 0.001, 4)
+
+[node name="Chimey  Asia" parent="bedroom" unique_id=1177583306 instance=ExtResource("15_48toa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 1.7)
+
+[node name="Barrel_Open_Empty Asia" parent="bedroom" unique_id=306838116 instance=ExtResource("16_mkx0j")]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0.9000001, 0, 5.6000004)
+
+[node name="Barrel_Lid_Destroyed_1 Asia" parent="bedroom" unique_id=247224419 instance=ExtResource("17_hyiu5")]
+transform = Transform3D(-0.70710677, 0, -0.70710677, 0, 0.99999994, 0, 0.7071067, 0, -0.7071067, 1, 0, 5.3)
+
+[node name="Barrel_Open_Spice Asia" parent="bedroom" unique_id=655823989 instance=ExtResource("18_l104s")]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0.5000001, 0, 5.3)
+
+[node name="Barrel_Lid Asia" parent="bedroom" unique_id=1633537434 instance=ExtResource("19_2lf6c")]
+transform = Transform3D(0.25881907, 0, 0.9659258, 0, 0.9999999, 0, -0.9659258, 0, 0.25881907, 1.3000001, 0, 5.6000004)
+
+[node name="Vase_1 Asia2" parent="bedroom" unique_id=173827616 instance=ExtResource("20_p7vw6")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 0.99999994, 0, -0.7071067, 0, -0.7071067, 0.099999905, 0, 5.4000006)
+
+[node name="Carpet C" parent="bedroom" unique_id=1702022713 instance=ExtResource("21_bju5b")]
+transform = Transform3D(1.4, 0, 0, 0, 1, 0, 0, 0, 1.1, 2, 0, 3.3000002)
+
+[node name="Cart_1  Asia" parent="." unique_id=554239388 instance=ExtResource("22_2jlat")]
+transform = Transform3D(1, 0, 0, 0, 0.990268, -0.13917309, 0, 0.13917309, 0.990268, -19.6, 0, 2.3)
+
+[node name="Bucket Asia" parent="." unique_id=114098472 instance=ExtResource("3_myh1l")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -2.1000001, 0, 8)
+
+[node name="Bucket Asia2" parent="." unique_id=1959211537 instance=ExtResource("3_myh1l")]
+transform = Transform3D(0.8660254, -0.4829629, 0.12940954, 0, 0.25881907, 0.9659258, -0.5, -0.83651626, 0.22414389, -1.8000001, 0.1, 7.7)
+
+[node name="Wooden Board Asia" parent="." unique_id=1212023861 instance=ExtResource("23_k1lj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7)
+
+[node name="Platform_1_1 Asia" parent="." unique_id=270145151 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, 8)
+
+[node name="Barrel_Destroyed Asia" parent="." unique_id=1013344704 instance=ExtResource("25_fd177")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 5.7)
+
+[node name="Platform_1_1 Asia2" parent="." unique_id=1555952526 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, 1.2)
+
+[node name="Platform_1_1 Asia3" parent="." unique_id=1815693213 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, 8)
+
+[node name="Platform_1_1 Asia7" parent="." unique_id=956438063 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, 14.700001)
+
+[node name="Platform_1_1 Asia5" parent="." unique_id=732614340 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, -12.400001)
+
+[node name="Platform_1_1 Asia6" parent="." unique_id=1628824184 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, -5.6000004)
+
+[node name="Platform_1_1 Asia8" parent="." unique_id=117175260 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, -25.9)
+
+[node name="Platform_1_1 Asia9" parent="." unique_id=892343530 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, -19.1)
+
+[node name="Platform_1_1 Asia4" parent="." unique_id=303945051 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -0.6, 1.2)
+
+[node name="Building_1 Asia" parent="." unique_id=510156780 instance=ExtResource("26_fba0y")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -20, 0, -3)
+
+[node name="Stall Asia" parent="." unique_id=1634226026 instance=ExtResource("27_lovpn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.4, 0, -9.5)
+
+[node name="Chair  Asia2" parent="." unique_id=599928657 instance=ExtResource("28_g1caw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.8, 0, 1.4)
+
+[node name="Chair  Asia" parent="." unique_id=442213598 instance=ExtResource("28_g1caw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1000004, 0, 0.6999998)
+
+[node name="Tree_Place Asia2" parent="." unique_id=2026940635 instance=ExtResource("29_nh0ja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 7)
+
+[node name="Wall_1_Gate Asia" parent="." unique_id=1539102877 instance=ExtResource("30_qdki5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 14)
+
+[node name="Wall_1_2 Asia" parent="." unique_id=2135666481 instance=ExtResource("31_1tp2p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 14)
+
+[node name="Wall_1_2 Asia2" parent="." unique_id=55271813 instance=ExtResource("31_1tp2p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 14)
+
+[node name="Wall_1_7 Asia" parent="." unique_id=1021696793 instance=ExtResource("32_md70m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 14)
+
+[node name="Wall_1_7 Asia2" parent="." unique_id=1857309428 instance=ExtResource("32_md70m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 14)
+
+[node name="Wall_1_4 Asia" parent="." unique_id=1031299074 instance=ExtResource("33_0wtor")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 14)
+
+[node name="Wall_1_4 Asia3" parent="." unique_id=1471438731 instance=ExtResource("33_0wtor")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.6, 0, -29)
+
+[node name="Wall_1_4 Asia4" parent="." unique_id=640007703 instance=ExtResource("33_0wtor")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -32.4, 0, -29)
+
+[node name="Wall_1_4 Asia2" parent="." unique_id=2020706247 instance=ExtResource("33_0wtor")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.5, 0, 14)
+
+[node name="Vase_2 Asia" parent="." unique_id=1522335179 instance=ExtResource("34_tciis")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.900001, 0, -8.4)
+
+[node name="Vase_1 Asia" parent="." unique_id=2050083771 instance=ExtResource("20_p7vw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.199999, 0, -8.2)
+
+[node name="Vegetables Box Asia" parent="." unique_id=743658650 instance=ExtResource("35_jeqh7")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.800002, 0, -9.1)
+
+[node name="Vegetables Box Asia2" parent="." unique_id=2141529993 instance=ExtResource("35_jeqh7")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.800002, 0, -9.9)
+
+[node name="Building_detai_2 Asia" parent="." unique_id=732347097 instance=ExtResource("36_sj3oy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -23, -0.2, 5.0999994)
+
+[node name="Building_6 Asia" parent="." unique_id=1945685153 instance=ExtResource("37_2w6gu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3, 0, -19.5)
+
+[node name="Building_4 Asia2" parent="." unique_id=876255353 instance=ExtResource("38_kbk40")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19, 0, -13)
+
+[node name="Building_9 Asia" parent="." unique_id=1900221107 instance=ExtResource("39_baicb")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -25, 0, 5.3)
+
+[node name="Building_5 Asia2" parent="." unique_id=157182479 instance=ExtResource("40_hqdei")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27, 0, -10)
+
+[node name="Stall_2 Asia" parent="." unique_id=1171677693 instance=ExtResource("41_s6eqv")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.1, 0, -9.5)
+
+[node name="Stall_2 Asia2" parent="." unique_id=447590862 instance=ExtResource("41_s6eqv")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.1, 0, -6.3999996)
+
+[node name="Sign_1 Asia" parent="." unique_id=2061781843 instance=ExtResource("42_5tul6")]
+transform = Transform3D(-0.93969256, 0, 0.34202018, 0, 1, 0, -0.34202018, 0, -0.93969256, -6.9, 0, -4.8)
+
+[node name="Bucket Asia3" parent="." unique_id=1951108921 instance=ExtResource("3_myh1l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8, 0, -8.1)
+
+[node name="Well Asia" parent="." unique_id=118320403 instance=ExtResource("43_c32gp")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.1000004, 0, 9.5)
+
+[node name="Witchered_Tree_1 Asia" parent="." unique_id=1611163233 instance=ExtResource("44_8qluf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 11)
+
+[node name="Stone Lamp_1 Asia" parent="." unique_id=1108076509 instance=ExtResource("4_aropg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+
+[node name="SakuraHill" type="Node3D" parent="." unique_id=1617340092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, -3, -21)
+
+[node name="Hill_2_2 Asia" parent="SakuraHill" unique_id=723253726 instance=ExtResource("45_bdwts")]
+transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.7, 25.967, 2.343, -58.564)
+
+[node name="Island_1 Asia" parent="SakuraHill" unique_id=1869634590 instance=ExtResource("46_34703")]
+transform = Transform3D(1.4399999, 0, 0, 0, 0.45, 0, 0, 0, 2.31, 31.412, 2.7929997, -74.664)
+
+[node name="Sakura_4 Asia" parent="SakuraHill" unique_id=288999958 instance=ExtResource("47_h8o5n")]
+transform = Transform3D(4.7925, 0, 0, 0, 3.4368749, 0, 0, 0, 7.4550004, 27.046999, 4.1429996, -88.944)
+
+[node name="Tora _1 Asia" parent="SakuraHill" unique_id=973645037 instance=ExtResource("48_l4cu6")]
+transform = Transform3D(1.5525, 0, 0, 0, 1.5525, 0, 0, 0, 0.7, 26.462, 4.278, -64.864)
+
+[node name="Mountain_6 Asia" parent="SakuraHill" unique_id=1236894047 instance=ExtResource("49_klmoj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -98)
+
+[node name="Mountain_1 Asia" parent="SakuraHill" unique_id=1524527336 instance=ExtResource("50_jhlkg")]
+transform = Transform3D(-0.2588191, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.2588191, 45, 0, -101)
+
+[node name="Mountain_2 Asia" parent="SakuraHill" unique_id=1809161433 instance=ExtResource("51_ajq7b")]
+transform = Transform3D(-0.258819, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.258819, 20, 0, -124)
+
+[node name="Cloud_1  Asia" parent="SakuraHill" unique_id=1561213993 instance=ExtResource("52_yxuaw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 46, -100)
+
+[node name="Cloud_2  Asia" parent="SakuraHill" unique_id=1774513255 instance=ExtResource("53_nwbj5")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 38, 28, -88)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SakuraHill" unique_id=50526574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, -88)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SakuraHill/StaticBody3D" unique_id=539820091]
+transform = Transform3D(1, 0, 0, 0, 0.9848078, -0.17364816, 0, 0.17364816, 0.9848078, -0.5, 3.271357, 28.971428)
+shape = SubResource("BoxShape3D_ddxmc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="SakuraHill/StaticBody3D" unique_id=978648684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 11.099998)
+shape = SubResource("BoxShape3D_uchmy")
+
+[node name="Katana  Asia" parent="SakuraHill" unique_id=513547460 instance=ExtResource("54_ba1ah")]
+transform = Transform3D(-0.18164103, -0.6806325, -0.70975053, 0.98108053, -0.17459664, -0.083646774, -0.06698732, -0.7115162, 0.6994694, 24.4, 5.3999996, -82.9)
+
+[node name="Wall_1_1 Asia" parent="SakuraHill" unique_id=1197626691 instance=ExtResource("55_rirst")]
+transform = Transform3D(0.13999999, 0, 0, 0, 0.2625, 0, 0, 0, 0.09099998, 25.4, 4.6, -83)
+
+[node name="Stone Lamp_1 Asia2" parent="." unique_id=1355667910 instance=ExtResource("4_aropg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 11)
+
+[node name="Tile_1_1 Asia" parent="." unique_id=74175930 instance=ExtResource("56_xtc4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1999999, 0, 9.900001)
+
+[node name="Tile_1_1 Asia2" parent="." unique_id=810904693 instance=ExtResource("56_xtc4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 9.2)
+
+[node name="Tile_1_3 Asia" parent="." unique_id=1582251618 instance=ExtResource("57_uu1qi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0, 10.3)
+
+[node name="Tile_1_1 Asia3" parent="." unique_id=1402293245 instance=ExtResource("56_xtc4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70000005, 0, 9.6)
+
+[node name="Tile_1_5 Asia" parent="." unique_id=1587328850 instance=ExtResource("58_yiln4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 9.2)
+
+[node name="Wall_1_3 Asia" parent="." unique_id=868698329 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 10.599999, 0, 4.4)
+
+[node name="Wall_1_3 Asia2" parent="." unique_id=887863093 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 10.599999, 0, -3.6)
+
+[node name="Wall_1_3 Asia3" parent="." unique_id=134890069 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 10.599999, 0, 4.4)
+
+[node name="Wall_1_3 Asia4" parent="." unique_id=1209991537 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 10.599999, 0, -3.6)
+
+[node name="Wall_1_3 Asia5" parent="." unique_id=1917874923 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 10.599999, 0, -11.5)
+
+[node name="Wall_1_3 Asia6" parent="." unique_id=869974833 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 10.599999, 0, -19.5)
+
+[node name="Wall_1_3 Asia9" parent="." unique_id=938634396 instance=ExtResource("59_omw6i")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -32.4, 0, -19.5)
+
+[node name="Wall_1_3 Asia10" parent="." unique_id=189158337 instance=ExtResource("59_omw6i")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -32.4, 0, -11.5)
+
+[node name="Wall_1_3 Asia11" parent="." unique_id=564580883 instance=ExtResource("59_omw6i")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -32.4, 0, -3.6000004)
+
+[node name="Wall_1_3 Asia12" parent="." unique_id=1735895898 instance=ExtResource("59_omw6i")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -32.4, 0, 4.3999996)
+
+[node name="Wall_Gate_2 Asia" parent="." unique_id=529907127 instance=ExtResource("60_dx7vq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -29)
+
+[node name="Wall_1_2 Asia3" parent="." unique_id=948305370 instance=ExtResource("31_1tp2p")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.1, 0, -29)
+
+[node name="Wall_1_2 Asia4" parent="." unique_id=1065019888 instance=ExtResource("31_1tp2p")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -18.900002, 0, -29)
+
+[node name="Wall_1_3 Asia7" parent="." unique_id=426368537 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -28.8)
+
+[node name="Wall_1_3 Asia8" parent="." unique_id=871330091 instance=ExtResource("59_omw6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -28.8)
+
+[node name="Building_12 Asia" parent="." unique_id=1174399748 instance=ExtResource("61_jxxmv")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3, 0, -13.6)
+
+[node name="Wall_Ladder Asia" parent="." unique_id=2010846508 instance=ExtResource("62_73jqr")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, -6, 0, -26.3)
+
+[node name="Arena" type="Node3D" parent="." unique_id=1102501315]
+
+[node name="Platform_1_1 Asia10" parent="Arena" unique_id=916930591 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1.32, 0, 0, 0, 1, 0, 0, 0, 1, -36.9, 0, -36)
+
+[node name="Platform_1_1 Asia11" parent="Arena" unique_id=1820027210 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1.32, 0, 0, 0, 1, 0, 0, 0, 1, -36.9, 0, -42.6)
+
+[node name="Platform_1_1 Asia12" parent="Arena" unique_id=1248088781 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1.32, 0, 0, 0, 1, 0, 0, 0, 1, -36.9, 0, -49.3)
+
+[node name="Platform_1_1 Asia13" parent="Arena" unique_id=2048845045 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1.32, 0, 0, 0, 1, 0, 0, 0, 1, -36.9, 0, -55.899998)
+
+[node name="Platform_1_1 Asia14" parent="Arena" unique_id=764197151 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1.32, 0, 0, 0, 1, 0, 0, 0, 1, -36.9, 0, -62.6)
+
+[node name="Platform_1_1 Asia15" parent="Arena" unique_id=1407496098 instance=ExtResource("24_uvk70")]
+transform = Transform3D(1.32, 0, 0, 0, 1, 0, 0, 0, 1, -36.9, 0, -69.2)
+
+[node name="Fence_4_2 Asia" parent="Arena" unique_id=1489107470 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -34.300003)
+
+[node name="Fence_4_2 Asia2" parent="Arena" unique_id=1086834547 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -35.9)
+
+[node name="Fence_4_2 Asia3" parent="Arena" unique_id=1902786634 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -37.500004)
+
+[node name="Fence_4_2 Asia4" parent="Arena" unique_id=884610439 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -39.100002)
+
+[node name="Fence_4_2 Asia5" parent="Arena" unique_id=614893313 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -40.700005)
+
+[node name="Fence_4_2 Asia6" parent="Arena" unique_id=2077266284 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -42.300003)
+
+[node name="Fence_4_2 Asia7" parent="Arena" unique_id=547007973 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -43.900005)
+
+[node name="Fence_4_2 Asia8" parent="Arena" unique_id=845569332 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -45.500004)
+
+[node name="Fence_4_2 Asia9" parent="Arena" unique_id=821662255 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -47.100002)
+
+[node name="Fence_4_2 Asia10" parent="Arena" unique_id=1285298041 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -48.7)
+
+[node name="Fence_4_2 Asia11" parent="Arena" unique_id=670832655 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -50.300003)
+
+[node name="Fence_4_2 Asia12" parent="Arena" unique_id=292193089 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -51.9)
+
+[node name="Fence_4_2 Asia13" parent="Arena" unique_id=1304126912 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -53.500004)
+
+[node name="Fence_4_2 Asia14" parent="Arena" unique_id=441726833 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -55.100002)
+
+[node name="Fence_4_2 Asia15" parent="Arena" unique_id=1162175153 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -56.700005)
+
+[node name="Fence_4_2 Asia16" parent="Arena" unique_id=578136126 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -58.300003)
+
+[node name="Fence_4_2 Asia17" parent="Arena" unique_id=204526162 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -59.9)
+
+[node name="Fence_4_2 Asia18" parent="Arena" unique_id=958112932 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -61.5)
+
+[node name="Fence_4_2 Asia19" parent="Arena" unique_id=20681254 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -63.100006)
+
+[node name="Fence_4_2 Asia20" parent="Arena" unique_id=2087350786 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -64.700005)
+
+[node name="Fence_4_2 Asia21" parent="Arena" unique_id=1243454701 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -66.3)
+
+[node name="Fence_4_2 Asia22" parent="Arena" unique_id=1152677891 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -67.9)
+
+[node name="Fence_4_2 Asia23" parent="Arena" unique_id=146708684 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -69.50001)
+
+[node name="Fence_4_2 Asia24" parent="Arena" unique_id=363822697 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -71.100006)
+
+[node name="Fence_4_2 Asia25" parent="Arena" unique_id=1472356044 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.7, 0.6, -72.700005)
+
+[node name="Building_Pagoda Asia" parent="Arena" unique_id=1993402781 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 1, -38)
+
+[node name="Building_Pagoda Asia2" parent="Arena" unique_id=604707820 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 1, -48)
+
+[node name="Building_Pagoda Asia3" parent="Arena" unique_id=1430368045 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 1, -58)
+
+[node name="Building_Pagoda Asia4" parent="Arena" unique_id=1862837978 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 1, -68)
+
+[node name="Platform_1_1 Asia16" parent="Arena" unique_id=710292828 instance=ExtResource("24_uvk70")]
+transform = Transform3D(-1.32, 0, -8.742278e-08, 0, 1, 0, 1.15398066e-07, 0, -1, 14.677124, 0, -69.377144)
+
+[node name="Platform_1_1 Asia17" parent="Arena" unique_id=1583918496 instance=ExtResource("24_uvk70")]
+transform = Transform3D(-1.32, 0, -8.742278e-08, 0, 1, 0, 1.15398066e-07, 0, -1, 14.677126, 0, -62.77714)
+
+[node name="Platform_1_1 Asia18" parent="Arena" unique_id=1854668501 instance=ExtResource("24_uvk70")]
+transform = Transform3D(-1.32, 0, -8.742278e-08, 0, 1, 0, 1.15398066e-07, 0, -1, 14.677126, 0, -56.07714)
+
+[node name="Platform_1_1 Asia19" parent="Arena" unique_id=880892815 instance=ExtResource("24_uvk70")]
+transform = Transform3D(-1.32, 0, -8.742278e-08, 0, 1, 0, 1.15398066e-07, 0, -1, 14.677126, 0, -49.477142)
+
+[node name="Platform_1_1 Asia20" parent="Arena" unique_id=1924329272 instance=ExtResource("24_uvk70")]
+transform = Transform3D(-1.32, 0, -8.742278e-08, 0, 1, 0, 1.15398066e-07, 0, -1, 14.677126, 0, -42.77714)
+
+[node name="Platform_1_1 Asia21" parent="Arena" unique_id=800700572 instance=ExtResource("24_uvk70")]
+transform = Transform3D(-1.32, 0, -8.742278e-08, 0, 1, 0, 1.15398066e-07, 0, -1, 14.677128, 0, -36.177143)
+
+[node name="Fence_4_2 Asia26" parent="Arena" unique_id=1729111659 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -71.07714)
+
+[node name="Fence_4_2 Asia27" parent="Arena" unique_id=2041178495 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -69.47714)
+
+[node name="Fence_4_2 Asia28" parent="Arena" unique_id=1695996736 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -67.87714)
+
+[node name="Fence_4_2 Asia29" parent="Arena" unique_id=1134736831 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -66.277145)
+
+[node name="Fence_4_2 Asia30" parent="Arena" unique_id=1806765398 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -64.67714)
+
+[node name="Fence_4_2 Asia31" parent="Arena" unique_id=1496235777 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -63.077137)
+
+[node name="Fence_4_2 Asia32" parent="Arena" unique_id=355769659 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -61.477135)
+
+[node name="Fence_4_2 Asia33" parent="Arena" unique_id=1335447502 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -59.877136)
+
+[node name="Fence_4_2 Asia34" parent="Arena" unique_id=730523688 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -58.277138)
+
+[node name="Fence_4_2 Asia35" parent="Arena" unique_id=1435391917 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -56.67714)
+
+[node name="Fence_4_2 Asia36" parent="Arena" unique_id=1194795844 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -55.077137)
+
+[node name="Fence_4_2 Asia37" parent="Arena" unique_id=705215653 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -53.47714)
+
+[node name="Fence_4_2 Asia38" parent="Arena" unique_id=1155558496 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -51.877136)
+
+[node name="Fence_4_2 Asia39" parent="Arena" unique_id=1144252109 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -50.277138)
+
+[node name="Fence_4_2 Asia40" parent="Arena" unique_id=1952551381 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -48.677135)
+
+[node name="Fence_4_2 Asia41" parent="Arena" unique_id=885921405 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -47.077137)
+
+[node name="Fence_4_2 Asia42" parent="Arena" unique_id=714417354 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -45.47714)
+
+[node name="Fence_4_2 Asia43" parent="Arena" unique_id=120219583 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -43.87714)
+
+[node name="Fence_4_2 Asia44" parent="Arena" unique_id=235967214 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -42.277134)
+
+[node name="Fence_4_2 Asia45" parent="Arena" unique_id=831986662 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -40.677135)
+
+[node name="Fence_4_2 Asia46" parent="Arena" unique_id=198294380 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -39.077137)
+
+[node name="Fence_4_2 Asia47" parent="Arena" unique_id=1250064251 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -37.47714)
+
+[node name="Fence_4_2 Asia48" parent="Arena" unique_id=1818816340 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -35.877132)
+
+[node name="Fence_4_2 Asia49" parent="Arena" unique_id=622469190 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -34.277134)
+
+[node name="Fence_4_2 Asia50" parent="Arena" unique_id=1708442489 instance=ExtResource("63_j7axb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.477125, 0.6, -32.677135)
+
+[node name="Building_Pagoda Asia5" parent="Arena" unique_id=1272230790 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.7771225, 1, -67.377144)
+
+[node name="Building_Pagoda Asia6" parent="Arena" unique_id=1584566202 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.777124, 1, -57.37714)
+
+[node name="Building_Pagoda Asia7" parent="Arena" unique_id=890722611 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.777124, 1, -47.37714)
+
+[node name="Building_Pagoda Asia8" parent="Arena" unique_id=1012085041 instance=ExtResource("64_lvqlt")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.777126, 1, -37.37714)
+
+[node name="Arena_YingYang Asia" parent="Arena" unique_id=424030222 instance=ExtResource("65_asxqf")]
+transform = Transform3D(-1.2676303e-07, 0, 2.8999999, 0, 1, 0, -2.8999999, 0, -1.2676303e-07, -11.1, 0, -52.8)
+
+[node name="WallCollision2" type="StaticBody3D" parent="." unique_id=1557582193]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, -11, 0, -29.3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallCollision2" unique_id=434103940]
+transform = Transform3D(1, 0, 0, 0, 0.96592706, 0.2588193, 0, -0.2588193, 0.96592706, 10.75, 2.228569, -0.18302917)
+shape = SubResource("BoxShape3D_5lnoy")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WallCollision2" unique_id=1878737648]
+transform = Transform3D(1, 0, 0, 0, 0.96592706, 0.2588193, 0, -0.2588193, 0.96592706, -10.75, 2.228569, -0.18302536)
+shape = SubResource("BoxShape3D_5lnoy")
+
+[node name="player" parent="." unique_id=990361468 instance=ExtResource("66_lwiw4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -71)
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=1558137794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -76)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=1574903253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 2, 0)
+shape = SubResource("BoxShape3D_6fe8j")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D3" unique_id=1466327061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.549999, 2, 0)
+shape = SubResource("BoxShape3D_6fe8j")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D3" unique_id=1489292703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7, 0)
+shape = SubResource("BoxShape3D_ajkep")
+
+[node name="GardenWall_Gate_1 Asia" parent="." unique_id=210877734 instance=ExtResource("67_n26av")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -76)
+
+[node name="GardenWall_4 Asia" parent="." unique_id=785667960 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -76)
+
+[node name="GardenWall_4 Asia2" parent="." unique_id=1695107974 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -76)
+
+[node name="GardenWall_4 Asia3" parent="." unique_id=221249078 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -76)
+
+[node name="GardenWall_4 Asia4" parent="." unique_id=2056706407 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, -76)
+
+[node name="GardenWall_4 Asia5" parent="." unique_id=1097890788 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -76)
+
+[node name="GardenWall_4 Asia6" parent="." unique_id=718087592 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -76)
+
+[node name="GardenWall_4 Asia7" parent="." unique_id=144579131 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -76)
+
+[node name="GardenWall_4 Asia8" parent="." unique_id=1738949520 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -76)
+
+[node name="GardenWall_4 Asia9" parent="." unique_id=473721755 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -76)
+
+[node name="GardenWall_4 Asia10" parent="." unique_id=1132717692 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -76)
+
+[node name="GardenWall_4 Asia11" parent="." unique_id=395359319 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -76)
+
+[node name="GardenWall_4 Asia12" parent="." unique_id=1395697050 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -76)
+
+[node name="GardenWall_4 Asia13" parent="." unique_id=1793415524 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -76)
+
+[node name="GardenWall_4 Asia14" parent="." unique_id=334254432 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, -76)
+
+[node name="GardenWall_4 Asia15" parent="." unique_id=2127634933 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -76)
+
+[node name="GardenWall_4 Asia16" parent="." unique_id=557627817 instance=ExtResource("68_hg4eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -76)
+
+[node name="Shelf_Base" parent="." unique_id=1971519677 instance=ExtResource("69_geluv")]
+transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 1, -1.2, 0, 0.39999998)
+
+[node name="Tora_2 Asia" parent="." unique_id=1628226095 instance=ExtResource("70_ks2rm")]
+transform = Transform3D(-8.940697e-08, 0, 1, 0, 0.99999994, 0, -0.99999994, 0, -5.9604645e-08, 3.6000001, 0, 9.5)
+
+[node name="Bell_1 Asia" parent="." unique_id=1323425991 instance=ExtResource("71_3hx6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3000002, 0.8, -5.5000005)
+
+[node name="Bag Asia" parent="." unique_id=1918970112 instance=ExtResource("72_5fl6d")]
+transform = Transform3D(-0.5000001, 0, -0.8660255, 0, 1, 0, 0.8660255, 0, -0.5000001, -15.5, 0, -4.5)
+
+[node name="Pot Asia" parent="." unique_id=1860070722 instance=ExtResource("73_abh15")]
+transform = Transform3D(0.76604444, 0, 0.6427876, 0, 1, 0, -0.6427876, 0, 0.76604444, -16, 0, -5)
+
+[node name="Tree_6 Asia" parent="." unique_id=217719048 instance=ExtResource("74_sn575")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 7)
+
+[node name="Stall Asia2" parent="." unique_id=1891660443 instance=ExtResource("27_lovpn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -20.2, 0, 6.6000004)
+
+[node name="Tree_Place Asia" parent="." unique_id=1745054882 instance=ExtResource("29_nh0ja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2)
+
+[node name="Tree_4 Asia" parent="." unique_id=1767975130 instance=ExtResource("75_27rs3")]
+transform = Transform3D(0.9659258, 0, -0.25881898, 0, 1, 0, 0.25881898, 0, 0.9659258, -5, 0, -2)
+
+[node name="Table_1 Asia" parent="." unique_id=87557932 instance=ExtResource("9_bweko")]
+transform = Transform3D(-0.25881904, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881904, -16.3, 0, -12.2)
+
+[node name="Weapon_1 Asia" parent="." unique_id=161943956 instance=ExtResource("76_tg6yn")]
+transform = Transform3D(0.68301266, -0.25881904, 0.68301266, 0.1830127, 0.9659258, 0.1830127, -0.70710677, 0, 0.70710677, -17, 0, -14)
+
+[node name="Weapon_1 Asia2" parent="." unique_id=388938436 instance=ExtResource("76_tg6yn")]
+transform = Transform3D(0.68301266, -0.25881904, 0.68301266, 0.1830127, 0.9659258, 0.1830127, -0.70710677, 0, 0.70710677, -17, 0, -14.2)
+
+[node name="Weapon_1 Asia3" parent="." unique_id=630195962 instance=ExtResource("76_tg6yn")]
+transform = Transform3D(0.68301266, -0.25881904, 0.68301266, 0.1830127, 0.9659258, 0.1830127, -0.70710677, 0, 0.70710677, -17, 0, -14.400001)
+
+[node name="Weapon_1 Asia4" parent="." unique_id=458347938 instance=ExtResource("76_tg6yn")]
+transform = Transform3D(0.68301266, -0.25881904, 0.68301266, 0.1830127, 0.9659258, 0.1830127, -0.70710677, 0, 0.70710677, -17, 0, -14.6)
+
+[node name="Weapon_1 Asia5" parent="." unique_id=399201941 instance=ExtResource("76_tg6yn")]
+transform = Transform3D(0.68301266, -0.25881904, 0.68301266, 0.1830127, 0.9659258, 0.1830127, -0.70710677, 0, 0.70710677, -17, 0, -14.8)
+
+[node name="Weapon_1 Asia6" parent="." unique_id=971423392 instance=ExtResource("76_tg6yn")]
+transform = Transform3D(0.68301266, -0.25881904, 0.68301266, 0.1830127, 0.9659258, 0.1830127, -0.70710677, 0, 0.70710677, -17, 0, -15.000001)
+
+[node name="Stall_2 Asia3" parent="." unique_id=1126675790 instance=ExtResource("41_s6eqv")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.2, 0, -14.8)
+
+[node name="Bench_1 Asia2" parent="." unique_id=12972106 instance=ExtResource("77_m2paq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2, 0, -5.8)
+
+[node name="Bench_1 Asia" parent="." unique_id=268814675 instance=ExtResource("77_m2paq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 0, -5.8)
+
+[node name="Sign_2 Asia" parent="." unique_id=818609572 instance=ExtResource("78_6gjw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1397468723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 13)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=728494393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -0.19999981)
+shape = SubResource("BoxShape3D_oc0hn")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1115745569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.599998, 2.1, -20)
+shape = SubResource("BoxShape3D_5g25t")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=989912117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2, 2, -20)
+shape = SubResource("BoxShape3D_5g25t")

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkuuxjjrl3tl4"
+path="res://.godot/imported/Computer_Case.obj-1c83f8f4f1e0bfe318e05fb6c169e397.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Computer_Case.obj-1c83f8f4f1e0bfe318e05fb6c169e397.mesh"]
+
+source_file="res://Imported Assets/VNB Low Poly Office Set V1.1.0/OBJ/Separated/Computer_Case.obj"
+dest_files=["res://.godot/imported/Computer_Case.obj-1c83f8f4f1e0bfe318e05fb6c169e397.mesh", "res://.godot/imported/Computer_Case.obj-1c83f8f4f1e0bfe318e05fb6c169e397.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
