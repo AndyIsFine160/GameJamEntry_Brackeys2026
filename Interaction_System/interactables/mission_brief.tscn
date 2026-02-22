@@ -1,0 +1,101 @@
+[gd_scene format=4 uid="uid://dums5e54qn58p"]
+
+[ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="1_1vkvd"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_qudvj"]
+[ext_resource type="Resource" uid="uid://c18d02wui8uoy" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-4.tres" id="2_twb63"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tocnk"]
+resource_name = "Palette"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_1vkvd")
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_66ukp"]
+_surfaces = [{
+"aabb": AABB(-0.117112465, 0, -0.18423606, 0.2413167, 0.021997208, 0.36548),
+"format": 34359742465,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAABAACAAMABQAAAAQAAwAGAAQABAAGAAUAAQAHAAMABgADAAcABwABAAAABwAFAAYAAAAFAAcACAAJAAoACwAJAAgACgAJAAsACgAMAAgADQAIAAwACwAIAA0ADAAOAA0ACwANAA8ADwANAA4AEAAOAAwADgAQAA8AEAAMAAoADwARAAsAEQAPABAACwASAAoAEgALABEAEAAKABIAEQATABIAEgATABAAEAATABEA"),
+"name": "Palette",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("kVXvPbcaMzxF6Sy+kVXvvbcaMzxF6Sy+kVXvvQAAAABF6Sy+kVXvvQAAAAADmDk+kVXvPQAAAABF6Sy+kVXvPbcaMzwDmDk+kVXvPQAAAAADmDk+kVXvvbcaMzwDmDk+qdjvvX0ztDzHwSk+mrPuPX0ztDwEIS8+mrPuPUVMNTwEIS8+zF7+PX0ztDz40S2+qdjvvUVMNTzHwSk+psDfvX0ztDxhqDy+psDfvUVMNTxhqDy+Re/VPX0ztDyQvje+Re/VPUVMNTyQvje++eDzPbjTgTzTQzm+zF7+PUVMNTz40S2++eDzPX0ZoTvTQzm+")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_twb63"]
+resource_name = "Cube_123"
+_surfaces = [{
+"aabb": AABB(-0.117112465, 0, -0.18423606, 0.2413167, 0.021997208, 0.36548),
+"attribute_data": PackedByteArray("JSo5P0gRQj4NcTA/SBFCPg1xMD9IEUI+JSo5P0gRQj4lKjk/SBFCPiUqOT+o9WQ+DXEwP6j1ZD4NcTA/SBFCPiUqOT+o9WQ+JSo5P0gRQj4lKjk/SBFCPiUqOT+o9WQ+DXEwP0gRQj4NcTA/qPVkPg1xMD+o9WQ+DXEwP0gRQj4NcTA/qPVkPiUqOT+o9WQ+JSo5P6j1ZD4NcTA/qPVkPiUqOT9IEUI+DXEwP0gRQj4NcTA/qPVkPiUqOT+o9WQ+DXEwP6j1ZD4lKjk/qPVkPiUqOT+o9WQ+DXEwP6j1ZD55azg/SBFCPg1xMD+o9WQ+JSo5P6j1ZD4NcTA/SBFCPiUqOT8w/UI+DXEwP0gRQj4NcTA/qPVkPg1xMD+o9WQ+DXEwP0gRQj4lKjk/MP1CPg1xMD+o9WQ+DXEwP0gRQj4lKjk/qPVkPnlrOD9IEUI+JSo5PzD9Qj4lKjk/MP1CPiUqOT9IEUI+JSo5P0gRQj55azg/SBFCPg1xMD9IEUI+DXEwP0gRQj55azg/SBFCPnlrOD9IEUI+JSo5P0gRQj4lKjk/MP1CPiUqOT+o9WQ+JSo5P6j1ZD4lKjk/MP1CPiUqOT8w/UI+JSo5PzD9Qj4lKjk/SBFCPnlrOD9IEUI+eWs4P0gRQj4lKjk/SBFCPiUqOT9IEUI+eWs4P0gRQj4="),
+"format": 34359742487,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHAAfAB0AHAAeACAAIQAiACMAIwAkACEAJQAmACcAJQAoACYAJQAnACkAKgArACwALAAtACoALgAvADAAMAAxAC4AMgAzADQANQA2ADcANwA4ADUAOQA6ADsAPAA9AD4APgA/ADwA"),
+"material": SubResource("StandardMaterial3D_tocnk"),
+"name": "Palette",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 64,
+"vertex_data": PackedByteArray("kVXvPbcaMzxF6Sy+kVXvvbcaMzxF6Sy+kVXvvQAAAABF6Sy+kVXvPQAAAABF6Sy+kVXvPbcaMzxF6Sy+kVXvPbcaMzwDmDk+kVXvvbcaMzwDmDk+kVXvvbcaMzxF6Sy+kVXvPbcaMzwDmDk+kVXvPbcaMzxF6Sy+kVXvPQAAAABF6Sy+kVXvPQAAAAADmDk+kVXvvbcaMzxF6Sy+kVXvvbcaMzwDmDk+kVXvvQAAAAADmDk+kVXvvQAAAABF6Sy+kVXvvbcaMzwDmDk+kVXvPbcaMzwDmDk+kVXvPQAAAAADmDk+kVXvvQAAAAADmDk+kVXvPQAAAABF6Sy+kVXvvQAAAABF6Sy+kVXvvQAAAAADmDk+kVXvPQAAAAADmDk+qdjvvX0ztDzHwSk+mrPuPX0ztDwEIS8+mrPuPUVMNTwEIS8+qdjvvUVMNTzHwSk+Re/VPUVMNTyQvje+qdjvvUVMNTzHwSk+mrPuPUVMNTwEIS8+psDfvUVMNTxhqDy+zF7+PUVMNTz40S2+psDfvX0ztDxhqDy+qdjvvX0ztDzHwSk+qdjvvUVMNTzHwSk+psDfvUVMNTxhqDy+zF7+PX0ztDz40S2+qdjvvX0ztDzHwSk+psDfvX0ztDxhqDy+mrPuPX0ztDwEIS8+Re/VPX0ztDyQvje+zF7+PUVMNTz40S2+zF7+PX0ztDz40S2++eDzPbjTgTzTQzm++eDzPX0ZoTvTQzm+Re/VPX0ztDyQvje+psDfvX0ztDxhqDy+psDfvUVMNTxhqDy+Re/VPUVMNTyQvje+Re/VPX0ztDyQvje++eDzPbjTgTzTQzm+zF7+PX0ztDz40S2+mrPuPUVMNTwEIS8+mrPuPX0ztDwEIS8+zF7+PX0ztDz40S2+zF7+PUVMNTz40S2+zF7+PUVMNTz40S2++eDzPX0ZoTvTQzm+Re/VPUVMNTyQvje+Re/VPUVMNTyQvje++eDzPX0ZoTvTQzm++eDzPbjTgTzTQzm+Re/VPX0ztDyQvje+/////////7//////////v/////////+//////////7//f///////v/9///////+//3///////7//f///////v////3////+/////f////7////9/////v////3////+/AAD/f////78AAP9/////vwAA/3////+/AAD/f////7//f/9/////P/9//3////8//3//f////z//f/9/////P/9/AAD///8//38AAP///z//fwAA////P/9/AAD///8/L33/f////z8vff9/////Py99/3////8/L33/f////z//fwAAL/3/P/9/AAAv/f8//38AAC/9/z//fwAAL/3/P/9/AAAv/f8/AADPgv///78AAM+C////vwAAz4L///+/AADPgv///7//f///L/3/v/9///8v/f+//3///y/9/7//f///L/3/v/9///8v/f+///86qP///7///zqo////v///Oqj///+///86qP///7///y/9////v///L/3///+///8v/f///7///y/9////v8/BU+qh3Auqz8FT6qHcC6rPwVPqodwLqi/9/3////8/L/3/f////z8v/f9/////Py/9/3////8/VGrQQaHc81VUatBBodzzVVRq0EGh3PNVAAAx9P///78AADH0////vwAAMfT///+/AAAx9P///78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_66ukp")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_twb63"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_pl2c7"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l77fp"]
+render_priority = 0
+shader = SubResource("Shader_pl2c7")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l77fp"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_l77fp")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_twb63")
+emission_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_66ukp"]
+size = Vector3(0.3, 0.12, 0.4)
+
+[node name="MissionBrief" type="Node3D" unique_id=112752815]
+script = ExtResource("1_qudvj")
+dialogue = ExtResource("2_twb63")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=127219548]
+mesh = SubResource("ArrayMesh_twb63")
+surface_material_override/0 = SubResource("StandardMaterial3D_l77fp")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2093464008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04597196, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=637132135]
+shape = SubResource("BoxShape3D_66ukp")

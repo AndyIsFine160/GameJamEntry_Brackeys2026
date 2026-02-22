@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dd1pshum02o8y"]
 
+[ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_5lwu1"]
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="1_t2e2d"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="2_7u17k"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="2_y6c60"]
@@ -17,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://ct3fjv01tpea7" path="res://Interaction_System/interactables/guitar.tscn" id="9_sr1wa"]
 [ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="10_27nil"]
 [ext_resource type="PackedScene" uid="uid://c76usneo02711" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Bookshelf.fbx" id="10_dikbl"]
+[ext_resource type="PackedScene" uid="uid://dums5e54qn58p" path="res://Interaction_System/interactables/mission_brief.tscn" id="12_2kos1"]
 [ext_resource type="PackedScene" uid="uid://cemb83anagc1f" path="res://Imported Assets/Low Poly Furniture/Tables/Table C.fbx" id="15_hyaa0"]
 [ext_resource type="PackedScene" uid="uid://dkpivop5vhsvw" path="res://Scenes/poster2.tscn" id="16_vp0rb"]
 [ext_resource type="PackedScene" uid="uid://csa1mj3gmwtnq" path="res://Scenes/poster3.tscn" id="18_mvgsr"]
@@ -69,8 +71,11 @@ albedo_texture = ExtResource("2_ycn35")
 albedo_texture = ExtResource("2_ycn35")
 
 [node name="Node3D" type="Node3D" unique_id=147642952]
+script = ExtResource("1_5lwu1")
+interaction_count = 5
 
 [node name="InteractionHandler" type="Node" parent="." unique_id=1288230057]
+unique_name_in_owner = true
 script = ExtResource("1_t2e2d")
 
 [node name="RayCast3D" type="RayCast3D" parent="InteractionHandler" unique_id=1428939122]
@@ -87,31 +92,8 @@ metadata/_edit_use_anchors_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0631739, 0.21334216, 1.9277594)
 dialogue = ExtResource("4_4l877")
 
-[node name="Letters" type="Node3D" parent="InteractionHandler" unique_id=1591465814]
-
-[node name="Letters" parent="InteractionHandler/Letters" unique_id=1089834561 instance=ExtResource("6_kyq6s")]
+[node name="Letters2" parent="InteractionHandler" unique_id=1089834561 instance=ExtResource("6_kyq6s")]
 transform = Transform3D(0.0053556873, 0, -0.14190997, 0, 0.007986209, 0, 0.084678106, 0, 0.008975466, 0, 0.28669593, 4.80695)
-
-[node name="Letters2" parent="InteractionHandler/Letters" unique_id=1149571380 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(-0.07938664, 0, -0.050187528, 0, 0.007986209, 0, 0.029947046, 0, -0.13304213, -0.07025682, 0.28669593, 4.80695)
-
-[node name="Letters3" parent="InteractionHandler/Letters" unique_id=1652268703 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(-0.07938664, 0, -0.050187528, 0, 0.007986209, 0, 0.029947046, 0, -0.13304213, -0.007332772, 0.29591846, 4.80695)
-
-[node name="Letters4" parent="InteractionHandler/Letters" unique_id=19648127 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(0.009257158, -0.0010711468, -0.14005211, 0.001252933, 0.0079140505, -0.0189557, 0.0843315, 0, 0.015655303, -0.091851115, 0.29591846, 4.80695)
-
-[node name="Letters5" parent="InteractionHandler/Letters" unique_id=2077890541 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(-0.024952043, -0.00055361376, 0.13554783, 0.001733877, -0.007966998, -0.009418999, 0.08107684, 0, 0.04191736, 0.026879128, 0.2987624, 4.7985063)
-
-[node name="Letters6" parent="InteractionHandler/Letters" unique_id=1209669336 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(0.07001173, -0.0005536138, 0.07972007, -0.0048650014, -0.007967, -0.0055396184, 0.047683913, 0, -0.11761389, 0.09502298, 0.2940272, 4.814938)
-
-[node name="Letters7" parent="InteractionHandler/Letters" unique_id=1562279977 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(0.07001173, -0.0005536138, 0.07972007, -0.0048650014, -0.007967, -0.0055396184, 0.047683913, 0, -0.11761389, 0.033352047, 0.28906783, 4.800221)
-
-[node name="Letters8" parent="InteractionHandler/Letters" unique_id=1024142362 instance=ExtResource("6_kyq6s")]
-transform = Transform3D(-0.028742166, 0.0004903207, 0.1335013, 0.0007412917, -0.007967205, 0.00972462, 0.079827346, 0.0002505269, 0.047977403, 0.115328506, 0.28337145, 4.8199887)
 
 [node name="Poster" parent="InteractionHandler" unique_id=775435708 instance=ExtResource("4_y6c60")]
 transform = Transform3D(0.014501175, -1.5145075e-07, -9.061966e-15, -3.4573495e-09, -0.6352305, -7.6017265e-08, -5.6327373e-16, -5.553361e-08, 0.8695363, 1.8600498, 0.4093355, 0.5725267)
@@ -129,6 +111,9 @@ dialogue = ExtResource("4_4l877")
 transform = Transform3D(0.016384294, -0.3699611, 0.6892061, 0.020506086, 0.7949338, 0.86259055, -1.1529155, 6.3757e-11, 0.02061083, -0.011057414, 0.050817914, 6.0051446)
 
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("10_27nil")]
+
+[node name="MissionBrief" parent="InteractionHandler" unique_id=112752815 instance=ExtResource("12_2kos1")]
+transform = Transform3D(0.46349704, 0.88609844, 0, -0.88609844, 0.46349704, 0, 0, 0, 1, -0.29105622, 0.50162524, 5.489208)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1474717128]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
