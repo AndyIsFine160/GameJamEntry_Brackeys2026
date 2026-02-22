@@ -1,6 +1,18 @@
 [gd_scene format=4 uid="uid://bogm56asgo4iu"]
 
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_8j3jd"]
+[ext_resource type="Script" uid="uid://hld2c3iwmaag" path="res://Interaction_System/interactable_scene_change.gd" id="1_8j3jd"]
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="2_n1w7n"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="3_3ijdm"]
+
+[sub_resource type="Resource" id="Resource_27ryb"]
+script = ExtResource("2_n1w7n")
+text = "You feel uneasy"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_02awl"]
+script = ExtResource("3_3ijdm")
+content = Array[ExtResource("2_n1w7n")]([SubResource("Resource_27ryb")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c42cj"]
 resource_name = "Brown"
@@ -84,10 +96,11 @@ albedo_texture = SubResource("CompressedTexture2D_icqxw")
 emission_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6asd"]
-size = Vector3(4.7286377, 6.6487885, 2.5273438)
+size = Vector3(2.889, 6.649, 0.332)
 
 [node name="Door B" type="Node3D" unique_id=1592935045]
 script = ExtResource("1_8j3jd")
+dialogue = SubResource("Resource_02awl")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=848791161]
 transform = Transform3D(63.9403, 0, 0, 0, -7.6222777e-06, 63.940292, 0, -63.940292, -7.6222777e-06, 0, 0, 0)

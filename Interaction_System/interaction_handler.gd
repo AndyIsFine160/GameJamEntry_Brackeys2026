@@ -93,3 +93,5 @@ func interact_area(dg : Dialogue, area : DialogueArea):
 func set_interaction_total(t : int):
 	interaction_total = t
 	interaction_counter.set_interaction_count(0, t)
+	if t == 0:
+		can_change_scene = true

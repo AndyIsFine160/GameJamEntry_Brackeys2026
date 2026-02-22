@@ -5,18 +5,12 @@
 
 [sub_resource type="Resource" id="Resource_us1c6"]
 script = ExtResource("1_wbtof")
-name = "Salaryman"
-text = "A cup of coffee..."
-metadata/_custom_type_script = "uid://bw6pub8fdcttc"
-
-[sub_resource type="Resource" id="Resource_cunxj"]
-script = ExtResource("1_wbtof")
-name = "Salaryman"
-text = "Just to complete this day of my endless suffering."
+name = " "
+text = " You feel, uneasy"
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [resource]
 script = ExtResource("2_376n6")
 index = 2
-content = Array[ExtResource("1_wbtof")]([SubResource("Resource_us1c6"), SubResource("Resource_cunxj")])
+content = Array[ExtResource("1_wbtof")]([SubResource("Resource_us1c6")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
