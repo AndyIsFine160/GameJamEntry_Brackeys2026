@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://c8526iesaddmv"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_urvob"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_xo7bk"]
+
+[resource]
+script = ExtResource("2_xo7bk")
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
