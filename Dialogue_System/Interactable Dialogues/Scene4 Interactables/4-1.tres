@@ -3,6 +3,30 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_55867"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_mqasr"]
 
+[sub_resource type="Resource" id="Resource_55867"]
+script = ExtResource("1_55867")
+text = "He notices a poster with a quote"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_mqasr"]
+script = ExtResource("1_55867")
+name = "Poster"
+text = "“Fight for the country! And the never ending conquest!”"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_pj8cm"]
+script = ExtResource("1_55867")
+name = "Samurai"
+text = "What an odd quote, and conquest?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ov8ua"]
+script = ExtResource("1_55867")
+name = "Samurai"
+text = "They must be nearby."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_mqasr")
+content = Array[ExtResource("1_55867")]([SubResource("Resource_55867"), SubResource("Resource_mqasr"), SubResource("Resource_pj8cm"), SubResource("Resource_ov8ua")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

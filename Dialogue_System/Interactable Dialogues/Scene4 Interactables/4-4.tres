@@ -3,6 +3,53 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_31dew"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_g3mrp"]
 
+[sub_resource type="Resource" id="Resource_31dew"]
+script = ExtResource("1_31dew")
+text = "He fidgets around the room and suddenly finds files of a Mission Briefing."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_g3mrp"]
+script = ExtResource("1_31dew")
+name = "Mission Briefing"
+text = "“####’s platoon is sent to hold the fort at Fort Code: 89-06AFA9DS and are forbidden to exit the location until the escape of higher ups are confirmed. "
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_3uumq"]
+script = ExtResource("1_31dew")
+name = "Mission Briefing"
+text = "The platoon is sent to intercept the enemy forces to delay/stop them in their tracks.”"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_sgbkj"]
+script = ExtResource("1_31dew")
+text = "The files had a letter included, from platoon leader #####. It said"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_l6755"]
+script = ExtResource("1_31dew")
+name = "Letter"
+text = "“Whoever is reading this, you must feel bad that we just marched to death. You must be so mad, you might be my family, or related to my platoon members, but rest assured.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ms02k"]
+script = ExtResource("1_31dew")
+name = "Letter"
+text = "\"We accepted this mission, for a greater purpose. You may not understand this, but we will make sure to return. Whatever it takes, Platoon Leader ##### over and out.”"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_3o1dk"]
+script = ExtResource("1_31dew")
+name = "Samurai"
+text = "They were sent to their deaths… and sacrificed?! What twisted sh*t is that?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_men32"]
+script = ExtResource("1_31dew")
+name = "Samurai"
+text = "Why did they not refuse to take part in such a sacrificial mission?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_g3mrp")
+content = Array[ExtResource("1_31dew")]([SubResource("Resource_31dew"), SubResource("Resource_g3mrp"), SubResource("Resource_3uumq"), SubResource("Resource_sgbkj"), SubResource("Resource_l6755"), SubResource("Resource_ms02k"), SubResource("Resource_3o1dk"), SubResource("Resource_men32")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

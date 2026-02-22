@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://d27bxnak440a"]
+[gd_scene format=3 uid="uid://g0b4txyjh7n6"]
 
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_xyyhe"]
-[ext_resource type="Resource" uid="uid://cl4pk30vabgsn" path="res://Dialogue_System/Interactable Dialogss/Scene1 Interactables/1-3.tres" id="2_pu508"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_8vppp"]
+[ext_resource type="Resource" uid="uid://b6m4fv3njcaaj" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-4.tres" id="2_xyyhe"]
 [ext_resource type="Texture2D" uid="uid://cg0gj88un02yw" path="res://Imported Assets/635125287_1241475031510557_2321817207634983977_n.png" id="3_n1kl4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2c7e3"]
@@ -54,8 +54,8 @@ albedo_texture = SubResource("CompressedTexture2D_2r3lv")
 emission_enabled = true
 
 [node name="painting" type="Node3D" unique_id=1384751631]
-script = ExtResource("1_xyyhe")
-dialogue = ExtResource("2_pu508")
+script = ExtResource("1_8vppp")
+dialogue = ExtResource("2_xyyhe")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1670456429]
 transform = Transform3D(1, 0, 0, 0, 1.6786332, 0, 0, 0, 0.13026744, 0, 0.79225063, -0.3613019)

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dbwqk1sidebj5"]
+
+[ext_resource type="PackedScene" uid="uid://kk6uv3r7vxd0" path="res://Imported Assets/Low Poly Furniture/Miscellaneous/Vase.fbx" id="1_g4dcg"]
+[ext_resource type="PackedScene" uid="uid://bjbfatq6hoydj" path="res://Imported Assets/JapaneseEra/Tree_2 Asia.fbx" id="2_4s4rx"]
+
+[node name="bonsai" type="Node3D" unique_id=1726364184]
+transform = Transform3D(1, 0, 0, 0, 0.39999998, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Vase" parent="." unique_id=1807327404 instance=ExtResource("1_g4dcg")]
+transform = Transform3D(2.1, 0, 0, 0, 1, 0, 0, 0, 2.1, 0, 0, 0)
+
+[node name="Tree_2 Asia" parent="." unique_id=1683992299 instance=ExtResource("2_4s4rx")]

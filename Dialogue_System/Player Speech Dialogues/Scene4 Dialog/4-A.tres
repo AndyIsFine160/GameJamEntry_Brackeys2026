@@ -3,6 +3,30 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_3igjk"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_urcbk"]
 
+[sub_resource type="Resource" id="Resource_3qhnc"]
+script = ExtResource("1_3igjk")
+name = "Samurai"
+text = "What was that blinding flash?"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ydxr0"]
+script = ExtResource("1_3igjk")
+name = "Samurai"
+text = "WHERE IS THE ENEMY!"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_ekfxn"]
+script = ExtResource("1_3igjk")
+name = "Samurai"
+text = "I must avenge them.."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_l32wj"]
+script = ExtResource("1_3igjk")
+text = "He looks around, and realizes he is in someone else’s room. Someone he has never crossed paths with."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_urcbk")
+content = Array[ExtResource("1_3igjk")]([SubResource("Resource_3qhnc"), SubResource("Resource_ydxr0"), SubResource("Resource_ekfxn"), SubResource("Resource_l32wj")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"

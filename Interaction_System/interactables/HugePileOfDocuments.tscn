@@ -1,26 +1,8 @@
-[gd_scene format=4 uid="uid://b3gptmte27fum"]
+[gd_scene format=4 uid="uid://11qf3jtj1p5p"]
 
 [ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_7wji7"]
 [ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="2_7mfvs"]
-[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="2_k6dwb"]
-[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="3_g54mn"]
-
-[sub_resource type="Resource" id="Resource_rlfu8"]
-script = ExtResource("2_k6dwb")
-name = "Me"
-text = "Already this many?"
-metadata/_custom_type_script = "uid://bw6pub8fdcttc"
-
-[sub_resource type="Resource" id="Resource_3nqhq"]
-script = ExtResource("2_k6dwb")
-name = "Me"
-text = "I mean, what's the worst that could happen?"
-metadata/_custom_type_script = "uid://bw6pub8fdcttc"
-
-[sub_resource type="Resource" id="Resource_dubog"]
-script = ExtResource("3_g54mn")
-content = Array[ExtResource("2_k6dwb")]([SubResource("Resource_rlfu8"), SubResource("Resource_3nqhq")])
-metadata/_custom_type_script = "uid://b3mnv4pljudrt"
+[ext_resource type="Resource" uid="uid://c6r1trruvqvwh" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-2.tres" id="2_mluyj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iufm3"]
 resource_name = "Palette"
@@ -106,7 +88,7 @@ size = Vector3(0.5, 0.3, 0.5)
 
 [node name="HugePileOfDocuments" type="Node3D" unique_id=1431609793]
 script = ExtResource("1_7wji7")
-dialogue = SubResource("Resource_dubog")
+dialogue = ExtResource("2_mluyj")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=1262671043]
 mesh = SubResource("ArrayMesh_a2g0o")

@@ -1,20 +1,8 @@
 [gd_scene format=4 uid="uid://bftfhyybekvuc"]
 
-[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="2_0wlfi"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_bup37"]
 [ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="2_bup37"]
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="2_dxwxm"]
-[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="3_kfckm"]
-
-[sub_resource type="Resource" id="Resource_0wlfi"]
-script = ExtResource("2_0wlfi")
-name = "AAA"
-text = "AAA"
-metadata/_custom_type_script = "uid://bw6pub8fdcttc"
-
-[sub_resource type="Resource" id="Resource_kfckm"]
-script = ExtResource("3_kfckm")
-content = Array[ExtResource("2_0wlfi")]([SubResource("Resource_0wlfi")])
-metadata/_custom_type_script = "uid://b3mnv4pljudrt"
+[ext_resource type="Resource" uid="uid://cfimpcaojxgri" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-5.tres" id="2_dxwxm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhr43"]
 resource_name = "Palette"
@@ -99,8 +87,8 @@ emission_enabled = true
 radius = 0.18
 
 [node name="Book_Fat" type="Node3D" unique_id=2114625912]
-script = ExtResource("2_dxwxm")
-dialogue = SubResource("Resource_kfckm")
+script = ExtResource("1_bup37")
+dialogue = ExtResource("2_dxwxm")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=1416515536]
 mesh = SubResource("ArrayMesh_dxwxm")

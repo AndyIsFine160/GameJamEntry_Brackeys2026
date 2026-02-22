@@ -37,7 +37,6 @@
 [ext_resource type="PackedScene" uid="uid://hj8dlxk4v3lr" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Book_Folder.fbx" id="30_meyf6"]
 [ext_resource type="PackedScene" uid="uid://nmuwmvau5tlb" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Book_Small.fbx" id="31_s4d05"]
 [ext_resource type="PackedScene" uid="uid://6mj6yivexqbb" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Book_FileArchive.fbx" id="32_apgx0"]
-[ext_resource type="PackedScene" uid="uid://cj63cwkle6ta1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Painting_Small2.fbx" id="33_sbkcy"]
 [ext_resource type="PackedScene" uid="uid://d4ngcctiheyqc" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Pen.fbx" id="34_3b4xc"]
 [ext_resource type="PackedScene" uid="uid://degnx44utrfn" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Nature_Deco_3.fbx" id="35_por8t"]
 [ext_resource type="PackedScene" uid="uid://c76usneo02711" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Bookshelf.fbx" id="36_32sje"]
@@ -90,17 +89,20 @@
 [ext_resource type="PackedScene" uid="uid://cqpvvvqs2ei1h" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Projector.fbx" id="88_2q8sg"]
 [ext_resource type="PackedScene" uid="uid://stfxo1rge3xu" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Files_C.fbx" id="89_sdenr"]
 [ext_resource type="PackedScene" uid="uid://cdh4twkqlafd2" path="res://Imported Assets/Low Poly Furniture/Carpets/Carpet A.fbx" id="90_2q8sg"]
+[ext_resource type="PackedScene" uid="uid://csupju2yrpmn6" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4.fbx" id="90_drpu1"]
+[ext_resource type="PackedScene" uid="uid://c1rijrt0itbh1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Shelf_Base.fbx" id="91_1qewy"]
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="91_nssgg"]
 [ext_resource type="PackedScene" uid="uid://c5xuchjpoeu5n" path="res://Interaction_System/interactables/mug.tscn" id="92_agw4u"]
+[ext_resource type="PackedScene" uid="uid://g0b4txyjh7n6" path="res://Interaction_System/interactables/painting.tscn" id="92_msxrw"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="93_nssgg"]
 [ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="94_0wmv6"]
 [ext_resource type="Resource" uid="uid://dxnwsmvbr3kbs" path="res://Dialogue_System/alinus_test_dialogue.tres" id="94_ytk37"]
-[ext_resource type="PackedScene" uid="uid://b3gptmte27fum" path="res://Interaction_System/interactables/HugePileOfDocuments.tscn" id="97_7nhgr"]
-[ext_resource type="PackedScene" uid="uid://dpx5fqjqfgts3" path="res://Interaction_System/interactables/Photo.tscn" id="97_o4v25"]
+[ext_resource type="PackedScene" uid="uid://11qf3jtj1p5p" path="res://Interaction_System/interactables/HugePileOfDocuments.tscn" id="97_7nhgr"]
 [ext_resource type="Script" uid="uid://hld2c3iwmaag" path="res://Interaction_System/interactable_scene_change.gd" id="98_0bkj6"]
 [ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="99_02phj"]
-[ext_resource type="PackedScene" uid="uid://bx6yr6vakb5pn" path="res://Scenes/DialogueArea.tscn" id="100_02phj"]
-[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="101_msxrw"]
+[ext_resource type="PackedScene" path="res://Scenes/DialogueArea.tscn" id="100_02phj"]
+[ext_resource type="PackedScene" path="res://Interaction_System/InteractionCounter.tscn" id="101_msxrw"]
+[ext_resource type="PackedScene" uid="uid://bftfhyybekvuc" path="res://Interaction_System/interactables/picture_book.tscn" id="103_drpu1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -135,6 +137,12 @@ size = Vector3(2.3735962, 1, 0.75341797)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7nhgr"]
 size = Vector3(2.140625, 1, 6.986206)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kdpv0"]
+size = Vector3(14, 3, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l7u3s"]
+size = Vector3(1, 3, 5)
 
 [sub_resource type="SphereMesh" id="SphereMesh_nssgg"]
 radius = 0.1
@@ -225,7 +233,7 @@ size = Vector3(2.193, 2.036, 0.8)
 [node name="Scene1" type="Node3D" unique_id=1067484017]
 script = ExtResource("1_d246l")
 next_scene = ExtResource("2_o4v25")
-interaction_count = 2
+interaction_count = 4
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
 transform = Transform3D(0.012996845, 0, -0.897121, 0, 0.8972151, 0, 0.897121, 0, 0.012996845, -3.2161884, 0.9431344, 1.9006969)
@@ -248,6 +256,12 @@ environment = SubResource("Environment_5erdv")
 transform = Transform3D(36.75573, 0, 0, 0, 0.08411926, 0, 0, 0, 27.822905, -9.014485, 0, 2.6967025)
 use_collision = true
 size = Vector3(0.5254822, 1, 0.80615234)
+
+[node name="Nature_Deco_3" parent="Necessary/Main_Office" unique_id=1739859381 instance=ExtResource("35_por8t")]
+transform = Transform3D(0.027206643, 0, 0, 0, 11.887884, 0, 0, 0, 0.035941612, 0.12010333, 0, 0.21576822)
+
+[node name="Stool_B" parent="Necessary/Main_Office" unique_id=1366893287 instance=ExtResource("2_ddui2")]
+transform = Transform3D(0.015605089, 0, 0.029441645, 0, 11.887884, 0, -0.022286376, 0, 0.02061526, 0.20444392, 0, 0.12950832)
 
 [node name="Main_Office2" type="CSGBox3D" parent="Necessary" unique_id=1266033081]
 transform = Transform3D(37.067905, 0, 0, 0, 0.08483371, 0, 0, 0, 28.059214, -9.477208, 2.685802, 2.6967025)
@@ -457,9 +471,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06208563, -0.0011361241, 0
 [node name="Book_FileArchive" parent="Objects/Cubicle/Book_St" unique_id=530246718 instance=ExtResource("32_apgx0")]
 transform = Transform3D(-1.5536102e-10, 0.7088816, -0.70532745, -1, -4.371139e-08, -4.371139e-08, -6.181705e-08, 0.70532745, 0.7088816, 0.24193764, -0.0011361837, -0.13638687)
 
-[node name="Painting_Small2" parent="Objects/Cubicle" unique_id=105398146 instance=ExtResource("33_sbkcy")]
-transform = Transform3D(0.94499457, 0, 0.32708594, 0, 1, 0, -0.32708594, 0, 0.94499457, -17.083883, 1.1153699, -7.5268197)
-
 [node name="Pen" parent="Objects/Cubicle" unique_id=448226398 instance=ExtResource("34_3b4xc")]
 transform = Transform3D(-3.1592936e-08, 0.7227621, 0.6910969, -1, -4.371139e-08, 0, 3.0208806e-08, -0.6910969, 0.7227621, -17.547544, 1.0320827, -6.97583)
 
@@ -657,9 +668,6 @@ transform = Transform3D(0.9284793, 0, -0.37138405, 0, 1, 0, 0.37138405, 0, 0.928
 
 [node name="WhiteBoard_Big" parent="Objects/Cubicle2" unique_id=1791439819 instance=ExtResource("27_u3ne8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.887032, 1.6635756, -8.308662)
-
-[node name="Painting_Small2" parent="Objects/Cubicle2" unique_id=552744855 instance=ExtResource("33_sbkcy")]
-transform = Transform3D(0.94499457, 0, 0.32708594, 0, 1, 0, -0.32708594, 0, 0.94499457, -11.083883, 1.1153699, -7.5268197)
 
 [node name="Pen" parent="Objects/Cubicle2" unique_id=1536411064 instance=ExtResource("34_3b4xc")]
 transform = Transform3D(-3.1592936e-08, 0.7227621, 0.6910969, -1, -4.371139e-08, 0, 3.0208806e-08, -0.6910969, 0.7227621, -11.5475445, 1.0320827, -6.97583)
@@ -1594,6 +1602,38 @@ transform = Transform3D(0.77992314, 0, 0, 0, 1, 0, 0, 0, 0.4178095, -9.247442, -
 [node name="Carpet A" parent="Objects" unique_id=1301107881 instance=ExtResource("90_2q8sg")]
 transform = Transform3D(0.59047055, 0, 0, 0, 1, 0, 0, 0, 0.5563232, -3.0276783, -0.06199956, -6.53069)
 
+[node name="Obstacle" parent="." unique_id=781598154 instance=ExtResource("90_drpu1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9, 0, 5.3)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Obstacle" unique_id=1242020911]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle/StaticBody3D" unique_id=2023887806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1, 2)
+shape = SubResource("BoxShape3D_kdpv0")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Obstacle/StaticBody3D" unique_id=2030395491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -4.6)
+shape = SubResource("BoxShape3D_l7u3s")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Obstacle/StaticBody3D" unique_id=1023428474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -4.6)
+shape = SubResource("BoxShape3D_l7u3s")
+
+[node name="Office_Desk_3" parent="Obstacle" unique_id=837957902 instance=ExtResource("4_a2ia3")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 0.9000001, 0, 1.5999999)
+
+[node name="Shelf_Base" parent="Obstacle" unique_id=1971519677 instance=ExtResource("91_1qewy")]
+transform = Transform3D(-0.64278764, 0, -0.76604444, 0, 1, 0, 0.76604444, 0, -0.64278764, 0.60000014, 0, 3.3999996)
+
+[node name="Printer" parent="Obstacle" unique_id=571699613 instance=ExtResource("13_30qra")]
+transform = Transform3D(0.81915206, 0, -0.57357645, 0, 1, 0, 0.57357645, 0, 0.81915206, 0.60000014, 1, 1.3000002)
+
+[node name="Bookshelf" parent="Obstacle" unique_id=2089228860 instance=ExtResource("36_32sje")]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, -1.9000001, 0.3, -3.6000004)
+
+[node name="Bookshelf2" parent="Obstacle" unique_id=1807146690 instance=ExtResource("36_32sje")]
+transform = Transform3D(0.81915206, -0.57357645, -3.418782e-08, 0, -5.9604645e-08, 1, -0.57357645, -0.81915206, -4.8825267e-08, -9.999998, 0.4, -3.8000004)
+
 [node name="InteractionHandler" type="Node" parent="." unique_id=1346698006]
 unique_name_in_owner = true
 script = ExtResource("91_nssgg")
@@ -1609,9 +1649,8 @@ mesh = SubResource("SphereMesh_nssgg")
 
 [node name="UI" parent="InteractionHandler" unique_id=139771353 instance=ExtResource("93_nssgg")]
 
-[node name="Painting_Small3" parent="InteractionHandler" unique_id=1641695111 instance=ExtResource("97_o4v25")]
-transform = Transform3D(1.6446581, 0, 0.4109072, 0, 1, 0, -0.5692567, 0, 1.1871654, -5.1524754, 1.1153699, -7.5268197)
-script = ExtResource("94_0wmv6")
+[node name="painting" parent="InteractionHandler" unique_id=1384751631 instance=ExtResource("92_msxrw")]
+transform = Transform3D(0.55584365, -0.25881898, 0.8558348, -0.08018209, 0.9330126, 0.32631004, -0.87469554, -0.24999999, 0.33178017, -10.299999, 0.29999998, -5.6999993)
 
 [node name="Doors" type="Node3D" parent="InteractionHandler" unique_id=1001831587]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.44479, 1.114228, 7.709727)
@@ -1650,3 +1689,6 @@ shape = SubResource("BoxShape3D_msxrw")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.037872, 1.2635747, 6.6427355)
 
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("101_msxrw")]
+
+[node name="Book_Fat" parent="InteractionHandler" unique_id=555094438 instance=ExtResource("103_drpu1")]
+transform = Transform3D(-0.49999994, 0.86602545, 0, -0.86602545, -0.49999994, 0, 0, 0, 1, -17.500002, 0.90000004, 0.69999987)
