@@ -1,12 +1,68 @@
 [gd_scene format=3 uid="uid://dbwqk1sidebj5"]
 
-[ext_resource type="PackedScene" uid="uid://kk6uv3r7vxd0" path="res://Imported Assets/Low Poly Furniture/Miscellaneous/Vase.fbx" id="1_g4dcg"]
-[ext_resource type="PackedScene" uid="uid://bjbfatq6hoydj" path="res://Imported Assets/JapaneseEra/Tree_2 Asia.fbx" id="2_4s4rx"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_4s4rx"]
+[ext_resource type="PackedScene" uid="uid://baq8t2810w43x" path="res://Interaction_System/interactables/tree_2_asia.tscn" id="2_35f2l"]
+[ext_resource type="PackedScene" uid="uid://d06l3pw8aogef" path="res://Interaction_System/interactables/vase.tscn" id="3_f78mv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4s4rx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4s4rx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4s4rx"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_35f2l"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f78mv"]
+render_priority = 0
+shader = SubResource("Shader_35f2l")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vte4w"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_f78mv")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_4s4rx")
+emission_enabled = true
 
 [node name="bonsai" type="Node3D" unique_id=1726364184]
 transform = Transform3D(1, 0, 0, 0, 0.39999998, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_4s4rx")
 
-[node name="Vase" parent="." unique_id=1807327404 instance=ExtResource("1_g4dcg")]
-transform = Transform3D(2.1, 0, 0, 0, 1, 0, 0, 0, 2.1, 0, 0, 0)
+[node name="Tree_2 Asia" parent="." unique_id=1940912446 instance=ExtResource("2_35f2l")]
 
-[node name="Tree_2 Asia" parent="." unique_id=1683992299 instance=ExtResource("2_4s4rx")]
+[node name="Vase" parent="." unique_id=246032701 instance=ExtResource("3_f78mv")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=545622338]
+transform = Transform3D(1.3819803, 0, 0, 0, 3.7707732, 0, 0, 0, 1.2987733, 0, 1.4672674, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=28585878]
+shape = SubResource("BoxShape3D_4s4rx")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=194744998]
+mesh = SubResource("BoxMesh_4s4rx")
+surface_material_override/0 = SubResource("StandardMaterial3D_vte4w")
