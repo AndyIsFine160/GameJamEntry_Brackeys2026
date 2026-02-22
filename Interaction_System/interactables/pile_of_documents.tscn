@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bal637vv3ohsm"]
+[gd_scene format=4 uid="uid://c2gtgytvlipcv"]
 
 [ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="2_xs743"]
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="3_p8yb4"]
@@ -101,8 +101,7 @@ vertex_color_use_as_albedo = true
 albedo_texture = SubResource("CompressedTexture2D_vnquu")
 emission_enabled = true
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_xs743"]
-radius = 0.241
+[sub_resource type="BoxShape3D" id="BoxShape3D_xs743"]
 
 [node name="Office_Files_A" type="Node3D" unique_id=1768343871]
 script = ExtResource("2_xs743")
@@ -116,4 +115,4 @@ surface_material_override/0 = SubResource("StandardMaterial3D_75r2s")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2019789575]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.039413184, 0)
-shape = SubResource("SphereShape3D_xs743")
+shape = SubResource("BoxShape3D_xs743")

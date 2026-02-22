@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cpdhx0f2in6b"]
 
-[ext_resource type="Script" path="res://Scenes/scene.gd" id="1_d246l"]
+[ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_d246l"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_q2fht"]
 [ext_resource type="PackedScene" uid="uid://dep38qa5t5kk1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Stool_B.fbx" id="2_ddui2"]
+[ext_resource type="PackedScene" uid="uid://dckpcem6l7r6m" path="res://Scenes/Scene2.tscn" id="2_o4v25"]
 [ext_resource type="PackedScene" uid="uid://dp7r2ghp38n3" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4_Rounded_Alt.fbx" id="2_qbrl8"]
 [ext_resource type="PackedScene" uid="uid://h75diu2vqsad" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Wall_Small.fbx" id="3_unjri"]
 [ext_resource type="PackedScene" uid="uid://dlbh5s7n6ltxu" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_3.fbx" id="4_a2ia3"]
@@ -94,8 +95,8 @@
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="93_nssgg"]
 [ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="94_0wmv6"]
 [ext_resource type="Resource" uid="uid://dxnwsmvbr3kbs" path="res://Dialogue_System/alinus_test_dialogue.tres" id="94_ytk37"]
-[ext_resource type="PackedScene" uid="uid://bsmggbh5nkmq0" path="res://Interaction_System/interactables/Door.tscn" id="97_0bkj6"]
-[ext_resource type="PackedScene" path="res://Interaction_System/interactables/pile_of_documents.tscn" id="97_7nhgr"]
+[ext_resource type="PackedScene" uid="uid://bsmggbh5nkmq0" path="res://Interaction_System/interactables/Door_R.tscn" id="97_0bkj6"]
+[ext_resource type="PackedScene" uid="uid://bal637vv3ohsm" path="res://Interaction_System/interactables/pile_of_documents.tscn" id="97_7nhgr"]
 [ext_resource type="PackedScene" uid="uid://dpx5fqjqfgts3" path="res://Interaction_System/interactables/Photo.tscn" id="97_o4v25"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
@@ -138,6 +139,7 @@ height = 0.1
 
 [node name="Scene1" type="Node3D" unique_id=1067484017]
 script = ExtResource("1_d246l")
+next_scene = ExtResource("2_o4v25")
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
 transform = Transform3D(0.012996845, 0, -0.897121, 0, 0.8972151, 0, 0.897121, 0, 0.012996845, -3.2161884, 0.9431344, 1.9006969)
