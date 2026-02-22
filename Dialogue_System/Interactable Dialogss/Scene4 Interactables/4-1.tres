@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://50smo23nulho"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_i0f80"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_hphbf"]
+
+[sub_resource type="Resource" id="Resource_i0f80"]
+script = ExtResource("1_i0f80")
+name = "Salary Man"
+text = "\"All I've done is just work...\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_hphbf"]
+script = ExtResource("1_i0f80")
+name = "Salary Man"
+text = "\"Is there even an end to this? I can't even eat properly...\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_hphbf")
+index = 2
+content = Array[ExtResource("1_i0f80")]([SubResource("Resource_i0f80"), SubResource("Resource_hphbf")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"

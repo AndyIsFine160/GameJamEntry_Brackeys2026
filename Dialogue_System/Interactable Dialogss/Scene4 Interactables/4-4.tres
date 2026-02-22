@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://o20un3cvlivs"]
+
+[ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_p2dhe"]
+[ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_l1t5k"]
+
+[sub_resource type="Resource" id="Resource_p2dhe"]
+script = ExtResource("1_p2dhe")
+name = "Salary Man"
+text = "\"I got to go now sweetie, don't pull my coat please.\""
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_l1t5k"]
+script = ExtResource("1_p2dhe")
+name = "Little Girl"
+text = "\"Don't go please? You always work, when will you read stories to me again."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[resource]
+script = ExtResource("2_l1t5k")
+content = Array[ExtResource("1_p2dhe")]([SubResource("Resource_p2dhe"), SubResource("Resource_l1t5k")])
+metadata/_custom_type_script = "uid://b3mnv4pljudrt"
