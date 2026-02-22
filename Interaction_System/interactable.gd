@@ -10,10 +10,13 @@ func hover():
 	if hovered:
 		return
 	hovered = true
-	shader.set_shader_parameter("strength", 0.7)
+	shader.set_shader_parameter("outline_width", 5.0)
 
 func unhover():
 	if !hovered:
 		return
 	hovered = false
-	shader.set_shader_parameter("strength", 0.0)
+	shader.set_shader_parameter("outline_width", 0.0)
+
+func done():
+	pass
