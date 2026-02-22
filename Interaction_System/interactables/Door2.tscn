@@ -96,7 +96,7 @@ albedo_texture = SubResource("CompressedTexture2D_icqxw")
 emission_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6asd"]
-size = Vector3(5.014, 6.649, 2.527)
+size = Vector3(2.889, 6.649, 0.332)
 
 [node name="Door B" type="Node3D" unique_id=1592935045]
 script = ExtResource("1_8j3jd")
