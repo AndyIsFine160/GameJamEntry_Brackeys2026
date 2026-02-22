@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bix1ikmd7fwww"]
 
 [ext_resource type="Texture2D" uid="uid://dincp3q2qwc2i" path="res://Imported Assets/images.jpg" id="1_7x8lk"]
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="2_yh1t1"]
-[ext_resource type="Resource" uid="uid://b6m4fv3njcaaj" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-4.tres" id="3_0y0nn"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="2_a8c55"]
+[ext_resource type="Resource" uid="uid://j2vjyvqqt2a2" path="res://Dialogue_System/Interactable Dialogues/Scene3 Interactables/3-4.tres" id="3_yh1t1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8c55"]
 albedo_texture = ExtResource("1_7x8lk")
@@ -55,8 +55,8 @@ emission_enabled = true
 [node name="Letters" type="CSGBox3D" unique_id=1089834561]
 transform = Transform3D(0.005355687, 0, -0.14190997, 0, 0.007986209, 0, 0.084678106, 0, 0.008975468, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_a8c55")
-script = ExtResource("2_yh1t1")
-dialogue = ExtResource("3_0y0nn")
+script = ExtResource("2_a8c55")
+dialogue = ExtResource("3_yh1t1")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=824355537]
 mesh = SubResource("BoxMesh_l54i4")

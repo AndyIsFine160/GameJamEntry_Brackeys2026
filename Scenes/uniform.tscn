@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://d00id05nnhkt7"]
 
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_3p3rd"]
 [ext_resource type="Texture2D" uid="uid://cpws66l6nqs1v" path="res://Imported Assets/621734856_1289661459683315_2634154474629075877_n.png" id="1_74jj5"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_f5ht1"]
 [ext_resource type="Texture2D" uid="uid://dincp3q2qwc2i" path="res://Imported Assets/images.jpg" id="2_f5ht1"]
-[ext_resource type="Resource" uid="uid://cbp2or3v56nbb" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-1.tres" id="2_hcput"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4l877"]
 albedo_texture = ExtResource("1_74jj5")
@@ -58,8 +57,7 @@ emission_enabled = true
 size = Vector3(0.30169678, 0.09082031, 0.29974365)
 
 [node name="uniform" type="Node3D" unique_id=691943324]
-script = ExtResource("1_3p3rd")
-dialogue = ExtResource("2_hcput")
+script = ExtResource("1_f5ht1")
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=230048952]
 transform = Transform3D(0.20440026, 0, 0.19943799, 0, 0.051870774, 0, -0.19943798, 0, 0.20440026, 0.021055222, 0.0056004226, -0.011675805)

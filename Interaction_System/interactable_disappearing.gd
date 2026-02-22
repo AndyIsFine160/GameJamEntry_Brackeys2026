@@ -4,10 +4,9 @@ class_name Interactable_Disappearing
 var interacted = false
 
 func hover():
-    if interacted:
-        return
-    super.hover()
+	if interacted:
+		return
+	super.hover()
 
 func done():
-    interacted = true
-
+	interacted = true

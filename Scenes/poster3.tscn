@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://csa1mj3gmwtnq"]
 
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_h08gd"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_h08gd"]
 [ext_resource type="Texture2D" uid="uid://c24uih2pm3257" path="res://Imported Assets/poster-promoting-patriotism-and-suggesting-that-careless-communication-may-be-harmful-to-the-war-effort-showing-the-american-flag-PHCRGW (1).jpg" id="2_h08gd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_setpf"]
@@ -92,7 +92,7 @@ emission_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dywd2"]
 
-[node name="Node3D" type="Node3D" unique_id=696717749]
+[node name="Poster3" type="Node3D" unique_id=696717749]
 script = ExtResource("1_h08gd")
 
 [node name="Box" type="CSGBox3D" parent="." unique_id=775435708]
