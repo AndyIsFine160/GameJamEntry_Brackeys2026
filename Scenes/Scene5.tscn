@@ -108,6 +108,7 @@
 [ext_resource type="Resource" uid="uid://dwjxtndb3t4at" path="res://Dialogue_System/Interactable Dialogues/Scene5 Interactables/5-5.tres" id="104_qca7b"]
 [ext_resource type="Resource" uid="uid://c5yjkr0ccxdd4" path="res://Dialogue_System/Player Speech Dialogues/Scene5 Dialog/5-B.tres" id="105_bahd5"]
 [ext_resource type="Resource" uid="uid://dqxq08immj4bs" path="res://Dialogue_System/Player Speech Dialogues/Scene5 Dialog/5-C.tres" id="106_s7h0t"]
+[ext_resource type="Resource" uid="uid://cdvhjjge8e67u" path="res://Dialogue_System/Player Speech Dialogues/Scene5 Dialog/5-G.tres" id="107_lx3pj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1715,7 +1716,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7, 0, 2.5)
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("103_xlt7k")
-dialogue = ExtResource("104_bahd5")
+dialogue = ExtResource("107_lx3pj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionHandler/Area3D5" unique_id=801406618]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14999986, 0.5, 0)

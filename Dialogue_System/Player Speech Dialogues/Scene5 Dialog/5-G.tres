@@ -12,7 +12,7 @@ metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 [sub_resource type="Resource" id="Resource_gm5jv"]
 script = ExtResource("1_rtrnl")
 name = "Veteran"
-text = "Thank you for showing yourm memories to me, kind stranger."
+text = "Thank you for showing your memories to me, kind stranger."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
 [sub_resource type="Resource" id="Resource_4ql2r"]
