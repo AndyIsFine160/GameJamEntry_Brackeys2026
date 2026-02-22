@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpdhx0f2in6b"]
 
-[ext_resource type="Script" path="res://Scenes/scene.gd" id="1_d246l"]
+[ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_d246l"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_q2fht"]
 [ext_resource type="PackedScene" uid="uid://dep38qa5t5kk1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Stool_B.fbx" id="2_ddui2"]
 [ext_resource type="PackedScene" uid="uid://dp7r2ghp38n3" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4_Rounded_Alt.fbx" id="2_qbrl8"]
@@ -94,9 +94,9 @@
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="93_nssgg"]
 [ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="94_0wmv6"]
 [ext_resource type="Resource" uid="uid://dxnwsmvbr3kbs" path="res://Dialogue_System/alinus_test_dialogue.tres" id="94_ytk37"]
-[ext_resource type="PackedScene" uid="uid://bsmggbh5nkmq0" path="res://Interaction_System/interactables/Door.tscn" id="97_0bkj6"]
-[ext_resource type="PackedScene" path="res://Interaction_System/interactables/pile_of_documents.tscn" id="97_7nhgr"]
-[ext_resource type="PackedScene" uid="uid://dpx5fqjqfgts3" path="res://Interaction_System/interactables/Photo.tscn" id="97_o4v25"]
+[ext_resource type="PackedScene" path="res://Interaction_System/interactables/Door.tscn" id="97_0bkj6"]
+[ext_resource type="PackedScene" uid="uid://b3gptmte27fum" path="res://Interaction_System/interactables/HugePileOfDocuments.tscn" id="97_7nhgr"]
+[ext_resource type="PackedScene" path="res://Interaction_System/interactables/Photo.tscn" id="97_o4v25"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1517,39 +1517,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -2)
 visible = false
 mesh = SubResource("SphereMesh_nssgg")
 
+[node name="UI" parent="InteractionHandler" unique_id=139771353 instance=ExtResource("93_nssgg")]
+
 [node name="Mug" parent="InteractionHandler" unique_id=1164625262 instance=ExtResource("92_agw4u")]
 transform = Transform3D(1.823636, 0, 0, 0, 1.823636, 0, 0, 0, 1.823636, -1.2367826, 0.9989375, 1.745455)
 script = ExtResource("94_0wmv6")
 dialogue = ExtResource("94_ytk37")
 
-[node name="UI" parent="InteractionHandler" unique_id=139771353 instance=ExtResource("93_nssgg")]
-
 [node name="Painting_Small3" parent="InteractionHandler" unique_id=1641695111 instance=ExtResource("97_o4v25")]
 transform = Transform3D(1.6446581, 0, 0.4109072, 0, 1, 0, -0.5692567, 0, 1.1871654, -5.1524754, 1.1153699, -7.5268197)
+script = ExtResource("94_0wmv6")
 
 [node name="Doors" type="Node3D" parent="InteractionHandler" unique_id=1001831587]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.44479, 1.114228, 7.709727)
 
-[node name="Node3D" type="Node3D" parent="InteractionHandler" unique_id=1640968465]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.697571, 1.2717996, -7.730323)
-
-[node name="Office_Files_A" parent="InteractionHandler/Node3D" unique_id=1768343871 instance=ExtResource("97_7nhgr")]
-transform = Transform3D(2.1103518, 0, -0.7569037, 0, 2.241983, 0, 0.7569037, 0, 2.1103518, 0.3635447, -0.27692485, 0.12183905)
-
-[node name="Office_Files_A2" parent="InteractionHandler/Node3D" unique_id=1448724956 instance=ExtResource("97_7nhgr")]
-transform = Transform3D(2.2357073, 0, -0.16763261, 0, 2.2419827, 0, 0.16763261, 0, 2.2357073, 0.3635447, 0.06298804, 0.12183905)
-
-[node name="Office_Files_A3" parent="InteractionHandler/Node3D" unique_id=323730391 instance=ExtResource("97_7nhgr")]
-transform = Transform3D(2.1509678, -0.01888066, -0.6320371, 0.020744096, 2.241884, 0.0036257324, 0.6319787, -0.009326528, 2.1510475, 0.3635447, 0.37960482, 0.12183905)
-
-[node name="Office_Files_A4" parent="InteractionHandler/Node3D" unique_id=1995531399 instance=ExtResource("97_7nhgr")]
-transform = Transform3D(-2.1929986, 0, 0.46609586, 0, 2.241983, 0, -0.46609586, 0, -2.1929986, -0.23220277, -0.27692485, 0.12183809)
-
-[node name="Office_Files_A5" parent="InteractionHandler/Node3D" unique_id=1717409671 instance=ExtResource("97_7nhgr")]
-transform = Transform3D(-2.2336283, 0, 0.19337416, 0, 2.2419822, 0, -0.19337416, 0, -2.2336283, -0.18750787, 0.06298804, 0.12183809)
-
 [node name="Office_Desk_Door" parent="InteractionHandler" unique_id=117550619 instance=ExtResource("97_0bkj6")]
 transform = Transform3D(-1.410975e-07, 0, 2.8896554, 0, 2.8896554, 0, -3.2279348, 0, -1.2631084e-07, -18.61627, -0.060418367, 6.506187)
 
-[node name="Office_Desk_Door2" parent="InteractionHandler" unique_id=198641512 instance=ExtResource("97_0bkj6")]
-transform = Transform3D(1.69317e-07, 0, 2.889655, 0, 2.8896554, 0, 3.873522, 0, -1.2631082e-07, -18.61627, -0.060418367, 9.284166)
+[node name="HugePileOfDocuments" parent="InteractionHandler" unique_id=1431609793 instance=ExtResource("97_7nhgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7278442, 1.0168918, -7.534349)

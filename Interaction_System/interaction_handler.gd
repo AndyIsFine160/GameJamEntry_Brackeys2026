@@ -3,7 +3,7 @@ extends Node
 var camera : Camera3D
 var player : CharacterBody3D
 var ray : RayCast3D
-var current : Interactable
+var current : Interactable_Disappearing
 @export var length = 1
 
 @onready var ui : UI = $UI
@@ -26,19 +26,26 @@ func _process(_delta : float):
 			# get_node("Target").global_position = ray.get_collision_point()
 			var area = ray.get_collider() as Node
 			var tg = area.get_parent()
-			if tg is Interactable:
+			if tg is Interactable_Disappearing:
+				if tg.interacted:
+					return
 				if current == null:
 					player.interact_signal.connect(interact)
 				tg.hover()
 				current = tg
 		else:
-			# get_node("Target").global_position = ray.to_global(ray.target_position)
+
 			if current != null:
 				current.unhover()
 				player.interact_signal.disconnect(interact)
 				current = null
 
 func interact():
+	if current == null:
+		return
+	if current.interacted:
+		return
+
 	ui.start(current.dialogue)
 	player.set_physics_process(false)
 

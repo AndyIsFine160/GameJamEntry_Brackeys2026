@@ -1,4 +1,5 @@
 extends Node
+class_name BaseScene
 
 @export var next_scene: PackedScene
 var scene_path: String
