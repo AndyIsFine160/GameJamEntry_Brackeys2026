@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://cpdhx0f2in6b"]
+[gd_scene format=4 uid="uid://cpdhx0f2in6b"]
 
 [ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_d246l"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_q2fht"]
 [ext_resource type="PackedScene" uid="uid://dep38qa5t5kk1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Stool_B.fbx" id="2_ddui2"]
-[ext_resource type="PackedScene" uid="uid://dckpcem6l7r6m" path="res://Scenes/Scene2.tscn" id="2_o4v25"]
+[ext_resource type="PackedScene" path="res://Scenes/Scene2.tscn" id="2_o4v25"]
 [ext_resource type="PackedScene" uid="uid://dp7r2ghp38n3" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4_Rounded_Alt.fbx" id="2_qbrl8"]
 [ext_resource type="PackedScene" uid="uid://h75diu2vqsad" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Wall_Small.fbx" id="3_unjri"]
 [ext_resource type="PackedScene" uid="uid://dlbh5s7n6ltxu" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_3.fbx" id="4_a2ia3"]
@@ -95,9 +95,10 @@
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="93_nssgg"]
 [ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="94_0wmv6"]
 [ext_resource type="Resource" uid="uid://dxnwsmvbr3kbs" path="res://Dialogue_System/alinus_test_dialogue.tres" id="94_ytk37"]
-[ext_resource type="PackedScene" path="res://Interaction_System/interactables/Door.tscn" id="97_0bkj6"]
 [ext_resource type="PackedScene" uid="uid://b3gptmte27fum" path="res://Interaction_System/interactables/HugePileOfDocuments.tscn" id="97_7nhgr"]
-[ext_resource type="PackedScene" path="res://Interaction_System/interactables/Photo.tscn" id="97_o4v25"]
+[ext_resource type="PackedScene" uid="uid://dpx5fqjqfgts3" path="res://Interaction_System/interactables/Photo.tscn" id="97_o4v25"]
+[ext_resource type="Script" uid="uid://hld2c3iwmaag" path="res://Interaction_System/interactable_scene_change.gd" id="98_0bkj6"]
+[ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="99_02phj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q2fht"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -136,6 +137,88 @@ size = Vector3(2.140625, 1, 6.986206)
 [sub_resource type="SphereMesh" id="SphereMesh_nssgg"]
 radius = 0.1
 height = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2imcv"]
+resource_name = "Palette"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("99_02phj")
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_flwgw"]
+_surfaces = [{
+"aabb": AABB(-0.39412835, -0.0614179, -0.0072053745, 0.38452768, 0.86092323, 0.065794826),
+"format": 34359742465,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAAAQAFAAMABQABAAAAAgADAAYABgADAAUABgAEAAIAAAAHAAUABQAHAAYABwAAAAQABAAGAAcACAAJAAoACwAKAAkACQAMAAsACgANAAgADgAIAA0ACgALAA8ADwALAAwADwANAAoADAAOAA8ADQAPAA4A"),
+"name": "Palette",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("EEwdvFaRe70QG+y7McvJvlaRe70QG+y7McvJvlaRe70Wqww9McvJvmKsTD8Wqww9EEwdvFaRe70Wqww9McvJvmKsTD8QG+y7EEwdvGKsTD8Wqww9EEwdvGKsTD8QG+y7iN/CvhR25z5ITuM8iN/CviCCJT9ITuM8iN/CviCCJT99+289i9e0viCCJT99+289i9e0viCCJT9ITuM8iN/CvhR25z59+289i9e0vhR25z5ITuM8i9e0vhR25z59+289")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ov6gd"]
+resource_name = "Cube_210"
+_surfaces = [{
+"aabb": AABB(-0.39412835, -0.0614179, -0.0072053745, 0.38452768, 0.86092323, 0.065794826),
+"attribute_data": PackedByteArray("Vn8JPzhZ6z1Xfwk/sF3jPVd/CT+wXeM9Vn8JPzhZ6z3Spgs/sF3jPdKmCz84Wes90qYLPzhZ6z3Spgs/sF3jPVZ/CT84Wes90qYLPzhZ6z3Spgs/sF3jPVd/CT+wXeM9TFhOPtxnAT68C1g+1GcBPrwLWD7UZwE+TFhOPtxnAT5MWE4+JOYFPkxYTj7cZwE+TFhOPtxnAT5MWE4+JOYFPrwLWD7UZwE+vAtYPiTmBT68C1g+JOYFPrwLWD7UZwE+vAtYPiTmBT5MWE4+JOYFPkxYTj4k5gU+vAtYPiTmBT68C1g+1GcBPrwLWD4k5gU+TFhOPiTmBT5MWE4+3GcBPtKmCz84Wes9Vn8JPzhZ6z1Wfwk/OFnrPdKmCz84Wes90qYLP7Bd4z1Xfwk/sF3jPVd/CT+wXeM90qYLP7Bd4z3Spgs/OFnrPVZ/CT84Wes9V38JP7Bd4z3Spgs/sF3jPQ=="),
+"format": 34359742487,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgA"),
+"material": SubResource("StandardMaterial3D_2imcv"),
+"name": "Palette",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 44,
+"vertex_data": PackedByteArray("EEwdvFaRe70QG+y7McvJvlaRe70QG+y7McvJvlaRe70Wqww9EEwdvFaRe70Wqww9McvJvmKsTD8QG+y7EEwdvGKsTD8QG+y7EEwdvGKsTD8Wqww9McvJvmKsTD8Wqww9EEwdvFaRe70QG+y7EEwdvGKsTD8QG+y7McvJvmKsTD8QG+y7McvJvlaRe70QG+y7iN/CvhR25z5ITuM8iN/CviCCJT9ITuM8iN/CviCCJT99+289iN/CvhR25z59+289i9e0vhR25z5ITuM8iN/CvhR25z5ITuM8iN/CvhR25z59+289i9e0vhR25z59+289iN/CviCCJT9ITuM8i9e0viCCJT9ITuM8i9e0viCCJT99+289iN/CviCCJT99+289i9e0viCCJT9ITuM8i9e0vhR25z5ITuM8i9e0vhR25z59+289i9e0viCCJT99+289iN/CviCCJT99+289i9e0viCCJT99+289i9e0vhR25z59+289iN/CvhR25z59+289EEwdvGKsTD8QG+y7EEwdvFaRe70QG+y7EEwdvFaRe70Wqww9EEwdvGKsTD8Wqww9McvJvmKsTD8Wqww9McvJvlaRe70Wqww9McvJvlaRe70QG+y7McvJvmKsTD8QG+y7EEwdvGKsTD8Wqww9EEwdvFaRe70Wqww9McvJvlaRe70Wqww9McvJvmKsTD8Wqww9/38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f///////v/9///////+//3///////7//f///////v///////fwAA//////9/AAD//////38AAP//////fwAAAAD/f////78AAP9/////vwAA/3////+/AAD/f////7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9///////+//3///////7//f///////v/9///////+/////f////7////9/////v////3////+/////f////7//f/9//3/+//9//3//f////3//f/9//v//f/9//3/+/////3////+/////f////7////9/////v////3////+/AAD/f////78AAP9/////vwAA/3////+/AAD/f////7//f/9//3////9//3//f////3//f/9/////f/9//3///w==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_flwgw")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jtpt0"]
+load_path = "res://.godot/imported/palette1.png-54f4ac3aaf0ab621c501dd29d9ebf205.s3tc.ctex"
+
+[sub_resource type="Shader" id="Shader_hb5nf"]
+code = "shader_type spatial;
+render_mode cull_front, unshaded;
+ 
+uniform vec4 outline_color : source_color;
+uniform float outline_width = 1.0;
+ 
+void vertex() {
+	vec4 clip_position = PROJECTION_MATRIX * (MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	vec3 clip_normal = mat3(PROJECTION_MATRIX) * (mat3(MODELVIEW_MATRIX) * NORMAL);
+	
+	vec2 offset = normalize(clip_normal.xy) / VIEWPORT_SIZE * clip_position.w * outline_width * 2.0;
+	
+	clip_position.xy += offset;
+	
+	POSITION = clip_position;
+}
+ 
+void fragment() {
+	ALBEDO = outline_color.rgb;
+	if (outline_color.a < 1.0) {
+		ALPHA = outline_color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bo46u"]
+render_priority = 0
+shader = SubResource("Shader_hb5nf")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_width = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45ile"]
+resource_name = "Palette"
+next_pass = SubResource("ShaderMaterial_bo46u")
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("CompressedTexture2D_jtpt0")
+emission_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_msxrw"]
+size = Vector3(2.193, 2.036, 0.8)
 
 [node name="Scene1" type="Node3D" unique_id=1067484017]
 script = ExtResource("1_d246l")
@@ -1521,11 +1604,6 @@ mesh = SubResource("SphereMesh_nssgg")
 
 [node name="UI" parent="InteractionHandler" unique_id=139771353 instance=ExtResource("93_nssgg")]
 
-[node name="Mug" parent="InteractionHandler" unique_id=1164625262 instance=ExtResource("92_agw4u")]
-transform = Transform3D(1.823636, 0, 0, 0, 1.823636, 0, 0, 0, 1.823636, -1.2367826, 0.9989375, 1.745455)
-script = ExtResource("94_0wmv6")
-dialogue = ExtResource("94_ytk37")
-
 [node name="Painting_Small3" parent="InteractionHandler" unique_id=1641695111 instance=ExtResource("97_o4v25")]
 transform = Transform3D(1.6446581, 0, 0.4109072, 0, 1, 0, -0.5692567, 0, 1.1871654, -5.1524754, 1.1153699, -7.5268197)
 script = ExtResource("94_0wmv6")
@@ -1533,8 +1611,32 @@ script = ExtResource("94_0wmv6")
 [node name="Doors" type="Node3D" parent="InteractionHandler" unique_id=1001831587]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.44479, 1.114228, 7.709727)
 
-[node name="Office_Desk_Door" parent="InteractionHandler" unique_id=117550619 instance=ExtResource("97_0bkj6")]
-transform = Transform3D(-1.410975e-07, 0, 2.8896554, 0, 2.8896554, 0, -3.2279348, 0, -1.2631084e-07, -18.61627, -0.060418367, 6.506187)
-
 [node name="HugePileOfDocuments" parent="InteractionHandler" unique_id=1431609793 instance=ExtResource("97_7nhgr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7278442, 1.0168918, -7.534349)
+
+[node name="Mug" parent="InteractionHandler" unique_id=1164625262 instance=ExtResource("92_agw4u")]
+transform = Transform3D(1.823636, 0, 0, 0, 1.823636, 0, 0, 0, 1.823636, -1.2367826, 0.9989375, 1.745455)
+script = ExtResource("94_0wmv6")
+dialogue = ExtResource("94_ytk37")
+
+[node name="Office_Desk_Door" type="Node3D" parent="InteractionHandler" unique_id=117550619]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.606, -0.39, 6.504)
+script = ExtResource("98_0bkj6")
+dialogue = ExtResource("94_ytk37")
+
+[node name="Mesh" type="MeshInstance3D" parent="InteractionHandler/Office_Desk_Door" unique_id=577013903]
+transform = Transform3D(3.228, 0, 0, 0, 3.228, 0, 0, 0, 3.228, 0, 0, 0)
+mesh = SubResource("ArrayMesh_ov6gd")
+surface_material_override/0 = SubResource("StandardMaterial3D_45ile")
+
+[node name="Mesh2" type="MeshInstance3D" parent="InteractionHandler/Office_Desk_Door" unique_id=567699657]
+transform = Transform3D(-3.228, 0, 0, 0, 3.228, 0, 0, 0, 3.228, -2.5166097, 0, 0)
+mesh = SubResource("ArrayMesh_ov6gd")
+surface_material_override/0 = SubResource("StandardMaterial3D_45ile")
+
+[node name="Area3D" type="Area3D" parent="InteractionHandler/Office_Desk_Door" unique_id=487104524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1254997, 1.1532557, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionHandler/Office_Desk_Door/Area3D" unique_id=1366870297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08028984, 0.36691308, 0.17448425)
+shape = SubResource("BoxShape3D_msxrw")

@@ -51,4 +51,11 @@ func interact():
 
 func ui_hidden():
 	current.done()
+
+	if current is InteractableSceneChange:
+		print("success")
+		var main_scene = get_tree().current_scene
+		if main_scene is BaseScene:
+			main_scene.request_change_scene()
+
 	player.set_physics_process(true)
