@@ -5,8 +5,8 @@ class_name DialogueArea
 signal player_entered
 
 func _ready():
-    body_entered.connect(player_detected)
+	body_entered.connect(player_detected)
 
 func player_detected(_body):
-    print("player detected")
-    player_entered.emit(dialogue, self)
+	print("player detected")
+	player_entered.emit(dialogue, self)

@@ -6,32 +6,40 @@
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="2_y6c60"]
 [ext_resource type="Texture2D" uid="uid://gphmr2bx4d72" path="res://Imported Assets/images.png" id="2_ycn35"]
 [ext_resource type="PackedScene" uid="uid://f03b8s4wh62e" path="res://Imported Assets/Low Poly Furniture/Beds/Bed Double.fbx" id="3_fye3t"]
-[ext_resource type="PackedScene" uid="uid://d00id05nnhkt7" path="res://Scenes/uniform.tscn" id="3_t2e2d"]
+[ext_resource type="PackedScene" path="res://Scenes/uniform.tscn" id="3_t2e2d"]
 [ext_resource type="Resource" uid="uid://b6m4fv3njcaaj" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-4.tres" id="4_4l877"]
 [ext_resource type="PackedScene" uid="uid://bk0tmrlhhjcjm" path="res://Imported Assets/Low Poly Furniture/Drawers/Drawer B.fbx" id="4_j48og"]
-[ext_resource type="PackedScene" uid="uid://bs4ot0isf1yqq" path="res://Scenes/poster.tscn" id="4_y6c60"]
+[ext_resource type="PackedScene" path="res://Scenes/poster.tscn" id="4_y6c60"]
 [ext_resource type="PackedScene" uid="uid://d1mb6jurgcgki" path="res://Imported Assets/Low Poly Furniture/Lights/Lamp A.fbx" id="5_oxeir"]
-[ext_resource type="PackedScene" uid="uid://bix1ikmd7fwww" path="res://Scenes/letters.tscn" id="6_kyq6s"]
+[ext_resource type="PackedScene" path="res://Scenes/letters.tscn" id="6_kyq6s"]
 [ext_resource type="PackedScene" uid="uid://cbrwc1paxniy2" path="res://Imported Assets/Low Poly Furniture/Windows/Window B.fbx" id="7_kyq6s"]
 [ext_resource type="PackedScene" uid="uid://cs8mvsbdhhp41" path="res://Imported Assets/Giftbox_01.dae" id="8_y6c60"]
 [ext_resource type="PackedScene" uid="uid://dqig68u5uflnw" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Rug_A.fbx" id="9_kn3lq"]
-[ext_resource type="PackedScene" uid="uid://ct3fjv01tpea7" path="res://Interaction_System/interactables/guitar.tscn" id="9_sr1wa"]
-[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="10_27nil"]
+[ext_resource type="PackedScene" path="res://Interaction_System/interactables/guitar.tscn" id="9_sr1wa"]
+[ext_resource type="PackedScene" path="res://Interaction_System/InteractionCounter.tscn" id="10_27nil"]
 [ext_resource type="PackedScene" uid="uid://c76usneo02711" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Bookshelf.fbx" id="10_dikbl"]
 [ext_resource type="PackedScene" uid="uid://dums5e54qn58p" path="res://Interaction_System/interactables/mission_brief.tscn" id="12_2kos1"]
 [ext_resource type="PackedScene" uid="uid://cemb83anagc1f" path="res://Imported Assets/Low Poly Furniture/Tables/Table C.fbx" id="15_hyaa0"]
-[ext_resource type="PackedScene" uid="uid://dkpivop5vhsvw" path="res://Scenes/poster2.tscn" id="16_vp0rb"]
-[ext_resource type="PackedScene" uid="uid://csa1mj3gmwtnq" path="res://Scenes/poster3.tscn" id="18_mvgsr"]
+[ext_resource type="Resource" uid="uid://qlek6721echw" path="res://Dialogue_System/Player Speech Dialogues/Scene4 Dialog/4-B.tres" id="15_vpjrm"]
+[ext_resource type="PackedScene" path="res://Scenes/poster2.tscn" id="16_vp0rb"]
+[ext_resource type="PackedScene" path="res://Scenes/poster3.tscn" id="18_mvgsr"]
 [ext_resource type="PackedScene" uid="uid://bnkx2xof5ef1r" path="res://Imported Assets/Low Poly Furniture/Kitchen/Cupboard E.fbx" id="19_sr1wa"]
 [ext_resource type="PackedScene" uid="uid://b7slgx1u1qayl" path="res://Imported Assets/Low Poly Furniture/Kitchen/Cupboard C.fbx" id="20_27nil"]
 [ext_resource type="PackedScene" uid="uid://s2acvnrfcyku" path="res://Imported Assets/Low Poly Furniture/Kitchen/Cupboard Sink.fbx" id="21_pbm8j"]
 [ext_resource type="PackedScene" uid="uid://ddjvpi8suj6wa" path="res://Imported Assets/Low Poly Furniture/Kitchen/Fridge A.fbx" id="22_5lwu1"]
 [ext_resource type="PackedScene" uid="uid://d10ugh5ovpnbb" path="res://Imported Assets/Low Poly Furniture/Tables/Table B.fbx" id="23_2kos1"]
 [ext_resource type="PackedScene" uid="uid://dpa1ey1vojply" path="res://Imported Assets/Low Poly Furniture/Doors/Door B.fbx" id="26_pbm8j"]
+[ext_resource type="Script" uid="uid://be8wsitss88ap" path="res://Interaction_System/dialogue_area.gd" id="29_uy8xk"]
+[ext_resource type="Resource" uid="uid://dm8bjxcnofaj8" path="res://Dialogue_System/Player Speech Dialogues/Scene4 Dialog/4-A.tres" id="30_4nb8s"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_y6c60"]
 radius = 0.1
 height = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4nb8s"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cagm1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gsncy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -101,11 +109,11 @@ dialogue = ExtResource("4_4l877")
 
 [node name="Poster2" parent="InteractionHandler" unique_id=696717749 instance=ExtResource("16_vp0rb")]
 transform = Transform3D(0.33427078, 0, 0, 0, -0.44335398, -5.6220642e-08, 0, 2.6721114e-08, -0.4433539, 1.8632551, 0.6027783, 0.9019108)
-dialogue = ExtResource("4_4l877")
+script = null
 
 [node name="Poster3" parent="InteractionHandler" unique_id=2140035897 instance=ExtResource("18_mvgsr")]
 transform = Transform3D(0.49037948, 0, 0, 0, -0.46256876, 4.6316416e-08, 0, 4.043904e-08, 0.52979803, 1.863255, 0.4516654, 1.1456736)
-dialogue = ExtResource("4_4l877")
+script = null
 
 [node name="guitar" parent="InteractionHandler" unique_id=715204009 instance=ExtResource("9_sr1wa")]
 transform = Transform3D(0.016384294, -0.3699611, 0.6892061, 0.020506086, 0.7949338, 0.86259055, -1.1529155, 6.3757e-11, 0.02061083, -0.011057414, 0.050817914, 6.0051446)
@@ -113,7 +121,28 @@ transform = Transform3D(0.016384294, -0.3699611, 0.6892061, 0.020506086, 0.79493
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("10_27nil")]
 
 [node name="MissionBrief" parent="InteractionHandler" unique_id=112752815 instance=ExtResource("12_2kos1")]
-transform = Transform3D(0.46349704, 0.88609844, 0, -0.88609844, 0.46349704, 0, 0, 0, 1, -0.29105622, 0.50162524, 5.489208)
+transform = Transform3D(-2.0260101e-08, -3.8732598e-08, 1.0000001, -0.88609856, 0.46349713, 0, -0.46349707, -0.88609844, -4.371139e-08, -0.29105622, 0.60162526, 7.089208)
+
+[node name="Area3D" type="Area3D" parent="InteractionHandler" unique_id=396630548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0, 0.8)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("29_uy8xk")
+dialogue = ExtResource("30_4nb8s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionHandler/Area3D" unique_id=596418252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_4nb8s")
+
+[node name="Area3D2" type="Area3D" parent="InteractionHandler" unique_id=1580502762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29999998, 0, 7.1)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("29_uy8xk")
+dialogue = ExtResource("15_vpjrm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionHandler/Area3D2" unique_id=203266956]
+shape = SubResource("BoxShape3D_cagm1")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1474717128]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)

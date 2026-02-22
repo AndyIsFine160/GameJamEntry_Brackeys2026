@@ -9,7 +9,33 @@ name = "Veteran"
 text = "I must fulfill my promise to her..."
 metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 
+[sub_resource type="Resource" id="Resource_gm5jv"]
+script = ExtResource("1_rtrnl")
+name = "Veteran"
+text = "Thank you for showing yourm memories to me, kind stranger."
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_4ql2r"]
+script = ExtResource("1_rtrnl")
+text = "GAME END"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_3cjqg"]
+script = ExtResource("1_rtrnl")
+text = "THIS FATE IS STRANGE"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_grbfu"]
+script = ExtResource("1_rtrnl")
+text = "BUT FAKEE"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
+[sub_resource type="Resource" id="Resource_fbir1"]
+script = ExtResource("1_rtrnl")
+text = "ABSOLUTE CINEMA (Thank you for playin  )"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [resource]
 script = ExtResource("2_lntj0")
-content = Array[ExtResource("1_rtrnl")]([SubResource("Resource_rtrnl")])
+content = Array[ExtResource("1_rtrnl")]([SubResource("Resource_rtrnl"), SubResource("Resource_gm5jv"), SubResource("Resource_4ql2r"), SubResource("Resource_3cjqg"), SubResource("Resource_grbfu"), SubResource("Resource_fbir1")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
