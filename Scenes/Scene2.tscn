@@ -8,8 +8,8 @@
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="4_8077g"]
 [ext_resource type="PackedScene" uid="uid://bogm56asgo4iu" path="res://Interaction_System/interactables/Door2.tscn" id="5_7emfr"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="6_bqrwg"]
-[ext_resource type="Script" path="res://Interaction_System/dialogue_area.gd" id="10_pqb72"]
-[ext_resource type="PackedScene" path="res://Interaction_System/InteractionCounter.tscn" id="11_pqb72"]
+[ext_resource type="Script" uid="uid://be8wsitss88ap" path="res://Interaction_System/dialogue_area.gd" id="10_pqb72"]
+[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="11_pqb72"]
 [ext_resource type="Resource" uid="uid://bcqdmxcevf8pu" path="res://Dialogue_System/Player Speech Dialogues/Scene2 Dialog/2-A.tres" id="11_yudwp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ly1ba"]

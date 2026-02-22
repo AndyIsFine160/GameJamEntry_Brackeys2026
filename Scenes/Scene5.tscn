@@ -100,8 +100,7 @@
 [ext_resource type="Resource" uid="uid://dxnwsmvbr3kbs" path="res://Dialogue_System/alinus_test_dialogue.tres" id="98_3iedx"]
 [ext_resource type="Script" uid="uid://hld2c3iwmaag" path="res://Interaction_System/interactable_scene_change.gd" id="99_h3uu7"]
 [ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="100_aoagx"]
-[ext_resource type="PackedScene" path="res://Scenes/DialogueArea.tscn" id="101_myohx"]
-[ext_resource type="PackedScene" path="res://Interaction_System/InteractionCounter.tscn" id="102_imnb4"]
+[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="102_imnb4"]
 [ext_resource type="PackedScene" uid="uid://bftfhyybekvuc" path="res://Interaction_System/interactables/picture_book.tscn" id="103_xapvr"]
 [ext_resource type="Script" uid="uid://be8wsitss88ap" path="res://Interaction_System/dialogue_area.gd" id="103_xlt7k"]
 [ext_resource type="Resource" uid="uid://cd5c1o6mup57h" path="res://Dialogue_System/Player Speech Dialogues/Scene5 Dialog/5-A.tres" id="104_bahd5"]
@@ -242,7 +241,7 @@ size = Vector3(2.7, 2, 1)
 [node name="Scene1" type="Node3D" unique_id=1067484017]
 script = ExtResource("1_vt8bt")
 next_scene = ExtResource("2_4nvjn")
-interaction_count = 4
+interaction_count = 3
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("3_xlt7k")]
 transform = Transform3D(0.012996845, 0, -0.897121, 0, 0.8972151, 0, 0.897121, 0, 0.012996845, -3.2161884, 0.9431344, 1.9006969)
@@ -1690,9 +1689,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1254997, 1.1532557, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionHandler/Office_Desk_Door/Area3D" unique_id=1366870297]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08028984, 0.36691308, 0.17448425)
 shape = SubResource("BoxShape3D_msxrw")
-
-[node name="Area3D" parent="InteractionHandler" unique_id=570800686 instance=ExtResource("101_myohx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.037872, 1.2635747, 6.6427355)
 
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("102_imnb4")]
 

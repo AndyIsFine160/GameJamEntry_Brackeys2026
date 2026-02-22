@@ -2,9 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://qbmmf5o8nnxw" path="res://Imported Assets/JapaneseEra/Rake Asia.fbx" id="1_5xb02"]
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="1_bx1db"]
+[ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_obryg"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="2_6seh7"]
+[ext_resource type="PackedScene" uid="uid://dd1pshum02o8y" path="res://Scenes/Scene4.tscn" id="2_awsyj"]
 [ext_resource type="PackedScene" uid="uid://dc4rtot2ctdqj" path="res://Imported Assets/JapaneseEra/Sakwa Asia.fbx" id="2_yy3rc"]
-[ext_resource type="PackedScene" path="res://Interaction_System/InteractionCounter.tscn" id="3_bweko"]
+[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="3_bweko"]
 [ext_resource type="PackedScene" uid="uid://df13h7ui7j5g3" path="res://Imported Assets/JapaneseEra/Bucket Asia.fbx" id="3_myh1l"]
 [ext_resource type="PackedScene" uid="uid://ck833uu5k7eek" path="res://Imported Assets/JapaneseEra/Stone Lamp_1 Asia.fbx" id="4_aropg"]
 [ext_resource type="PackedScene" uid="uid://cyr2yqapwvelb" path="res://Imported Assets/JapaneseEra/BuildingWall_3_1  Asia.fbx" id="5_jhxkj"]
@@ -15,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cfjiykeokuxdy" path="res://Imported Assets/JapaneseEra/BuildingWall_4_1  Asia.fbx" id="7_bx1db"]
 [ext_resource type="PackedScene" uid="uid://x4l12l4qt3g4" path="res://Imported Assets/JapaneseEra/Door_1_1  Asia.fbx" id="8_6seh7"]
 [ext_resource type="PackedScene" uid="uid://vs1rps3tdjxt" path="res://Imported Assets/JapaneseEra/Table_1 Asia.fbx" id="9_bweko"]
+[ext_resource type="PackedScene" uid="uid://bogm56asgo4iu" path="res://Interaction_System/interactables/Door2.tscn" id="10_awsyj"]
 [ext_resource type="PackedScene" uid="uid://bs2jobvp4gaut" path="res://Imported Assets/JapaneseEra/Barrel_Closed Asia.fbx" id="10_jnb43"]
 [ext_resource type="PackedScene" uid="uid://clyiyv5coyjeo" path="res://Imported Assets/JapaneseEra/Balkon Asia.fbx" id="11_obryg"]
 [ext_resource type="PackedScene" uid="uid://prsjogvvi2gr" path="res://Imported Assets/JapaneseEra/Scroll_1 Asia.fbx" id="12_awsyj"]
@@ -132,7 +135,7 @@ size = Vector3(5.787958, 1.9570618, 2.2634706)
 size = Vector3(2.5289307, 1.9570618, 0.7390752)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ddxmc"]
-size = Vector3(10, 1, 9)
+size = Vector3(10, 1, 6.114746)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uchmy"]
 size = Vector3(41, 2.1757813, 46.933983)
@@ -183,6 +186,9 @@ size = Vector3(7.154541, 5, 11.7925415)
 size = Vector3(12.5, 5, 22)
 
 [node name="scene2" type="Node3D" unique_id=1667678290]
+script = ExtResource("1_obryg")
+next_scene = ExtResource("2_awsyj")
+interaction_count = 2
 
 [node name="InteractionHandler" type="Node" parent="." unique_id=1328533921]
 unique_name_in_owner = true
@@ -201,7 +207,6 @@ mesh = SubResource("SphereMesh_obryg")
 visible = false
 
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("3_bweko")]
-visible = false
 
 [node name="bonsai" parent="InteractionHandler" unique_id=1726364184 instance=ExtResource("80_myh1l")]
 transform = Transform3D(1, 0, 0, 0, 0.39999998, 0, 0, 0, 1, 3.0587285, 0.23759176, 1.0248672)
@@ -211,9 +216,13 @@ dialogue = ExtResource("5_jnb43")
 transform = Transform3D(0.6751568, 0.33582994, -0.09805104, 0.1381232, -1.6415623, -0.020059228, 2.74622, 0, 0.02511469, -19.012955, 0.8102436, 6.113436)
 dialogue = ExtResource("7_bweko")
 
+[node name="Door B" parent="InteractionHandler" unique_id=1592935045 instance=ExtResource("10_awsyj")]
+transform = Transform3D(0.29706165, 0, -0.26787007, 0, 0.4, 0, 0.26787007, 0, 0.29706165, -8.826008, 2.6302736, -104.67255)
+
 [node name="player" parent="." unique_id=990361468 instance=ExtResource("66_lwiw4")]
 transform = Transform3D(0.7980189, 0, 0, 0, 0.7980189, 0, 0, 0, 0.7980189, 4, 0.8306403, 3)
-jump_force = 0.0
+sprint_speed = 5.0
+jump_force = 5.0
 toggleable_fly = false
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=97119353]
@@ -281,7 +290,7 @@ shape = SubResource("BoxShape3D_jnb43")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, -88)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Static/StaticBody3D" unique_id=14468137]
-transform = Transform3D(1, 0, 0, 0, 0.98238856, -0.1868498, 0, 0.1868498, 0.98238856, -36.985317, 0.4029107, 7.053032)
+transform = Transform3D(1, 0, 0, 0, 0.9680077, -0.25092065, 0, 0.25092065, 0.9680077, -36.985317, 0.40100175, 8.449509)
 shape = SubResource("BoxShape3D_ddxmc")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Static/StaticBody3D" unique_id=670853193]

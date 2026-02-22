@@ -3,19 +3,6 @@
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="1_awbkk"]
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_ceu8o"]
 
-[sub_resource type="Resource" id="Resource_bka12"]
-script = ExtResource("1_ceu8o")
-name = "Salaryman"
-text = "Ok here goes."
-metadata/_custom_type_script = "uid://bw6pub8fdcttc"
-
-[sub_resource type="Resource" id="Resource_8em86"]
-script = ExtResource("1_ceu8o")
-name = "Salaryman"
-text = "I just hope I can get it done quick..."
-metadata/_custom_type_script = "uid://bw6pub8fdcttc"
-
 [resource]
 script = ExtResource("1_awbkk")
-content = Array[ExtResource("1_ceu8o")]([SubResource("Resource_bka12"), SubResource("Resource_8em86")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
