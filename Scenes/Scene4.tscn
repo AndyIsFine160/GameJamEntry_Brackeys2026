@@ -7,18 +7,21 @@
 [ext_resource type="Texture2D" uid="uid://gphmr2bx4d72" path="res://Imported Assets/images.png" id="2_ycn35"]
 [ext_resource type="PackedScene" uid="uid://f03b8s4wh62e" path="res://Imported Assets/Low Poly Furniture/Beds/Bed Double.fbx" id="3_fye3t"]
 [ext_resource type="PackedScene" uid="uid://d00id05nnhkt7" path="res://Scenes/uniform.tscn" id="3_t2e2d"]
-[ext_resource type="Resource" uid="uid://b6m4fv3njcaaj" path="res://Dialogue_System/Interactable Dialogues/Scene1 Interactables/1-4.tres" id="4_4l877"]
 [ext_resource type="PackedScene" uid="uid://bk0tmrlhhjcjm" path="res://Imported Assets/Low Poly Furniture/Drawers/Drawer B.fbx" id="4_j48og"]
 [ext_resource type="PackedScene" uid="uid://bs4ot0isf1yqq" path="res://Scenes/poster.tscn" id="4_y6c60"]
+[ext_resource type="Resource" uid="uid://cppqti1ggg25e" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-3.tres" id="5_4nb8s"]
 [ext_resource type="PackedScene" uid="uid://d1mb6jurgcgki" path="res://Imported Assets/Low Poly Furniture/Lights/Lamp A.fbx" id="5_oxeir"]
 [ext_resource type="PackedScene" uid="uid://bix1ikmd7fwww" path="res://Scenes/letters.tscn" id="6_kyq6s"]
 [ext_resource type="PackedScene" uid="uid://cbrwc1paxniy2" path="res://Imported Assets/Low Poly Furniture/Windows/Window B.fbx" id="7_kyq6s"]
+[ext_resource type="Resource" uid="uid://dlvoprrsbinsp" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-2.tres" id="7_vpjrm"]
 [ext_resource type="PackedScene" uid="uid://cs8mvsbdhhp41" path="res://Imported Assets/Giftbox_01.dae" id="8_y6c60"]
+[ext_resource type="Resource" uid="uid://cbp2or3v56nbb" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-1.tres" id="9_cagm1"]
 [ext_resource type="PackedScene" uid="uid://dqig68u5uflnw" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Rug_A.fbx" id="9_kn3lq"]
 [ext_resource type="PackedScene" uid="uid://ct3fjv01tpea7" path="res://Interaction_System/interactables/guitar.tscn" id="9_sr1wa"]
 [ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="10_27nil"]
 [ext_resource type="PackedScene" uid="uid://c76usneo02711" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Bookshelf.fbx" id="10_dikbl"]
 [ext_resource type="PackedScene" uid="uid://dums5e54qn58p" path="res://Interaction_System/interactables/mission_brief.tscn" id="12_2kos1"]
+[ext_resource type="Resource" uid="uid://dn05kevh7ly0s" path="res://Dialogue_System/Interactable Dialogues/Scene4 Interactables/4-5.tres" id="13_vpjrm"]
 [ext_resource type="PackedScene" uid="uid://cemb83anagc1f" path="res://Imported Assets/Low Poly Furniture/Tables/Table C.fbx" id="15_hyaa0"]
 [ext_resource type="PackedScene" uid="uid://dkpivop5vhsvw" path="res://Scenes/poster2.tscn" id="16_vp0rb"]
 [ext_resource type="PackedScene" uid="uid://csa1mj3gmwtnq" path="res://Scenes/poster3.tscn" id="18_mvgsr"]
@@ -90,25 +93,27 @@ metadata/_edit_use_anchors_ = true
 
 [node name="uniform" parent="InteractionHandler" unique_id=691943324 instance=ExtResource("3_t2e2d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0631739, 0.21334216, 1.9277594)
-dialogue = ExtResource("4_4l877")
+dialogue = ExtResource("5_4nb8s")
 
 [node name="Letters2" parent="InteractionHandler" unique_id=1089834561 instance=ExtResource("6_kyq6s")]
 transform = Transform3D(0.0053556873, 0, -0.14190997, 0, 0.007986209, 0, 0.084678106, 0, 0.008975466, 0, 0.28669593, 4.80695)
+dialogue = ExtResource("7_vpjrm")
 
 [node name="Poster" parent="InteractionHandler" unique_id=775435708 instance=ExtResource("4_y6c60")]
 transform = Transform3D(0.014501175, -1.5145075e-07, -9.061966e-15, -3.4573495e-09, -0.6352305, -7.6017265e-08, -5.6327373e-16, -5.553361e-08, 0.8695363, 1.8600498, 0.4093355, 0.5725267)
-dialogue = ExtResource("4_4l877")
+dialogue = ExtResource("9_cagm1")
 
 [node name="Poster2" parent="InteractionHandler" unique_id=696717749 instance=ExtResource("16_vp0rb")]
 transform = Transform3D(0.33427078, 0, 0, 0, -0.44335398, -5.6220642e-08, 0, 2.6721114e-08, -0.4433539, 1.8632551, 0.6027783, 0.9019108)
-dialogue = ExtResource("4_4l877")
+script = null
 
 [node name="Poster3" parent="InteractionHandler" unique_id=2140035897 instance=ExtResource("18_mvgsr")]
 transform = Transform3D(0.49037948, 0, 0, 0, -0.46256876, 4.6316416e-08, 0, 4.043904e-08, 0.52979803, 1.863255, 0.4516654, 1.1456736)
-dialogue = ExtResource("4_4l877")
+script = null
 
 [node name="guitar" parent="InteractionHandler" unique_id=715204009 instance=ExtResource("9_sr1wa")]
 transform = Transform3D(0.016384294, -0.3699611, 0.6892061, 0.020506086, 0.7949338, 0.86259055, -1.1529155, 6.3757e-11, 0.02061083, -0.011057414, 0.050817914, 6.0051446)
+dialogue = ExtResource("13_vpjrm")
 
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("10_27nil")]
 
