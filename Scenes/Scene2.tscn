@@ -33,6 +33,9 @@ fog_depth_end = 30.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krnfe"]
 albedo_color = Color(0.45995867, 0.45995867, 0.4599586, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_os01q"]
+size = Vector3(2.415, 3.995, 1)
+
 [sub_resource type="SphereMesh" id="SphereMesh_7emfr"]
 radius = 0.1
 height = 0.1
@@ -43,7 +46,7 @@ next_scene = ExtResource("2_os01q")
 
 [node name="FirstPersonCharacter" parent="." unique_id=990361468 groups=["Player"] instance=ExtResource("1_3myvu")]
 transform = Transform3D(0.6963037, 0, 0, 0, 0.6963037, 0, 0, 0, 0.6963037, 0.2871821, 0.71966267, 0.43401074)
-speed = 30.0
+speed = 3.0
 sprint_speed = 3.0
 jump_force = 0.0
 toggleable_fly = false
@@ -74,6 +77,13 @@ use_collision = true
 transform = Transform3D(2.7393703, 0, 0, 0, 2.965682, 0, 0, 0, 1.0576564, 0, 0, 2.0643005)
 visible = false
 use_collision = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall" unique_id=1930555560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.038437605, 1.5963676, -161.52086)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/StaticBody3D" unique_id=1939969417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.9094696)
+shape = SubResource("BoxShape3D_os01q")
 
 [node name="Spawner" type="Node3D" parent="." unique_id=1988282986]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5610886, 0, 0)
