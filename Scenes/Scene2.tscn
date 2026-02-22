@@ -8,7 +8,9 @@
 [ext_resource type="Script" uid="uid://b15jtub2i5tes" path="res://Interaction_System/interaction_handler.gd" id="4_8077g"]
 [ext_resource type="PackedScene" uid="uid://bogm56asgo4iu" path="res://Interaction_System/interactables/Door2.tscn" id="5_7emfr"]
 [ext_resource type="PackedScene" uid="uid://dmpqawvo4bc3k" path="res://Dialogue_System/UI.tscn" id="6_bqrwg"]
-[ext_resource type="PackedScene" uid="uid://2v6bhwigxmy3" path="res://Interaction_System/InteractionCounter.tscn" id="11_pqb72"]
+[ext_resource type="Script" path="res://Interaction_System/dialogue_area.gd" id="10_pqb72"]
+[ext_resource type="PackedScene" path="res://Interaction_System/InteractionCounter.tscn" id="11_pqb72"]
+[ext_resource type="Resource" uid="uid://bcqdmxcevf8pu" path="res://Dialogue_System/Player Speech Dialogues/Scene2 Dialog/2-A.tres" id="11_yudwp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ly1ba"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -39,6 +41,9 @@ size = Vector3(2.415, 3.995, 1)
 [sub_resource type="SphereMesh" id="SphereMesh_7emfr"]
 radius = 0.1
 height = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_54ucl"]
+size = Vector3(3, 2, 1)
 
 [node name="Scene2" type="Node3D" unique_id=1276587240]
 script = ExtResource("1_pg17c")
@@ -137,3 +142,14 @@ visible = false
 
 [node name="InteractionCounter" parent="InteractionHandler" unique_id=46917967 instance=ExtResource("11_pqb72")]
 visible = false
+
+[node name="Area3D" type="Area3D" parent="InteractionHandler" unique_id=2045937396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("10_pqb72")
+dialogue = ExtResource("11_yudwp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionHandler/Area3D" unique_id=976139742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_54ucl")

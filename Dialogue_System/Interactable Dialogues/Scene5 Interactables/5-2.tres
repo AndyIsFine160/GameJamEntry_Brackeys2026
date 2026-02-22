@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://bw6pub8fdcttc" path="res://Dialogue_System/pair.gd" id="1_0mrpt"]
 [ext_resource type="Script" uid="uid://b3mnv4pljudrt" path="res://Dialogue_System/dialogue.gd" id="2_chss7"]
 
+[sub_resource type="Resource" id="Resource_bsv2p"]
+script = ExtResource("1_0mrpt")
+text = "Veteran looks at an unfinished painting"
+metadata/_custom_type_script = "uid://bw6pub8fdcttc"
+
 [sub_resource type="Resource" id="Resource_0mrpt"]
 script = ExtResource("1_0mrpt")
 name = "Salary Man"
@@ -24,5 +29,5 @@ metadata/_custom_type_script = "uid://bw6pub8fdcttc"
 [resource]
 script = ExtResource("2_chss7")
 index = 3
-content = Array[ExtResource("1_0mrpt")]([SubResource("Resource_0mrpt"), SubResource("Resource_chss7"), SubResource("Resource_p05a0")])
+content = Array[ExtResource("1_0mrpt")]([SubResource("Resource_bsv2p"), SubResource("Resource_0mrpt"), SubResource("Resource_chss7"), SubResource("Resource_p05a0")])
 metadata/_custom_type_script = "uid://b3mnv4pljudrt"
