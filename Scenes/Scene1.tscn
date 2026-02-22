@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cpqbo2wc4qcyt" path="res://Scenes/scene.gd" id="1_d246l"]
 [ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://Imported Assets/addons/gremlins_first_person/player.tscn" id="1_q2fht"]
 [ext_resource type="PackedScene" uid="uid://dep38qa5t5kk1" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Stool_B.fbx" id="2_ddui2"]
-[ext_resource type="PackedScene" path="res://Scenes/Scene2.tscn" id="2_o4v25"]
+[ext_resource type="PackedScene" uid="uid://dckpcem6l7r6m" path="res://Scenes/Scene2.tscn" id="2_o4v25"]
 [ext_resource type="PackedScene" uid="uid://dp7r2ghp38n3" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_4_Rounded_Alt.fbx" id="2_qbrl8"]
 [ext_resource type="PackedScene" uid="uid://h75diu2vqsad" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Wall_Small.fbx" id="3_unjri"]
 [ext_resource type="PackedScene" uid="uid://dlbh5s7n6ltxu" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/FBX/Separated/Office_Desk_3.fbx" id="4_a2ia3"]
@@ -223,6 +223,7 @@ size = Vector3(2.193, 2.036, 0.8)
 [node name="Scene1" type="Node3D" unique_id=1067484017]
 script = ExtResource("1_d246l")
 next_scene = ExtResource("2_o4v25")
+interaction_count = 2
 
 [node name="Player" parent="." unique_id=2124899755 instance=ExtResource("1_q2fht")]
 transform = Transform3D(0.012996845, 0, -0.897121, 0, 0.8972151, 0, 0.897121, 0, 0.012996845, -3.2161884, 0.9431344, 1.9006969)
@@ -1593,6 +1594,7 @@ transform = Transform3D(0.59047055, 0, 0, 0, 1, 0, 0, 0, 0.5563232, -3.0276783, 
 
 [node name="InteractionHandler" type="Node" parent="." unique_id=1346698006]
 script = ExtResource("91_nssgg")
+length = 2
 
 [node name="RayCast3D" type="RayCast3D" parent="InteractionHandler" unique_id=408523902]
 collide_with_areas = true

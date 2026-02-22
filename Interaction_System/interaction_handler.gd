@@ -4,6 +4,7 @@ var camera : Camera3D
 var player : CharacterBody3D
 var ray : RayCast3D
 var current : Interactable_Disappearing
+var can_change_scene : bool
 @export var length = 1
 
 @onready var ui : UI = $UI
@@ -29,6 +30,8 @@ func _process(_delta : float):
 			if tg is Interactable_Disappearing:
 				if tg.interacted:
 					return
+				if tg is InteractableSceneChange:
+					tg.can_change = can_change_scene
 				if current == null:
 					player.interact_signal.connect(interact)
 				tg.hover()
@@ -45,6 +48,10 @@ func interact():
 		return
 	if current.interacted:
 		return
+	
+	if current is InteractableSceneChange:
+		if current.can_change == false:
+			return
 
 	ui.start(current.dialogue)
 	player.set_physics_process(false)
@@ -52,10 +59,16 @@ func interact():
 func ui_hidden():
 	current.done()
 
+	if current is Interactable_Disappearing:
+		var main_scene = get_tree().current_scene
+		if main_scene is BaseScene:
+			can_change_scene = main_scene.interaction_done_notify()
+
 	if current is InteractableSceneChange:
 		print("success")
 		var main_scene = get_tree().current_scene
 		if main_scene is BaseScene:
 			main_scene.request_change_scene()
+			
 
 	player.set_physics_process(true)

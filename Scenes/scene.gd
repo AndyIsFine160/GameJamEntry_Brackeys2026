@@ -2,6 +2,8 @@ extends Node
 class_name BaseScene
 
 @export var next_scene: PackedScene
+@export var interaction_count = 0
+var interactions = 0
 var scene_path: String
 var loaded_scene: PackedScene
 
@@ -37,7 +39,7 @@ func _process(_delta):
 			state = FAILED
 
 func change_scene():
-	if state == LOADED and want_scene:
+	if state == LOADED and want_scene and interactions >= interaction_count:
 		get_tree().change_scene_to_packed(loaded_scene)
 	elif state == LOADING:
 		print("Scene still loading")
@@ -45,3 +47,7 @@ func change_scene():
 func request_change_scene():
 	want_scene = true
 	change_scene()
+
+func interaction_done_notify() -> bool:
+	interactions += 1
+	return interactions >= interaction_count
