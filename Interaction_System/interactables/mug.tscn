@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://c5xuchjpoeu5n"]
 
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="1_jqek4"]
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_jqek4"]
 [ext_resource type="Texture2D" uid="uid://b2hnyrqltsru7" path="res://Imported Assets/VNB Low Poly Office Set V1.1.0/Textures/palette1.png" id="2_lt3np"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1csce"]

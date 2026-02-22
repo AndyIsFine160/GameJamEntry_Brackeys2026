@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bs4ot0isf1yqq"]
 
+[ext_resource type="Script" uid="uid://0ol8ys1kc0v2" path="res://Interaction_System/interactable_disappearing.gd" id="1_dywd2"]
+[ext_resource type="Resource" uid="uid://j2vjyvqqt2a2" path="res://Dialogue_System/Interactable Dialogues/Scene3 Interactables/3-4.tres" id="2_0gu4l"]
 [ext_resource type="Texture2D" uid="uid://dgjycub2ac6k1" path="res://Imported Assets/an-american-ww2-poster-using-patriotic-slogans-to-gain-support-for-the-war-effort-saying-free-labor-will-win-2F9CEMB.jpg" id="2_dywd2"]
-[ext_resource type="Script" uid="uid://dee3e5tatrv7e" path="res://Interaction_System/interactable.gd" id="2_efwel"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0gu4l"]
 albedo_texture = ExtResource("2_dywd2")
@@ -92,8 +93,9 @@ emission_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dywd2"]
 
-[node name="Node3D" type="Node3D" unique_id=696717749]
-script = ExtResource("2_efwel")
+[node name="Poster1" type="Node3D" unique_id=696717749]
+script = ExtResource("1_dywd2")
+dialogue = ExtResource("2_0gu4l")
 
 [node name="Box" type="CSGBox3D" parent="." unique_id=775435708]
 transform = Transform3D(-0.020897476, 3.826334e-08, -2.7291412e-15, 0, -1.9131674e-08, -0.71417874, -1.8269154e-09, -0.4376816, 3.1217738e-08, 0, 0, 0)
